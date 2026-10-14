@@ -1,37 +1,5 @@
 # FroggerPro reproducible bring-up build
 
-## Evolution X kernel replacement (2026-10-13)
-
-Boot investigation after the OTA confirmed that the physical metadata partition
-is F2FS: an ext4 mount failed and a read-only F2FS mount succeeded in Evolution X
-recovery. Evolution X's boot fstab also declares F2FS. The active Lineage
-`fstab.qcom` has been corrected to F2FS; its prior ext4 entry was incompatible
-with the device. The recovery fstab already supports both formats.
-
-The working profile now selects `prebuilts/working-evolutionx-20260930`, extracted
-from Evolution X 12.2 Hotfix for FroggerPro. Its kernel release is
-`6.6.139-4k-g6242c82bd7d5`; all 309 ramdisk, 426 vendor, and 77 system modules
-match that release. The previous capture used `6.6.139-4k-geabe13baf83c` and is
-retained separately. These are different kernel builds despite their shared
-6.6.139 version number.
-
-The complete source payload and extracted partition hashes were verified.
-The matching Evolution X boot, init_boot, vendor_boot, DTBO, and recovery
-images booted recovery with root ADB on the phone. This establishes recovery
-support for that exact set; normal Lineage Android boot remains unverified.
-Final rebuilt images and OTA require the verification recorded in
-`frogger-bootloop-diagnostics/evolutionx-20260930/verify_completed_build.py`.
-Use the complete matching set rather than mixing either module collection.
-
-Use the active product: `lineage_FroggerPro-cp2a-userdebug` (CP2A.260605.016).
-From the Lineage root:
-
-```bash
-source build/envsetup.sh
-lunch lineage_FroggerPro-cp2a-userdebug
-m bacon -j8
-```
-
 ## Fixes retained in the active tree
 
 - BoardConfig.mk: TARGET_USES_VULKAN=true; metadata partition enabled;
