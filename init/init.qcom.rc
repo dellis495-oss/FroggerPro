@@ -1,0 +1,48 @@
+import /vendor/etc/init/hw/init.froggerpro.usb.rc
+
+on early-init
+    setprop ro.hardware.egl adreno
+    setprop ro.hardware.vulkan adreno
+    setprop sys.usb.configfs 1
+    setprop sys.usb.controller ${ro.boot.usbcontroller}
+    setprop vendor.usb.controller ${ro.boot.usbcontroller}
+    symlink /vendor/firmware_mnt /firmware
+    symlink /vendor/bt_firmware /bt_firmware
+    symlink /vendor/dsp /dsp
+
+on init
+    mkdir /metadata 0700 root system
+    mkdir /mnt/vendor/persist 0771 system system
+    mkdir /vendor/firmware_mnt 0771 root system
+    mkdir /vendor/bt_firmware 0771 bluetooth bluetooth
+    mkdir /vendor/dsp 0771 root system
+
+on property:ro.boot.usbcontroller=*
+    wait /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode
+    write /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode peripheral
+
+on fs
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    mount_all /vendor/etc/fstab.qcom --early
+
+on post-fs
+    exec_start vendor.froggerpro-modprobe
+    # Keep the secure services alive across module loading. Restarting here
+    # leaves KeyMint without QSEE during late-fs wrapped-key generation.
+    setprop sys.usb.config adb
+
+on late-fs
+    mount_all /vendor/etc/fstab.qcom --late
+
+on early-boot
+    write /sys/kernel/icnss/wlan_en_delay 1000
+    write /sys/kernel/icnss/wpss_boot 1
+
+service vendor.froggerpro-modprobe /vendor/bin/modprobe --all=/vendor/lib/modules/modules.load -d /vendor/lib/modules
+    class core
+    user root
+    group root
+    seclabel u:r:vendor_modprobe:s0
+    disabled
+    oneshot

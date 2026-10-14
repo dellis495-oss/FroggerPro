@@ -1,0 +1,6 @@
+// Qualcomm ADSP userspace ABI shared by source and prebuilt kernel profiles.
+cc_library_headers {
+    name: "frogger_adsp_uapi_headers",
+    vendor: true,
+    export_include_dirs: ["."],
+}

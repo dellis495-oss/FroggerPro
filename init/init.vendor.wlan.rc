@@ -1,0 +1,21 @@
+#
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on post-fs-data
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
+on early-boot
+    write /sys/kernel/icnss/wlan_en_delay 1000
+    write /sys/kernel/icnss/wpss_boot 1
+
+service wifi_qos_daemon /vendor/bin/wifi_qos_daemon
+    class late_start
+    user wifi
+    group wifi inet net_admin oem_2912 system
+    capabilities NET_ADMIN
+    oneshot

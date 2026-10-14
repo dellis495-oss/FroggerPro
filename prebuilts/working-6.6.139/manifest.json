@@ -1,0 +1,4152 @@
+[
+  {
+    "path": "Image",
+    "size": 36735488,
+    "sha256": "f9e8a0d701ea2ea8cbc62e5e554f468910b83e335f590b431419e7b2d39f73d7"
+  },
+  {
+    "path": "dtb/froggerpro.dtb",
+    "size": 8375491,
+    "sha256": "b7f7c76ed034d83735146b6ae5672d4f75e3d5c6a6925ace62d033ca4582fe47"
+  },
+  {
+    "path": "dtbo.img",
+    "size": 52428800,
+    "sha256": "9cdd225bc2c7b2329a2934b53a8ba2876cd2bbad68ce91a8ed9ce5cf27fdd7e6"
+  },
+  {
+    "path": "ramdisk/adsp_sleepmon.ko",
+    "size": 76488,
+    "sha256": "6ab339adf6df6b776fcee4ab238249c7e51a3484a5d9c7e7a37d7593eb277ffe"
+  },
+  {
+    "path": "ramdisk/altmode-glink.ko",
+    "size": 33960,
+    "sha256": "7124948c0e82fee4793a1851e67a749c43317101da9e708b41ccab832dcd1d40"
+  },
+  {
+    "path": "ramdisk/arm_smmu.ko",
+    "size": 256280,
+    "sha256": "15b783730ccb7cd8493be7beab399cc62125edebc4c42d83103c6a96bc6de05d"
+  },
+  {
+    "path": "ramdisk/bam_dma.ko",
+    "size": 58256,
+    "sha256": "27d0d7865a9261bbfc9b409f2d7adfe944cc688acb706d1d105d92981389a5bf"
+  },
+  {
+    "path": "ramdisk/bcl_pmic5.ko",
+    "size": 55728,
+    "sha256": "f8e7714e5ea440fe485ca90dcdb284dbb80d45d665cc8eac56bcaaf5c726f212"
+  },
+  {
+    "path": "ramdisk/bcl_soc.ko",
+    "size": 20184,
+    "sha256": "f81b9bb5d2bae6785061f4608aaef673a3f1f4e4fc3117e775e020f9573df9f9"
+  },
+  {
+    "path": "ramdisk/boot_stats.ko",
+    "size": 15664,
+    "sha256": "12c023f75105bb5a288b475c0569b6117ccc31c53011a2d6279bddba7b24d927"
+  },
+  {
+    "path": "ramdisk/bwmon.ko",
+    "size": 82896,
+    "sha256": "00fa2e67bd264c171c351f026e94696281ddc337cea94a2927609cc554659e99"
+  },
+  {
+    "path": "ramdisk/c1dcvs_scmi_v2.ko",
+    "size": 28808,
+    "sha256": "3f11c5207ff638b4bd27b6ca3fe3fcafed5866c57fea1ffcc9b12ff561616f20"
+  },
+  {
+    "path": "ramdisk/cambistmclkcc-sun.ko",
+    "size": 35752,
+    "sha256": "a2b062ba37ba41917b49184c5edf2eaa88f2cf26cfc6724e4c128bfbe542fa98"
+  },
+  {
+    "path": "ramdisk/cambistmclkcc-tuna.ko",
+    "size": 34640,
+    "sha256": "a784d122bc3dbe35e6f6e106d6fe91422db3e6f6b702349f0465cb7bc20140a4"
+  },
+  {
+    "path": "ramdisk/camcc-kera.ko",
+    "size": 101464,
+    "sha256": "06d617005485f97ea9e2b83fe5207793ef8c75ed1c563b5c689b5d9a2d6b68a3"
+  },
+  {
+    "path": "ramdisk/camcc-sun.ko",
+    "size": 103384,
+    "sha256": "f985fda11cbdc7c83e21a480d754a8edea816b36912fb1c63683e1bd1684b5c3"
+  },
+  {
+    "path": "ramdisk/camcc-tuna.ko",
+    "size": 103616,
+    "sha256": "9a67d79d66bfc4b23e730c64efd42dc6f0efe2e3aea4f2ddb957f443e67bcd9e"
+  },
+  {
+    "path": "ramdisk/cdsprm.ko",
+    "size": 92280,
+    "sha256": "3af0ec35ced67ffb0150e1f98a8d8b7df3ce57e1b98783b4b8a1c674d5357860"
+  },
+  {
+    "path": "ramdisk/charger-ulog-glink.ko",
+    "size": 29848,
+    "sha256": "d3421d43974a320f46e6d2f0e7389e596b56dd0a1f456fd8afce8f96e90d26e5"
+  },
+  {
+    "path": "ramdisk/clk-dummy.ko",
+    "size": 17656,
+    "sha256": "e2e4f6522e909e369eb6bbf176160dad1a45319fbf1f0c9725e2fbeacd0d52dc"
+  },
+  {
+    "path": "ramdisk/clk-qcom.ko",
+    "size": 408904,
+    "sha256": "3e36604702d4be6cd78fb80c591411992b86038ec6335b0c8378634341ad15f1"
+  },
+  {
+    "path": "ramdisk/clk-rpmh.ko",
+    "size": 80968,
+    "sha256": "9380448b753798aa2047a878e6f31273f90017e21de25006f2cd9d2163de7aa3"
+  },
+  {
+    "path": "ramdisk/clk-scmi.ko",
+    "size": 19696,
+    "sha256": "ead498317bfa863109576086e840c137e25092dc34ef4a5ba197cb6fca7a1d68"
+  },
+  {
+    "path": "ramdisk/cmd-db.ko",
+    "size": 22248,
+    "sha256": "e096d47bf46fe52c0b068ddfbe294039c669af11aed800d349068806435115dd"
+  },
+  {
+    "path": "ramdisk/coresight-csr.ko",
+    "size": 45416,
+    "sha256": "9838b948989a17f678b90e971802c5f7957d6668e3b99c24128128b9407a4937"
+  },
+  {
+    "path": "ramdisk/coresight-cti.ko",
+    "size": 95200,
+    "sha256": "a9913515f0e8a2497e620f10d962ed4d2be6741b28fdc7859014dcfdb8154af0"
+  },
+  {
+    "path": "ramdisk/coresight-dummy.ko",
+    "size": 23768,
+    "sha256": "cd5ff879e3d7f2e3be2b8c3b51529d3a58e8405411cdc244f0c6ae25c32827b3"
+  },
+  {
+    "path": "ramdisk/coresight-funnel.ko",
+    "size": 38304,
+    "sha256": "b7bf1b716d7059880fbe394e55e2a841acb3b2b7bb33bfbb1ea7c0d242d074c9"
+  },
+  {
+    "path": "ramdisk/coresight-qmi.ko",
+    "size": 32184,
+    "sha256": "ba5780a773e429e4bebd5cfd6492d73754402adcfb33fb971e4647d75ba4464f"
+  },
+  {
+    "path": "ramdisk/coresight-remote-etm.ko",
+    "size": 25744,
+    "sha256": "567d783e3fd303d3b27cda2b934b8d262d906ba9a728912c43a36252f96928f7"
+  },
+  {
+    "path": "ramdisk/coresight-replicator.ko",
+    "size": 39936,
+    "sha256": "e04c4968a731f2c23b19481c5ac3a67c4f46bbd83f43f9f436158078114b5932"
+  },
+  {
+    "path": "ramdisk/coresight-stm.ko",
+    "size": 40088,
+    "sha256": "2b35bf410ad1346d498b7c261cc7be60837b6d6098c89a4a177755244ab0c2c5"
+  },
+  {
+    "path": "ramdisk/coresight-tgu.ko",
+    "size": 26688,
+    "sha256": "974e9ce8fe05cca59adcca9f953e068dc95f7b58ce28b2f4926bae4ae6ca35ae"
+  },
+  {
+    "path": "ramdisk/coresight-tmc-sec.ko",
+    "size": 36128,
+    "sha256": "cd03becbf53085a0b8c344db871e3d421d0aab79d6a2b38eb091e7e8672b1f30"
+  },
+  {
+    "path": "ramdisk/coresight-tmc.ko",
+    "size": 125904,
+    "sha256": "175283cfaa172f1ebc6d167154f846d2c163d3015e6a6d4dfe74475d6baaaf4d"
+  },
+  {
+    "path": "ramdisk/coresight-tpda.ko",
+    "size": 35864,
+    "sha256": "cd26a041b44df76e2e41f55319a407003a05b302589955117d52206040a17a81"
+  },
+  {
+    "path": "ramdisk/coresight-tpdm.ko",
+    "size": 132456,
+    "sha256": "caf19f35c5d78d3baa41bc8e16c31833246f5864bdf7be0aac7eabdc53c6594f"
+  },
+  {
+    "path": "ramdisk/coresight-trace-noc.ko",
+    "size": 29520,
+    "sha256": "14fffd446e4397985fcffa623c8d4fd20f54a2819f77547aaa1725c054563df6"
+  },
+  {
+    "path": "ramdisk/coresight-uetm.ko",
+    "size": 38088,
+    "sha256": "d269828751053774320e8c84ca517e3cf8549c737eab8e30f5681f080163dcfa"
+  },
+  {
+    "path": "ramdisk/coresight.ko",
+    "size": 167528,
+    "sha256": "0404d172ac7d870962316670007c1417141b27a4a435d82f5b0430b8a5890439"
+  },
+  {
+    "path": "ramdisk/cpu_hotplug.ko",
+    "size": 21424,
+    "sha256": "79259d11b7f328f703d0062a56c2c70df11c5ef04f1dc1a05639947c4b387de6"
+  },
+  {
+    "path": "ramdisk/cpu_mpam.ko",
+    "size": 37760,
+    "sha256": "32770a2cb8425931f1e850791540b5ac0b69c8bf1f007554da1b8d5679a68019"
+  },
+  {
+    "path": "ramdisk/cpu_phys_log_map.ko",
+    "size": 13696,
+    "sha256": "f0e3017069a62d40f96af1b9ea356c37a016f9d6e9dd310b6ecec05c6942d8fb"
+  },
+  {
+    "path": "ramdisk/cpucp_fast.ko",
+    "size": 16328,
+    "sha256": "9974922875e9c5066f294e330178353b83b2b091d6d7f043dd81d100803753c2"
+  },
+  {
+    "path": "ramdisk/cpucp_log.ko",
+    "size": 51240,
+    "sha256": "63a1151f940efb0f9e6fb5faaf70a003b39cadcc41a16b2679e6175cd12500c6"
+  },
+  {
+    "path": "ramdisk/cpufreq_stats_scmi_v2.ko",
+    "size": 22152,
+    "sha256": "535c1469d46c549e4459606865de9d555acd693f7fbb6ea02d959cff4db55fae"
+  },
+  {
+    "path": "ramdisk/cpufreq_stats_scmi_v3.ko",
+    "size": 22608,
+    "sha256": "1c29f7a28eca9cc37ca4b5ceb63ebe5abe92920d6115113482bb0e8a7e51ecfb"
+  },
+  {
+    "path": "ramdisk/cqhci.ko",
+    "size": 53224,
+    "sha256": "9587fe7020b7f888a1f619630a847dbe1593ed401d7c6e13301850ed97c6a86d"
+  },
+  {
+    "path": "ramdisk/crm-v2.ko",
+    "size": 75480,
+    "sha256": "f4b151ab66035e0a63ddb109fe57728291d28318bad9d2b6b1187b3aa4c4d141"
+  },
+  {
+    "path": "ramdisk/dcc_v2.ko",
+    "size": 59592,
+    "sha256": "7c7aee862eec77e9088d6374f4dbd3280115c2a22fb9a296f9ac23e051a0e8ad"
+  },
+  {
+    "path": "ramdisk/dcvs_fp.ko",
+    "size": 19648,
+    "sha256": "1c9cc9c9df1dc4cb16498f5358b03ea4f0b3bf93f066f38c08c59225f73b05ce"
+  },
+  {
+    "path": "ramdisk/ddr_cdev.ko",
+    "size": 16424,
+    "sha256": "9a44316111a34c321849ffd2f3ea900eba4023b4c574246203f59a78e680dc79"
+  },
+  {
+    "path": "ramdisk/debug-regulator.ko",
+    "size": 47408,
+    "sha256": "4ac79c119e35cba42e5051e885df9fe30a3e38fbd65a465c2b14fe2fc9b41e9b"
+  },
+  {
+    "path": "ramdisk/debug_symbol.ko",
+    "size": 18240,
+    "sha256": "34b5087c2b1341db0623a05efeb08ff5052efbc9cf48f26d86a143d44c8ddb5c"
+  },
+  {
+    "path": "ramdisk/debugcc-kera.ko",
+    "size": 58496,
+    "sha256": "82d40e6628bb196bc110d8182b00a0f18926938b37d7cbd32e5a66bdd05caccb"
+  },
+  {
+    "path": "ramdisk/debugcc-sun.ko",
+    "size": 61896,
+    "sha256": "e275ea520e1e9e01119083f6e4a26302408571251e21702312bf9dda16844eac"
+  },
+  {
+    "path": "ramdisk/debugcc-tuna.ko",
+    "size": 65608,
+    "sha256": "fdad5c512106a95ffa1848fbc6d1611f4178666253ad4b39f3d4de72c0054a58"
+  },
+  {
+    "path": "ramdisk/dispcc-sun.ko",
+    "size": 91528,
+    "sha256": "8ea46b09e7e59818a390fee5555739467a5df5de3e78d863ccf0f0057669bf72"
+  },
+  {
+    "path": "ramdisk/dispcc-tuna.ko",
+    "size": 95392,
+    "sha256": "83b4a9e615cef9c15088c325369357406c44ff5022a8c899a3f1b1a516c0e3b9"
+  },
+  {
+    "path": "ramdisk/dmesg_dumper.ko",
+    "size": 33416,
+    "sha256": "ca7a9dc889d9a0b553c4bd77975d4a09d1a816f1c04bf76a53cb2cd29bbd782a"
+  },
+  {
+    "path": "ramdisk/drm_display_helper.ko",
+    "size": 270008,
+    "sha256": "2d64f16203eec227f3a86a7e862b7d0f1fda8de94fee660844af79a346c1a43e"
+  },
+  {
+    "path": "ramdisk/drm_dp_aux_bus.ko",
+    "size": 23960,
+    "sha256": "b531dc4d67ff6aa7f9eab00ed3ac7f665db2d557426c4206c0237265f85042da"
+  },
+  {
+    "path": "ramdisk/dwc3-msm.ko",
+    "size": 200848,
+    "sha256": "ebf3af639a5bb6f307a6d963bf2e38e0495f4f3ada8df6d38a14e7d46cf78aba"
+  },
+  {
+    "path": "ramdisk/dynpf_scmi.ko",
+    "size": 17520,
+    "sha256": "f0446ef42002b18cd67e445027d818b8c4800b07162d6906fa3a4fc9878b6d71"
+  },
+  {
+    "path": "ramdisk/eud.ko",
+    "size": 36424,
+    "sha256": "7ff219629b830a6e7d0c3e5b9bf37903a0affc9385d0efcf7324c902de1bf393"
+  },
+  {
+    "path": "ramdisk/evacc-sun.ko",
+    "size": 32688,
+    "sha256": "02a2d2431784e1e6c601f65619afbc533e1b3c9a67352cb6857577e09e667338"
+  },
+  {
+    "path": "ramdisk/evacc-tuna.ko",
+    "size": 31752,
+    "sha256": "e130910d6e261fb47e72e118f4e68553bced200670eebca404563594bc929599"
+  },
+  {
+    "path": "ramdisk/f_fs_ipc_log.ko",
+    "size": 76576,
+    "sha256": "5d5c5a0427f040dc81301639596b03d8c9e88fd1955a3772d76a44ddae9799ef"
+  },
+  {
+    "path": "ramdisk/focaltech_fts.ko",
+    "size": 533160,
+    "sha256": "de19bca785fbb475a854a12fb683aa64ef238abcf1b0305ce1b9c6857e265d04"
+  },
+  {
+    "path": "ramdisk/fsa4480-i2c.ko",
+    "size": 22944,
+    "sha256": "b433fd82790cd767d5f54e1671070d069fecbec1e0486968ee49c7ec49a757ec"
+  },
+  {
+    "path": "ramdisk/gcc-kera.ko",
+    "size": 116176,
+    "sha256": "c7f1da34fbb3140d4b72559021b614489ac425c4b189a8532268c9e43bde2b89"
+  },
+  {
+    "path": "ramdisk/gcc-sun.ko",
+    "size": 123200,
+    "sha256": "98d690a86776f2fe35f8fe9c27b4dd57b802b970532a544a021a4fd9f3b409e7"
+  },
+  {
+    "path": "ramdisk/gcc-tuna.ko",
+    "size": 110632,
+    "sha256": "f7e814d10646abdb8a8545adea711a299edfe2a83c30ebc152743052654d7a6f"
+  },
+  {
+    "path": "ramdisk/gdsc-regulator.ko",
+    "size": 50288,
+    "sha256": "70ae0b81085ff516290c6eaf6f021b7a22a2c2072c16b23aea80ac9e15b0f55a"
+  },
+  {
+    "path": "ramdisk/gh_arm_drv.ko",
+    "size": 16864,
+    "sha256": "714ba3a0729cd7a06c2bb1f3324c8917adec4d3fdb416c6361170f8ba505b56c"
+  },
+  {
+    "path": "ramdisk/gh_ctrl.ko",
+    "size": 24368,
+    "sha256": "bdba66f2310b92f9015b40f5ed83f37eed506ecf6f0c313bfe91f255968880aa"
+  },
+  {
+    "path": "ramdisk/gh_dbl.ko",
+    "size": 28464,
+    "sha256": "0b28c11676df060ba60465cdab4f6807a3273c2287ac988bca1cffa20ccc68a6"
+  },
+  {
+    "path": "ramdisk/gh_irq_lend.ko",
+    "size": 28384,
+    "sha256": "b50eb2f48da4846836104017cd76050c216c149bfdc9e19d8b846ff0895dbc12"
+  },
+  {
+    "path": "ramdisk/gh_mem_notifier.ko",
+    "size": 15808,
+    "sha256": "a6dbe809037269c25886563cfb25776a2b00c85350dd91df24c1243d8b2b85b0"
+  },
+  {
+    "path": "ramdisk/gh_msgq.ko",
+    "size": 30864,
+    "sha256": "691f20e6d06759f990e783551446b8a999396564ef51e92c29e762364ae30ed6"
+  },
+  {
+    "path": "ramdisk/gh_panic_notifier.ko",
+    "size": 36000,
+    "sha256": "a12cc37a42d70a72557249ef04066d72bcd2b5e64b4bd13076d30ffb63d7f44a"
+  },
+  {
+    "path": "ramdisk/gh_rm_booster.ko",
+    "size": 24408,
+    "sha256": "71b7a7c83e3b1214f8afd3f1bc4464427ef68164be954b4b80e6298e13fd147b"
+  },
+  {
+    "path": "ramdisk/gh_rm_drv.ko",
+    "size": 182432,
+    "sha256": "21989aeeba8310703ed4ff4667cb072127d7c36317139a9c86a9d270742e4a3e"
+  },
+  {
+    "path": "ramdisk/gh_tlmm_vm_mem_access.ko",
+    "size": 25120,
+    "sha256": "026ce9c594b00f191048210ba30095e0060820df347d8c6976ff169c348e4c0a"
+  },
+  {
+    "path": "ramdisk/gh_virt_wdt.ko",
+    "size": 19584,
+    "sha256": "9d61f0b55258e8844ea295d619d05c1d35a853ea436e06e2513409e77ea8bf90"
+  },
+  {
+    "path": "ramdisk/gic_intr_routing.ko",
+    "size": 33152,
+    "sha256": "1f2a3beb11749728d615d9f0be9686dbf57db104ac4571fb22813cf3f13e744b"
+  },
+  {
+    "path": "ramdisk/glink_pkt.ko",
+    "size": 68896,
+    "sha256": "3815b7431354bc28242168317ea9c40be248e1f1aeb97f16f4ffbe0d2b85e507"
+  },
+  {
+    "path": "ramdisk/glink_probe.ko",
+    "size": 23344,
+    "sha256": "3aefe29d2f44990522b704b8e47537c23129b0adf09b458e0e5ed89c9a914a37"
+  },
+  {
+    "path": "ramdisk/governor_gpubw_mon.ko",
+    "size": 17040,
+    "sha256": "66e04c9b9c8b3dbdccb8adfd5f8a21a31ae76bfcc5e59ab31b650752538e556e"
+  },
+  {
+    "path": "ramdisk/governor_msm_adreno_tz.ko",
+    "size": 25312,
+    "sha256": "8c60f705a74704dfd9eec877d994b325dfd855f036c0ba2668f083df85caf66f"
+  },
+  {
+    "path": "ramdisk/gpu_dump_skip_cdev.ko",
+    "size": 15880,
+    "sha256": "b99fbf72244d306bf3db9e198404b715ed532efe22ca3e75736ef0b7c9b3dcb9"
+  },
+  {
+    "path": "ramdisk/gpucc-kera.ko",
+    "size": 43968,
+    "sha256": "9e824e47460d185241d6362de030baebf98e056d4c779c9002fa13d18a5a0556"
+  },
+  {
+    "path": "ramdisk/gpucc-sun.ko",
+    "size": 43568,
+    "sha256": "31c690169c776e684993e7c9d0747ad3bb5bd08f608d04437e50f846efffc78c"
+  },
+  {
+    "path": "ramdisk/gpucc-tuna.ko",
+    "size": 43568,
+    "sha256": "31f4c3e5989deb310e1d317af2232fcce493503b47c98618a2b4a8ce85e6994b"
+  },
+  {
+    "path": "ramdisk/gunyah_loader.ko",
+    "size": 191776,
+    "sha256": "495c72d8612caa09793c7459dc8c47d449297240fe863a7abe0c047403c7fdcc"
+  },
+  {
+    "path": "ramdisk/hdcp_qseecom_dlkm.ko",
+    "size": 98624,
+    "sha256": "256f9e8c9467ebea100289f5abf9f552449b19f3fd9f2f3e21ee8b960cb83c7c"
+  },
+  {
+    "path": "ramdisk/heap_mem_ext_v01.ko",
+    "size": 14704,
+    "sha256": "d1b4fb1a5831748b2b346870f9f36de816c60846b5445118412fd547d72d50c0"
+  },
+  {
+    "path": "ramdisk/hung_task_enh.ko",
+    "size": 20608,
+    "sha256": "26932956a4b3cea36fab6d645d4d7b222217dc8d25c8f36b27e4fff9b08903cd"
+  },
+  {
+    "path": "ramdisk/hvc_gunyah.ko",
+    "size": 23368,
+    "sha256": "d3007625ddebcb38d4ec1b4e7b6e7c3df0f19b03cda97944156e42059a0bea35"
+  },
+  {
+    "path": "ramdisk/hwmon.ko",
+    "size": 64704,
+    "sha256": "4b0491905120d2a13f79a04b9b24406c23cfaac80123876ddf33c18923830d79"
+  },
+  {
+    "path": "ramdisk/i2c-msm-geni.ko",
+    "size": 139256,
+    "sha256": "d3ae12b35f09fd775cd71aa56d9eb8940f1717587dd699d61e863ce1431b7f02"
+  },
+  {
+    "path": "ramdisk/i3c-master-msm-geni.ko",
+    "size": 173160,
+    "sha256": "e5162b428205b9364d30c309f0b5e14cc9a80ab4b49ba547992a5cb74963774a"
+  },
+  {
+    "path": "ramdisk/icc-bcm-voter.ko",
+    "size": 35520,
+    "sha256": "e4d6f7b08a3330c2f04f58bd98afee514d4ca2b6fc78b812b51d54e8f272f4cf"
+  },
+  {
+    "path": "ramdisk/icc-debug.ko",
+    "size": 20600,
+    "sha256": "3eeba3bd48e50aead22181f9eef4a441ebf47b4e721b155ba841e530086ac778"
+  },
+  {
+    "path": "ramdisk/icc-rpmh.ko",
+    "size": 29256,
+    "sha256": "2d0667c22fa3070149433c872279a49f901b795e71ea0b22e6f4542a455c4988"
+  },
+  {
+    "path": "ramdisk/iommu-logger.ko",
+    "size": 14664,
+    "sha256": "f3b34d885664565249989a8fd394bbc7d5b39a21b339ee153c6bbbf2f7d3e846"
+  },
+  {
+    "path": "ramdisk/ipclite.ko",
+    "size": 136312,
+    "sha256": "7557fd66fa01ef98079bab7415489af5a817d8dff5d564efbd845f6deb0baa68"
+  },
+  {
+    "path": "ramdisk/leds-qcom-flash.ko",
+    "size": 28040,
+    "sha256": "7bbd7c99ecac1a253da2499bb1d9d7c3928c10a3efc08be3fafa34bc54792ca6"
+  },
+  {
+    "path": "ramdisk/leds-qcom-lpg.ko",
+    "size": 44520,
+    "sha256": "f096b8e588da39b6be8e68ae702cf25eb4c34ce3fd43adfe9e1624fbd9ab0714"
+  },
+  {
+    "path": "ramdisk/leds-qpnp-vibrator-ldo.ko",
+    "size": 26032,
+    "sha256": "dd66e7e9dfec9bd618ecb222cc07f4a6326aae14133a2e245a8d400f5f463b9a"
+  },
+  {
+    "path": "ramdisk/leds-qti-flash.ko",
+    "size": 54712,
+    "sha256": "6473f6c09dfdc1b40c6e53620a22eb1f0981f80def1ca255acf4ddb38c9bf767"
+  },
+  {
+    "path": "ramdisk/llcc-qcom.ko",
+    "size": 66584,
+    "sha256": "d4195000d57b79f2f84fa89c81cdf195719d0f809037116e9cf7e6d5b4655d43"
+  },
+  {
+    "path": "ramdisk/llcc_heuristics.ko",
+    "size": 19832,
+    "sha256": "74fd075121289fdc14b17e8019da7b1367ded2cce34254ff7d6801d90c8c4478"
+  },
+  {
+    "path": "ramdisk/llcc_perfmon.ko",
+    "size": 65528,
+    "sha256": "8123345d21d448c34bcb5dc0ff65f585463eaa6758533552663e66d1a8b42346"
+  },
+  {
+    "path": "ramdisk/lt9611uxc.ko",
+    "size": 77800,
+    "sha256": "47889dd8ef385ed94e90a6675b4c3d997796a91dac581294d592ea8759227a74"
+  },
+  {
+    "path": "ramdisk/max31760_fan.ko",
+    "size": 28720,
+    "sha256": "18937318405875ea877b870fbfb8115287ec0b26f3a16cc52bb9c9e11f0c3b2a"
+  },
+  {
+    "path": "ramdisk/mdt_loader.ko",
+    "size": 18696,
+    "sha256": "137b4c1ed1667f461711be4e605600b2337b940e85ac799b59385c87c7b1a929"
+  },
+  {
+    "path": "ramdisk/mem-hooks.ko",
+    "size": 10744,
+    "sha256": "56a27bdbad7132be63cdde323594538a66c61f92897743da4e3772a61c6297f4"
+  },
+  {
+    "path": "ramdisk/mem_buf.ko",
+    "size": 70000,
+    "sha256": "6225a9ed844866351c5b57715b523ff13917205114020f20566084b2609dde43"
+  },
+  {
+    "path": "ramdisk/mem_buf_dev.ko",
+    "size": 162584,
+    "sha256": "7e9be61cd8246ad153ddc8f8051f997af23d1bac8a8db15b9e379bb401e33acb"
+  },
+  {
+    "path": "ramdisk/mem_buf_msgq.ko",
+    "size": 32480,
+    "sha256": "4f1b8016195ea8293cda814a9969dd27f6a2363a111369a109c8f9f116d70683"
+  },
+  {
+    "path": "ramdisk/mem_object.ko",
+    "size": 29432,
+    "sha256": "9a765fca28823425bf29239158065f252ef5e80cdf5aed229c2957bca8ea1abd"
+  },
+  {
+    "path": "ramdisk/memlat.ko",
+    "size": 77784,
+    "sha256": "040cca740be23b77094f2276ed0da3c1c7d72f5905648ca2df167f7f9b369f5f"
+  },
+  {
+    "path": "ramdisk/memory_dump_v2.ko",
+    "size": 46632,
+    "sha256": "0dab32852242eeeda3b2b3b90f509c4f72f0257bdf887d077ffbe4d38f841345"
+  },
+  {
+    "path": "ramdisk/mhi.ko",
+    "size": 260760,
+    "sha256": "451092911a9ad4d46e9cf96bd8353e95219e1089987109a1195f5cb5e939b4a0"
+  },
+  {
+    "path": "ramdisk/mhi_dev_satellite.ko",
+    "size": 48640,
+    "sha256": "7f49966dfb5ee93178107d1a57f2bf12b5b5298b79fe347776a33cbad4a9c16b"
+  },
+  {
+    "path": "ramdisk/mhi_dev_uci.ko",
+    "size": 47000,
+    "sha256": "4fd34bd878c6e7338dbc21e41a9f969b47acc904175dd587dad948e780ca2dca"
+  },
+  {
+    "path": "ramdisk/minidump.ko",
+    "size": 146072,
+    "sha256": "b19a38aae5ec5dc0730e643b80d1a541e36468f533f337221352dc08b4c7d515"
+  },
+  {
+    "path": "ramdisk/modules.alias",
+    "size": 50804,
+    "sha256": "e281bd0af96c951d0f2d4d46e67f0071753072e5bc2e910a466c4bf8b544d9ba"
+  },
+  {
+    "path": "ramdisk/modules.dep",
+    "size": 77251,
+    "sha256": "4e5053465772485711fdd503b810edfc1ca15546bfd99ef1128167a4e488328d"
+  },
+  {
+    "path": "ramdisk/modules.load",
+    "size": 1798,
+    "sha256": "99e3fcfd2ee5009a5edd86e03b9b5d08b5307286a6fdaefeb3cdaf9bcf778008"
+  },
+  {
+    "path": "ramdisk/modules.load.recovery",
+    "size": 5125,
+    "sha256": "4e5b47c55905014cf9e7f93c9afa64bd236b6b88b6d61e99e9be38c4bcbb4868"
+  },
+  {
+    "path": "ramdisk/modules.softdep",
+    "size": 984,
+    "sha256": "47715659189d69ee46b39f1b3dc61bc0ee29b1b8eb283d757a59a7df72c149a6"
+  },
+  {
+    "path": "ramdisk/mpam.ko",
+    "size": 21472,
+    "sha256": "504974899748f68e85df0d4dc1358ab35305d3057c82f0a75621f746e28c4a34"
+  },
+  {
+    "path": "ramdisk/mpam_msc.ko",
+    "size": 24528,
+    "sha256": "b17bc77b35d1f85526cfb8fccd1d571a57789faca3f8de59864194ca2a7b390f"
+  },
+  {
+    "path": "ramdisk/mpam_msc_slc.ko",
+    "size": 27336,
+    "sha256": "976d2dcd17568016583245e35ba7fffa4564cd21ceb17b77af4baaebaba3b0e4"
+  },
+  {
+    "path": "ramdisk/msm-mmrm.ko",
+    "size": 106120,
+    "sha256": "871ae2f6c9313cfe7fe9796141852c0b2d0df90dfaff5192d075f577f34c49d0"
+  },
+  {
+    "path": "ramdisk/msm_dma_iommu_mapping.ko",
+    "size": 24216,
+    "sha256": "c7e26505512c4870a521b5529fa5296a5ad969c2e155e516aa8fec8f8fec282b"
+  },
+  {
+    "path": "ramdisk/msm_drm.ko",
+    "size": 5416616,
+    "sha256": "1a6e1afc6799f1262812ad84a0017fcb62bea6c241f16e4c858d1aa1a0bfa74e"
+  },
+  {
+    "path": "ramdisk/msm_ext_display.ko",
+    "size": 29160,
+    "sha256": "d66cd5d237242e6b69484628541bf489377889f834be3e223701ea868d3c4096"
+  },
+  {
+    "path": "ramdisk/msm_geni_serial.ko",
+    "size": 182312,
+    "sha256": "f1f1b1e9f2bf025206131ab89397926d9a72d00b1c94974a0f3d9728c3f36340"
+  },
+  {
+    "path": "ramdisk/msm_gpi.ko",
+    "size": 148776,
+    "sha256": "dfa8e4e0ba068fe3feacb04351994cf0810d6e331524bca25ca90c8f178c02ae"
+  },
+  {
+    "path": "ramdisk/msm_hw_fence.ko",
+    "size": 340192,
+    "sha256": "8872d12a56ad0339b6ae3bff6c5999656c77e5e75888598cfccf57935f0d371d"
+  },
+  {
+    "path": "ramdisk/msm_memshare.ko",
+    "size": 48512,
+    "sha256": "5af5a7f78badca779eaadd6576b2ec949aacb11c88c62459612223bc1f22075b"
+  },
+  {
+    "path": "ramdisk/msm_performance.ko",
+    "size": 43040,
+    "sha256": "b18d88dcb27e3ac2abc6f4c590303dc139d3c57acc9c8c966e5e2c5c3a863a0c"
+  },
+  {
+    "path": "ramdisk/msm_qmp.ko",
+    "size": 44288,
+    "sha256": "88d94b40639084b17097c962826de89aae2b1e3386f4dc6ad65afd6542cb9f45"
+  },
+  {
+    "path": "ramdisk/msm_sharedmem.ko",
+    "size": 19224,
+    "sha256": "6b51d496dc0365ceb1bcc1881052e9f159e8871af1b07363a223eeab616b74c0"
+  },
+  {
+    "path": "ramdisk/msm_show_epoch.ko",
+    "size": 11528,
+    "sha256": "bd45fb0b6223ff613d7dfbeca7531ab7ea29ca8567ddf7f3f6f0b1ab500ebae4"
+  },
+  {
+    "path": "ramdisk/msm_show_resume_irq.ko",
+    "size": 19504,
+    "sha256": "91e6415af19f1a4e848fcd36b31689b1eee72919ce01b5e4d9618fabf68a5b19"
+  },
+  {
+    "path": "ramdisk/msm_sysstats.ko",
+    "size": 33400,
+    "sha256": "9244298f6415b3e963320ef3c3f0508018e7bcf6f16b13525db42e46dd413358"
+  },
+  {
+    "path": "ramdisk/nb7vpq904m.ko",
+    "size": 37792,
+    "sha256": "cc410285d2acdb78288591df1864a1b620efbda59d7b84a12d56c981576e3f4e"
+  },
+  {
+    "path": "ramdisk/nothing_virtual_ntc.ko",
+    "size": 25416,
+    "sha256": "efb283191caa65a9aeb2d33100c66f7f1b162ead709aa3d573c34bb1d366e43e"
+  },
+  {
+    "path": "ramdisk/nt_display_notifier.ko",
+    "size": 12896,
+    "sha256": "80877302bd1ce0ded1a26beab822c2e8ba284c07096099f1950f938944188a35"
+  },
+  {
+    "path": "ramdisk/nvmem_qcom-spmi-sdam.ko",
+    "size": 16112,
+    "sha256": "f37727a511c76ad5504872e318ebc6c28e2c282c129d20adc79befc2fe7f24ea"
+  },
+  {
+    "path": "ramdisk/nvmem_qfprom.ko",
+    "size": 31544,
+    "sha256": "c5032d58f17484f22a73c9a0cb8a6d7a971cd3516baf965ab5636dbab060fba5"
+  },
+  {
+    "path": "ramdisk/panel_event_notifier.ko",
+    "size": 16128,
+    "sha256": "2fca26465196d67edceb55fc2a19b808fdb88bcd29823b8ac43edd23fd036fe9"
+  },
+  {
+    "path": "ramdisk/pci-msm-drv.ko",
+    "size": 476592,
+    "sha256": "7ab09ca9c11487c4cd153cef00d17938488945c403aca5403967c55e379b6ede"
+  },
+  {
+    "path": "ramdisk/pcie-pdc.ko",
+    "size": 19992,
+    "sha256": "0041c3194d82d3ccb9b4d448c93371b128cb8dddf1382c03231fc6350d0843bb"
+  },
+  {
+    "path": "ramdisk/pdr_interface.ko",
+    "size": 36496,
+    "sha256": "13d71231ab17b938ec593628bdf63ce5a557b163712e7e15955c705fec793cfc"
+  },
+  {
+    "path": "ramdisk/phy-generic.ko",
+    "size": 24640,
+    "sha256": "64390f03dc6c5c90f899df4d26bf0a160192866cd4a5c08b78d8b91c2094b833"
+  },
+  {
+    "path": "ramdisk/phy-msm-m31-eusb2.ko",
+    "size": 34992,
+    "sha256": "dea90ebbaf53cdcf84f7607e7c32ee7b371cf9a109edeba00e15f0564d6032a3"
+  },
+  {
+    "path": "ramdisk/phy-msm-snps-eusb2.ko",
+    "size": 49488,
+    "sha256": "3c146690db442f3e28f962aab21c9bef5f2b66a9221d5dbbaad67fff0f4ed96a"
+  },
+  {
+    "path": "ramdisk/phy-msm-ssusb-qmp.ko",
+    "size": 40040,
+    "sha256": "d4ac363a578635ff58fd55aa030c2bcd6a5ebec3c598fa83e74c93f12641cf15"
+  },
+  {
+    "path": "ramdisk/phy-qcom-emu.ko",
+    "size": 18808,
+    "sha256": "593b75810850d616a63c9cdb5eaf777654da46aee3f390f66a83b80f0826c16d"
+  },
+  {
+    "path": "ramdisk/phy-qcom-ufs-qmp-v4-niobe.ko",
+    "size": 28184,
+    "sha256": "14475bc156dc26a00d77d6f4acfc4bd602aa3a42d16e630d81e838affec27b21"
+  },
+  {
+    "path": "ramdisk/phy-qcom-ufs-qmp-v4-sun.ko",
+    "size": 28584,
+    "sha256": "e51180e33c8d6c7eba34a41da4024450b944f45be6622f07968d53877d4b5876"
+  },
+  {
+    "path": "ramdisk/phy-qcom-ufs-qrbtc-sdm845.ko",
+    "size": 23744,
+    "sha256": "2d5345ad2aaa88244b186ccffcd79f570891f0722709ab3d7af02cb04c654c30"
+  },
+  {
+    "path": "ramdisk/phy-qcom-ufs.ko",
+    "size": 47432,
+    "sha256": "60ff6dece559dd6261dcd6d928779e974b71a6f754eded1327ab976c0e4cb0fc"
+  },
+  {
+    "path": "ramdisk/pinctrl-kera.ko",
+    "size": 134296,
+    "sha256": "ed9b6d2016d637ef399d948347093247574a9451736ed2eaef6053d81264499e"
+  },
+  {
+    "path": "ramdisk/pinctrl-msm.ko",
+    "size": 63856,
+    "sha256": "a57bd198bbda26e88bc014d3809a0b865d8c3273db41402116e51bc0528ffc51"
+  },
+  {
+    "path": "ramdisk/pinctrl-spmi-gpio.ko",
+    "size": 62576,
+    "sha256": "1e5095212d8975b1389622eee0ddac93eb0de58fbe1f3e736897e623a699991b"
+  },
+  {
+    "path": "ramdisk/pinctrl-spmi-mpp.ko",
+    "size": 39424,
+    "sha256": "9e4b83bfa0713d3c8241ee614f2795a239f224de113866a7406851b3fa235a4b"
+  },
+  {
+    "path": "ramdisk/pinctrl-sun.ko",
+    "size": 151416,
+    "sha256": "123b9bfc5ffffc0400f8d2ee2869cd5103a6e3531e6ca4ec88b2f3ff8029491f"
+  },
+  {
+    "path": "ramdisk/pinctrl-tuna.ko",
+    "size": 135808,
+    "sha256": "0b82f4e95ee53bff3e5ffef015cc55fb3d04aa9470b36ad39fdc19e1035a7be3"
+  },
+  {
+    "path": "ramdisk/platform_mpam.ko",
+    "size": 27312,
+    "sha256": "3dc1853e98bd119e3091f5f9064532859803b05385e3d790e76a813d7bbef225"
+  },
+  {
+    "path": "ramdisk/pm8941-pwrkey.ko",
+    "size": 23272,
+    "sha256": "18aa0d038a86bd2355197fc7e36d6bcac592ab83254ddcb66c457a43a5d93bd1"
+  },
+  {
+    "path": "ramdisk/pmic-glink-debug.ko",
+    "size": 25544,
+    "sha256": "843cc454137a42b36962fc816096dbab18c67207bd99ebdd2707483193e2bd57"
+  },
+  {
+    "path": "ramdisk/pmic-pon-log.ko",
+    "size": 32456,
+    "sha256": "dddb81dc7d12603f50fd1d753c2912ebe57c7871961e2844218cb3b62d446e7b"
+  },
+  {
+    "path": "ramdisk/proxy-consumer.ko",
+    "size": 23104,
+    "sha256": "72f191a3e730981471c10da3e145eed477855f60bf6e2dd035f2d2404184144f"
+  },
+  {
+    "path": "ramdisk/q2spi-geni.ko",
+    "size": 330192,
+    "sha256": "d27bd460e236e0901d20909598cc038194655ce85f819a888652e17b1e58494f"
+  },
+  {
+    "path": "ramdisk/qcom-amoled-regulator.ko",
+    "size": 33024,
+    "sha256": "3a5790404af9cd55a8b3ba8d85403200ec6b83bfd79877edb48884cfaed7065f"
+  },
+  {
+    "path": "ramdisk/qcom-cpufreq-hw-debug.ko",
+    "size": 22352,
+    "sha256": "6f0d45dfc2a8c9a7dad6d8835ceddc0b934024133ba5847d1f59cfc626a4b06e"
+  },
+  {
+    "path": "ramdisk/qcom-cpufreq-hw.ko",
+    "size": 54544,
+    "sha256": "65aaa11bde1608597fdec06c04eff05a6bbce65d3090f6048d1d2d50ede2b57b"
+  },
+  {
+    "path": "ramdisk/qcom-cpufreq-thermal.ko",
+    "size": 16688,
+    "sha256": "8ac5a0e4b5c76641006cf46b8643f8d4d4dbfbe2048b77a3bd671e893b485f44"
+  },
+  {
+    "path": "ramdisk/qcom-dcvs.ko",
+    "size": 109056,
+    "sha256": "b67961e8fa0ed638a06bd5d3b4bc34a658f97b311df645fc846bc087ba753741"
+  },
+  {
+    "path": "ramdisk/qcom-dload-mode.ko",
+    "size": 26440,
+    "sha256": "3d87cf7ce12760fac7c9edf5f1cbe7145e70f48e3fdd72d8c17a38aa10e37fa8"
+  },
+  {
+    "path": "ramdisk/qcom-hv-haptics.ko",
+    "size": 181456,
+    "sha256": "9f452bf307eb6a4803b0c259b058640c4a243bf38a7655415eb1a7eb61d0a4c1"
+  },
+  {
+    "path": "ramdisk/qcom-i2c-pmic.ko",
+    "size": 33616,
+    "sha256": "d2435648402db0068c02bcd05b6b715c0fbf059a0b669ed90dcff71b08031eda"
+  },
+  {
+    "path": "ramdisk/qcom-ipcc.ko",
+    "size": 23128,
+    "sha256": "6c7042d2697f6125fcebcae1f50b20d4058c83871c0412e7f1bd60dae256acbc"
+  },
+  {
+    "path": "ramdisk/qcom-pdc.ko",
+    "size": 29376,
+    "sha256": "8eac3a9148fe33ce153f3a2dd13e0752c2a97448f12c1f63bac5d598d775f64d"
+  },
+  {
+    "path": "ramdisk/qcom-pmu-lib.ko",
+    "size": 54032,
+    "sha256": "94829fc9406f0ad472deb4c07778dca6b0ae10d6a5793f385ccc095b482ad5ae"
+  },
+  {
+    "path": "ramdisk/qcom-pon.ko",
+    "size": 16184,
+    "sha256": "de8d66cd3d3eebd6e0b365386f86f67ae3ee42bade22d32b53ca9f681cfd54bf"
+  },
+  {
+    "path": "ramdisk/qcom-reboot-reason.ko",
+    "size": 15432,
+    "sha256": "1b74d3ba52e674a235a956f8e1d8bb534de49524633d159e2ad3d7f86df3ca34"
+  },
+  {
+    "path": "ramdisk/qcom-rng.ko",
+    "size": 22960,
+    "sha256": "0bd913f18b27ccd550392d22f18b55b5c47256e3d2ba302bb3524be4e028c865"
+  },
+  {
+    "path": "ramdisk/qcom-scm.ko",
+    "size": 174632,
+    "sha256": "8c46ac1a04b91916a94db4d0de336bb0cc29d9d46f0174f4b2d2a39cb31fbd91"
+  },
+  {
+    "path": "ramdisk/qcom-spmi-adc5-gen3.ko",
+    "size": 68992,
+    "sha256": "0a57e9f0bd6a5f5e6e7c54ffcc2ba779c1778ec9e28d0dcbbce7c8279e408d1f"
+  },
+  {
+    "path": "ramdisk/qcom-spmi-pmic.ko",
+    "size": 28704,
+    "sha256": "2f53e8dc73a7941cdc9939fa94b968dc5455e738dcf02b2a62711f2760dbbc39"
+  },
+  {
+    "path": "ramdisk/qcom-spmi-temp-alarm.ko",
+    "size": 27112,
+    "sha256": "3b253de30664054855b04bb890d64a9de1239124f0227d85b79dc7a5d37849ff"
+  },
+  {
+    "path": "ramdisk/qcom-vadc-common.ko",
+    "size": 37280,
+    "sha256": "380b856274e780c4d8548a0d1f3c2f949dd244af408d9f27acc6fb9b75456ab0"
+  },
+  {
+    "path": "ramdisk/qcom_aoss.ko",
+    "size": 37096,
+    "sha256": "e4747265bb4a019c007d91c05989f781def5b5a6bc8d3a76ca69e184537c37fa"
+  },
+  {
+    "path": "ramdisk/qcom_cpu_vendor_hooks.ko",
+    "size": 17624,
+    "sha256": "f729bfe034b1acc8a7179d54d3592335dd96c8f0c9c5d83b5c8be3436a3d2358"
+  },
+  {
+    "path": "ramdisk/qcom_cpucp.ko",
+    "size": 23096,
+    "sha256": "b73a608e8126ffaefeb8e13608bfd5b1db359512bbe952785d61dad146b082ec"
+  },
+  {
+    "path": "ramdisk/qcom_cpuss_sleep_stats.ko",
+    "size": 30064,
+    "sha256": "745b8873540cf278162d13ca2f9a278be9870fd1f5950f614aa5c50b90853aae"
+  },
+  {
+    "path": "ramdisk/qcom_cpuss_sleep_stats_v4.ko",
+    "size": 18928,
+    "sha256": "a941106be9b178bfd4782760b7b3bdb68cbea0ccc883f7f084c2b2c0cc13cca6"
+  },
+  {
+    "path": "ramdisk/qcom_dma_heaps.ko",
+    "size": 108136,
+    "sha256": "ac725073b6b634fe0cc5bcd8c543c65c0a05eba48ef5385f55811f1be15aca51"
+  },
+  {
+    "path": "ramdisk/qcom_dynamic_ramoops.ko",
+    "size": 18000,
+    "sha256": "6867a5841eb0ff20f2e406c0bc19ff580658d3b90b8b4fd050dd4838dd3cbe2d"
+  },
+  {
+    "path": "ramdisk/qcom_edac.ko",
+    "size": 20032,
+    "sha256": "c63bd3e2ce45a0c0fdae5359a890d02551b19b0217613d0e6dfdae08f51092c3"
+  },
+  {
+    "path": "ramdisk/qcom_glink.ko",
+    "size": 99056,
+    "sha256": "9ea8e25bf45601b3ed02b25735a98cd43604b3df875e8c28f6b61265c0a9922d"
+  },
+  {
+    "path": "ramdisk/qcom_glink_smem.ko",
+    "size": 24104,
+    "sha256": "4b1a432bd4d5421a67dc920517dafca655cabcf7fb2b64a6afacaca507ba058a"
+  },
+  {
+    "path": "ramdisk/qcom_glink_spss.ko",
+    "size": 23384,
+    "sha256": "a4fd738d842a3b5599657d44a2df2acce9914673653d8ed4f32cdf360271ed0d"
+  },
+  {
+    "path": "ramdisk/qcom_hwspinlock.ko",
+    "size": 20560,
+    "sha256": "d566c6b1d4d138c8ecba6b456f821fc59de24e90f417b2198e3def76675164d9"
+  },
+  {
+    "path": "ramdisk/qcom_ice.ko",
+    "size": 33560,
+    "sha256": "7b2a2674d9a673882978ac09e10643461ec86d9b206b592e7af90ac5bcbbba31"
+  },
+  {
+    "path": "ramdisk/qcom_iommu_debug.ko",
+    "size": 94296,
+    "sha256": "3a903167b210e6819120460557764c214151b110e8c7aafecdd1a7362a047a21"
+  },
+  {
+    "path": "ramdisk/qcom_iommu_util.ko",
+    "size": 138464,
+    "sha256": "ff2dd8c8078f0d77cd8afa50418066c92149d682bda2df708e4d512758336e9c"
+  },
+  {
+    "path": "ramdisk/qcom_ipc_logging.ko",
+    "size": 50688,
+    "sha256": "837ab8dbf62cb68ba1586a99c8d6416e8f60c8edbd9e4b4cf94a1aae815e71f9"
+  },
+  {
+    "path": "ramdisk/qcom_llcc_pmu.ko",
+    "size": 27104,
+    "sha256": "63e11a4da96fdfc8a74a2f952a170e3a9329405a06895485b29cde19abdfa7db"
+  },
+  {
+    "path": "ramdisk/qcom_logbuf_boot_log.ko",
+    "size": 14736,
+    "sha256": "adc71b39e1856763994f4d1d39364efde44c901d272d0707195cb39b3970d0f2"
+  },
+  {
+    "path": "ramdisk/qcom_logbuf_vendor_hooks.ko",
+    "size": 12824,
+    "sha256": "5088ebf2b7b3216834fc5bb7f8cbe7462d5780a875b23b32c3cb7ed4f7fc4bf2"
+  },
+  {
+    "path": "ramdisk/qcom_lpm.ko",
+    "size": 93608,
+    "sha256": "3173e635aa77ad79b6ae665364b8199441d1c37e62dec51fd0a7de506f232cd1"
+  },
+  {
+    "path": "ramdisk/qcom_pil_info.ko",
+    "size": 17576,
+    "sha256": "c9f60882d51b6c5986a8eaa8f32c62cb958d12c88192516aefbecf099298b271"
+  },
+  {
+    "path": "ramdisk/qcom_q6v5.ko",
+    "size": 29192,
+    "sha256": "9f27393ec5e266bfd933247fa5d771ed43184043736889633b963184cef95f9b"
+  },
+  {
+    "path": "ramdisk/qcom_q6v5_pas.ko",
+    "size": 116376,
+    "sha256": "552ebb28ed2d2e88227c13f0a193d3d76e6918bb4136c90d832a7fa1ea3909a6"
+  },
+  {
+    "path": "ramdisk/qcom_ramdump.ko",
+    "size": 25096,
+    "sha256": "1ec7990ef0869bfaacb22cf103202a74cd8a3785d2358dcfdf59bf2075c00412"
+  },
+  {
+    "path": "ramdisk/qcom_rpmh.ko",
+    "size": 105552,
+    "sha256": "fa944641f5ea00e1c0852a669362ee2c3b59244fe67cd3b1632e0a6382de8eea"
+  },
+  {
+    "path": "ramdisk/qcom_scmi_client.ko",
+    "size": 13824,
+    "sha256": "2808ee5ccae840d1f2813d567253130026808242ca9b299d72e7bab037bf5be8"
+  },
+  {
+    "path": "ramdisk/qcom_scmi_vendor.ko",
+    "size": 15360,
+    "sha256": "a894004840971869cff5b1bcb26636bb977aade0b509bc87dbfc7a6342d666db"
+  },
+  {
+    "path": "ramdisk/qcom_smd.ko",
+    "size": 41832,
+    "sha256": "874f3f75862c963cb711840dda065181a0797a4cd7c370de806b3d760e50dc77"
+  },
+  {
+    "path": "ramdisk/qcom_spss.ko",
+    "size": 48168,
+    "sha256": "e1b0e3f86dc08afde61b11a0f835d8b9e28ba78e61df8e3a3062f13fdfcd998f"
+  },
+  {
+    "path": "ramdisk/qcom_stats.ko",
+    "size": 60616,
+    "sha256": "a75cc6868a71495053d46e71e3171467653d2237c40b313399f5b654697e17bb"
+  },
+  {
+    "path": "ramdisk/qcom_sysmon.ko",
+    "size": 42776,
+    "sha256": "647d240b5de143427b86c7f2ee39146deec41231fd3860ce722994f1a45ec6c2"
+  },
+  {
+    "path": "ramdisk/qcom_tsens.ko",
+    "size": 100336,
+    "sha256": "cae028e2c26b36753e6da5a40eace661654199d5b48e68838f0b89fafc93a789"
+  },
+  {
+    "path": "ramdisk/qcom_va_minidump.ko",
+    "size": 37696,
+    "sha256": "2307feb98384f1c006b58a11736c6f73c50d17a85a18964d88b039415997de1d"
+  },
+  {
+    "path": "ramdisk/qcom_wdt_core.ko",
+    "size": 40560,
+    "sha256": "ec941ee54e33cb58f3de7c80b379c38abfce813cf4bb438d41ef1abcb606e698"
+  },
+  {
+    "path": "ramdisk/qfprom-sys.ko",
+    "size": 15840,
+    "sha256": "ecbeb651b3a61261403dd668ffb6a46e5d2f694538cd228a000ff15f348f9281"
+  },
+  {
+    "path": "ramdisk/qmi_helpers.ko",
+    "size": 39640,
+    "sha256": "e1ed69765724a51570959e6e21477cd5e4b2cca8582c0e103b2a76570cf0390b"
+  },
+  {
+    "path": "ramdisk/qnoc-kera.ko",
+    "size": 421552,
+    "sha256": "8b5218340da372ba07860697a6047a114aa496fe50e6928b362eb3dd7ebda2ac"
+  },
+  {
+    "path": "ramdisk/qnoc-qos.ko",
+    "size": 12488,
+    "sha256": "d34d18b5c801454650405f02cf889f113f68945e9eece7300f2bd5c77ecad9e2"
+  },
+  {
+    "path": "ramdisk/qnoc-sun.ko",
+    "size": 613672,
+    "sha256": "69d586234e2c63e0007338d39f4564ed69690025f9ab8309a3d28f03ae00b648"
+  },
+  {
+    "path": "ramdisk/qnoc-tuna.ko",
+    "size": 568248,
+    "sha256": "85216a47e920a86ef0211b8982db7171546085c737a173f772dd59f2e703c7c5"
+  },
+  {
+    "path": "ramdisk/qrtr-gunyah.ko",
+    "size": 34128,
+    "sha256": "0b76a0f1b1847f5fa70ccb0d03c6636b48f1d900bf9f08945f6860c027da1c3b"
+  },
+  {
+    "path": "ramdisk/qrtr-mhi.ko",
+    "size": 22800,
+    "sha256": "99770bf6f38d11a952c8b994bd60d059f6f50f612c50f50465d9d7ade7284946"
+  },
+  {
+    "path": "ramdisk/qrtr-smd.ko",
+    "size": 16976,
+    "sha256": "71dfa1b1df047283f5a80f0519707afdf564c0a059d7b457d7197e744b109aa2"
+  },
+  {
+    "path": "ramdisk/qrtr-tun.ko",
+    "size": 18040,
+    "sha256": "83d55bbe6ed6fc615ae04e599680d427494b2027c5edd1e3868f4afa48c8b31f"
+  },
+  {
+    "path": "ramdisk/qrtr.ko",
+    "size": 118200,
+    "sha256": "73f157347d0334a04ca8faac1b18452ba2fb0a73dc9685f3f3e291f4d00e9d0a"
+  },
+  {
+    "path": "ramdisk/qsee_ipc_irq_bridge.ko",
+    "size": 32560,
+    "sha256": "25a421cb980f57df727852220aad5abf2fdb4e7b0471b394dd0e386da9c9b2bc"
+  },
+  {
+    "path": "ramdisk/qseecom_proxy.ko",
+    "size": 16376,
+    "sha256": "a00d9ac05e15aa315daaebb81638f1cd0ae23689b2f91acfc76e0e13655e79d7"
+  },
+  {
+    "path": "ramdisk/qti-fixed-regulator.ko",
+    "size": 21856,
+    "sha256": "1dc23928b8eeb2d6d43a39cd9eea4f4967176d5a87e152880220519938dc0b34"
+  },
+  {
+    "path": "ramdisk/qti-glink-adc.ko",
+    "size": 21584,
+    "sha256": "2c54abafb88996ba2903f336c35e9ddd78677e9b61596fe867cbaf11ec2d0117"
+  },
+  {
+    "path": "ramdisk/qti-ocp-notifier.ko",
+    "size": 21432,
+    "sha256": "4e3aebd93ac9ea1b4086993d001e2ba1edf6a4fae49e39761b18c761f46c5a48"
+  },
+  {
+    "path": "ramdisk/qti-regmap-debugfs.ko",
+    "size": 26848,
+    "sha256": "0a340ad080a70597b80b85a05478fdc80b944a7dc0df13ca80f5a079629c0bc5"
+  },
+  {
+    "path": "ramdisk/qti_amoled_ecm.ko",
+    "size": 36360,
+    "sha256": "7b730eba14a6277e184846a053b08a4524ae7485fe0a82c70a197b6fd63de5a9"
+  },
+  {
+    "path": "ramdisk/qti_battery_charger.ko",
+    "size": 160136,
+    "sha256": "29dfa084bed0306e6d21f4b57635fa218342ff5016cd9f9c01031de5e623cc69"
+  },
+  {
+    "path": "ramdisk/qti_battery_debug.ko",
+    "size": 37264,
+    "sha256": "c205109db6a8ed73cd39498a1899a02d44c58e1b12a30578d450a64ae036237f"
+  },
+  {
+    "path": "ramdisk/qti_cpufreq_cdev.ko",
+    "size": 21304,
+    "sha256": "666b5d1c25baf6fc3a041e90df32db2611690de95018c71967f8a67908988eb8"
+  },
+  {
+    "path": "ramdisk/qti_devfreq_cdev.ko",
+    "size": 18368,
+    "sha256": "fa55d43e093f2e6bf96fef13013a99952b3babf7560175b7a27b024de09e5ee7"
+  },
+  {
+    "path": "ramdisk/qti_dmof_scmi.ko",
+    "size": 29864,
+    "sha256": "68a436a740d449b2d2aab1b235494aeb9d79fd4363ef31dd18b234ea5424503c"
+  },
+  {
+    "path": "ramdisk/qti_pmic_glink.ko",
+    "size": 40256,
+    "sha256": "b7b9b2f0477f32d94a39dfbd5d284e6ea6dfe684b707711f7732f7fcf8721362"
+  },
+  {
+    "path": "ramdisk/qti_qmi_cdev.ko",
+    "size": 34024,
+    "sha256": "408bbfa333fa7784b0f6b2e77050da4d5985abe74b29683c1c28ad683e98f2a9"
+  },
+  {
+    "path": "ramdisk/qti_qmi_sensor_v2.ko",
+    "size": 41424,
+    "sha256": "a5ccb1a33c46d13b06fd3e795e0c2e08a39f450a7bf815d4429b53a5df081051"
+  },
+  {
+    "path": "ramdisk/qti_thermal_vendor_hooks.ko",
+    "size": 12416,
+    "sha256": "ebafd87cba9c24c6b4d1fccdf74770ce4f51ed427d8269d496b3bfab400629df"
+  },
+  {
+    "path": "ramdisk/qti_userspace_cdev.ko",
+    "size": 15736,
+    "sha256": "46205b1e8410fe63ebd1fe0b0023aedca6bd6b82c77dd4c3060769ab7b601e31"
+  },
+  {
+    "path": "ramdisk/rdbg.ko",
+    "size": 34232,
+    "sha256": "b0667b915371951e2f1c0d064c566ff4ee6ebbbac89540ce9e5271e47dcca9f6"
+  },
+  {
+    "path": "ramdisk/reboot-mode.ko",
+    "size": 16656,
+    "sha256": "73132bd376aad3cadbe23bc34040bf96b6514c3abb8f19fdf3e358cfaf47c9d8"
+  },
+  {
+    "path": "ramdisk/redriver.ko",
+    "size": 18480,
+    "sha256": "7ab638ada6fa4295bc5207cd692b0c64a525356487278196cfc69181f2269487"
+  },
+  {
+    "path": "ramdisk/repeater-qti-pmic-eusb2.ko",
+    "size": 27688,
+    "sha256": "108c035760d3459425b46874e4da7ea4179b62f00022caa8b686a0842cdad10b"
+  },
+  {
+    "path": "ramdisk/repeater.ko",
+    "size": 19128,
+    "sha256": "fd36fcebb2cce2678fca6d0484154bce7a5b5294dce7deda553286098e301523"
+  },
+  {
+    "path": "ramdisk/rpmh-regulator.ko",
+    "size": 52664,
+    "sha256": "14d8099d7378c6f4489f77a40360559711ad3cd5cf654822102c63f91437848e"
+  },
+  {
+    "path": "ramdisk/rproc_qcom_common.ko",
+    "size": 60432,
+    "sha256": "00339e6a67b14f93221c70078123748be8d26ec176367c05b02d26fd2c2f985f"
+  },
+  {
+    "path": "ramdisk/rtc-pm8xxx.ko",
+    "size": 24592,
+    "sha256": "487fab87536c9e206ed903b9ab3010088986921c0b37c79a49fb39201f7e1d5f"
+  },
+  {
+    "path": "ramdisk/sched-walt.ko",
+    "size": 949360,
+    "sha256": "607d3e8522c78f044ca848cd224697d9a6bcc5fa7d496b8883749c071bc2033f"
+  },
+  {
+    "path": "ramdisk/sdhci-msm.ko",
+    "size": 119976,
+    "sha256": "d705ef94d55e6b0f4593db4fdfe4c8fe8f5ecaaca2411c9f390c767a2f7bb3d6"
+  },
+  {
+    "path": "ramdisk/secure_buffer.ko",
+    "size": 51824,
+    "sha256": "f1e86c4bf035de9d8e7d9299239db9d82b4330223394215ffd00d6210395d7ef"
+  },
+  {
+    "path": "ramdisk/sg.ko",
+    "size": 68872,
+    "sha256": "20327303a1e84635fb2dfc8ae90df070f47456234caa4000c7916581eca98692"
+  },
+  {
+    "path": "ramdisk/si_core_module.ko",
+    "size": 53096,
+    "sha256": "01b97020390c3ac10ad8e20300d941a52fb9e06e618835c6c30b3a8369e1158c"
+  },
+  {
+    "path": "ramdisk/slc_mpam.ko",
+    "size": 28648,
+    "sha256": "1de36c9a57a690302f31c3236683bba7c89c105635d63194b4f87800abbce1dd"
+  },
+  {
+    "path": "ramdisk/slim-qcom-ngd-ctrl.ko",
+    "size": 118768,
+    "sha256": "e3e7db01d158eefe0dbb4204704fdecde815db20207f8b330d17bc27ba6c4ffd"
+  },
+  {
+    "path": "ramdisk/slimbus.ko",
+    "size": 56040,
+    "sha256": "20dfc3b99a4c40aeb851e5b13af4bd4388b3fccf83acb45cc7fd4eb88d541fac"
+  },
+  {
+    "path": "ramdisk/smcinvoke_dlkm.ko",
+    "size": 257920,
+    "sha256": "320579e437863e87b007a38250d5e92e0b7087c0d2e8ae47a365d1614584c46b"
+  },
+  {
+    "path": "ramdisk/smem.ko",
+    "size": 32928,
+    "sha256": "1618480de1e7fd0e660a65932d5c04fe108c15a1efae910d3431ad51c2e6c762"
+  },
+  {
+    "path": "ramdisk/smmu_proxy_dlkm.ko",
+    "size": 38896,
+    "sha256": "74ab49b739ff28104f5d7b9b299d27ddc490ee30b5ab8a145730db36e8891e39"
+  },
+  {
+    "path": "ramdisk/smp2p.ko",
+    "size": 32488,
+    "sha256": "9d6020f032b6bf3ed5201ee4967956aecb9c97721716506d220e7b2006abb023"
+  },
+  {
+    "path": "ramdisk/smp2p_sleepstate.ko",
+    "size": 15352,
+    "sha256": "5aa8e1dc852ee4fdc0be4b650105196b347da935e214667475656a2142621f3a"
+  },
+  {
+    "path": "ramdisk/snd-soc-hdmi-codec.ko",
+    "size": 31832,
+    "sha256": "6504c338ee24db7fdda7019b9488330995e4591bee2be4bf04c64172812b1e9b"
+  },
+  {
+    "path": "ramdisk/snd-usb-audio-qmi.ko",
+    "size": 79104,
+    "sha256": "f38c7f8e7c70ce97a08fd1d082ca799bf958dc77aad5a66302181a5079b52d4b"
+  },
+  {
+    "path": "ramdisk/socinfo.ko",
+    "size": 92936,
+    "sha256": "c7ca91a9b21fe39c8fd452fa2c93eb7fd2ba4b095e0cf8e7d406218cd6855c7c"
+  },
+  {
+    "path": "ramdisk/spi-msm-geni.ko",
+    "size": 118064,
+    "sha256": "0905f9d3baa70d175ad087561a9d8376ff642787fb7617a19f846f22d2daf34f"
+  },
+  {
+    "path": "ramdisk/spmi-pmic-arb-debug.ko",
+    "size": 24232,
+    "sha256": "0a6ef2ed85dacc5c64d348141420e09d0519ac32bbfed6cc718893c832c09f03"
+  },
+  {
+    "path": "ramdisk/spmi-pmic-arb.ko",
+    "size": 62080,
+    "sha256": "dd70b64f2a342625a063a4dc5d17a4e9287460e8995bc1f370bc897112556090"
+  },
+  {
+    "path": "ramdisk/spmi-pmic-err-debug.ko",
+    "size": 21784,
+    "sha256": "a72ef944c336a145bc4f2eca12bd8dc1357f106cf6632cf5305187c44fda795c"
+  },
+  {
+    "path": "ramdisk/sps_drv.ko",
+    "size": 484864,
+    "sha256": "258ccbd312f4421d2166416c8f7298ead13dcc6f1c3e369965bee8a0b2f71413"
+  },
+  {
+    "path": "ramdisk/stm_console.ko",
+    "size": 12664,
+    "sha256": "0e58ebae458f07da356d8b6a971e905a708a3488c4d270ffacb4ff34a50945e8"
+  },
+  {
+    "path": "ramdisk/stm_core.ko",
+    "size": 60592,
+    "sha256": "219aa8882eb6681706222b8954fbe50565b637082e9f81dfb0d11219b24c0160"
+  },
+  {
+    "path": "ramdisk/stm_ftrace.ko",
+    "size": 13800,
+    "sha256": "e861f526f2baa4c703969e8305f1b357f2ceaa616178579c129146698eca8ae7"
+  },
+  {
+    "path": "ramdisk/stm_heartbeat.ko",
+    "size": 15208,
+    "sha256": "520ce4d5c56a345da9f4bbf185ccf5afdb50092796a32e9988ce8d25bafbb93a"
+  },
+  {
+    "path": "ramdisk/stm_p_ost.ko",
+    "size": 17416,
+    "sha256": "2ac682d6ec39b0d64582e761ac6aa39c73325b427594aa83467815160475aec9"
+  },
+  {
+    "path": "ramdisk/stub-regulator.ko",
+    "size": 18224,
+    "sha256": "61b30eeac47057a6ae7c018e295cafc719050deb41976e9e6b9d43092a15ab7d"
+  },
+  {
+    "path": "ramdisk/sync_fence.ko",
+    "size": 34656,
+    "sha256": "6cf9b942b597054248ea8cdbd6922b1f12278e1f4a1d428472825015d695735b"
+  },
+  {
+    "path": "ramdisk/synx-driver.ko",
+    "size": 288496,
+    "sha256": "d5577e84494c76cbbd989e84151489a965438e0eaff003dcd55dead0bdcf61bc"
+  },
+  {
+    "path": "ramdisk/sys_pm_vx.ko",
+    "size": 45096,
+    "sha256": "95beb9981ce4bcbd5de4e53e4851d65c5cb3e4a0e0dc8d7fa3dde6d0a9d8a92a"
+  },
+  {
+    "path": "ramdisk/sysmon_subsystem_stats.ko",
+    "size": 53520,
+    "sha256": "e4684280fbac175d9a9f7055961502909a83e22ed7bbc1613cccd2ea052dad6c"
+  },
+  {
+    "path": "ramdisk/tcsrcc-sun.ko",
+    "size": 18424,
+    "sha256": "7d5d83ae0a31d7ac152d82ccfdd8d2099fca019af207dc6d99770f89782bdbab"
+  },
+  {
+    "path": "ramdisk/tcsrcc-tuna.ko",
+    "size": 20320,
+    "sha256": "723711c0b091527a633c9202f3f24e6ae15ff05ad7bf4141a1a07cb8686d47aa"
+  },
+  {
+    "path": "ramdisk/thermal_config.ko",
+    "size": 22264,
+    "sha256": "f21c145e9634bbdcbeb1fd6a966b7f6336516b71ca7e3a51e888bcad6afbaeb8"
+  },
+  {
+    "path": "ramdisk/thermal_pause.ko",
+    "size": 26496,
+    "sha256": "5b81b8f71e5a35ab5a1d0def5aaf13f94d279abe60d17b7c84e453c8d7e8c447"
+  },
+  {
+    "path": "ramdisk/tmecom-intf.ko",
+    "size": 22264,
+    "sha256": "1ef4efdd8ce3273afba68e730f6e5a87f185d6b7c0eabdff217951920aef246b"
+  },
+  {
+    "path": "ramdisk/touchpanel_event_notify.ko",
+    "size": 12552,
+    "sha256": "6fb4f5f8ec35b4187a37c134843a617326fe32720b90a81b6ef1856dd0335f7f"
+  },
+  {
+    "path": "ramdisk/ucsi_qti_glink.ko",
+    "size": 35720,
+    "sha256": "12c423ab52dd4b5ce8d5e4b1e3b1621948c9f849c8c0685d5da316184fa6f9bb"
+  },
+  {
+    "path": "ramdisk/ufs-qcom.ko",
+    "size": 248080,
+    "sha256": "2b847f9798af820ce277e4b09411b40508196c276f5f82337458b4e816828db3"
+  },
+  {
+    "path": "ramdisk/ufshcd-crypto-qti.ko",
+    "size": 22536,
+    "sha256": "8f281be4a3c33e355fa7bad696a3679caf89fe85d46750bdd14a90c3e29cb6f7"
+  },
+  {
+    "path": "ramdisk/usb_f_ccid.ko",
+    "size": 44992,
+    "sha256": "30559709c8055799064e100839ad00851a1c95193a4a75e25bc4eb6923129b52"
+  },
+  {
+    "path": "ramdisk/usb_f_cdev.ko",
+    "size": 59816,
+    "sha256": "9d8fe375be79219a8d987ac6b0db330341fc90f861f7574432d90f1fe58644c8"
+  },
+  {
+    "path": "ramdisk/usb_f_gsi.ko",
+    "size": 168104,
+    "sha256": "2ed98d31cda6334e4aa1057153a389f95845620ac3c20589a9991fc308e816ba"
+  },
+  {
+    "path": "ramdisk/usb_f_qdss.ko",
+    "size": 52592,
+    "sha256": "d43fbc1a5451d61df454da7d62288bc3e7840fdb41c7aecedb277c3abcb8a3b4"
+  },
+  {
+    "path": "ramdisk/videocc-sun.ko",
+    "size": 37232,
+    "sha256": "6f91998a2407f6b8d6730bc8ea95541a031dc735f5c8a6cdde518c7f6a3b8c7c"
+  },
+  {
+    "path": "ramdisk/videocc-tuna.ko",
+    "size": 34472,
+    "sha256": "dd22c2191253fe1e603c09e8a1dccd772349d12642595f32100686b85b07be71"
+  },
+  {
+    "path": "ramdisk/wcd_usbss_i2c.ko",
+    "size": 83096,
+    "sha256": "9fbf5925733216826b142567df7d720c681bc28ddfc48a5f792abea17c1c1ff7"
+  },
+  {
+    "path": "ramdisk/xhci-sideband.ko",
+    "size": 21784,
+    "sha256": "130af284634825c9ef7a6e91002bc6b695e8c42cdb752094f5d5be90c446277b"
+  },
+  {
+    "path": "system/6lowpan.ko",
+    "size": 43113,
+    "sha256": "ab94ffb2dfa77da0c3f41dd48b44115d803a748be218d481a40b0e99f565e901"
+  },
+  {
+    "path": "system/8021q.ko",
+    "size": 70641,
+    "sha256": "b8c999749c40010fc9a99ab85b085e5db250548bdef99feedb81f97bb576e6cf"
+  },
+  {
+    "path": "system/9pnet.ko",
+    "size": 178913,
+    "sha256": "ec0fba70f9ce6e5539f379fe1af12bd86e40e0362c4b5e55d1e68bdea47c891c"
+  },
+  {
+    "path": "system/9pnet_fd.ko",
+    "size": 37425,
+    "sha256": "8edaad29f5d895527c3f89f1eaa417ffc50740c745539bc622306802089b58d8"
+  },
+  {
+    "path": "system/aqc111.ko",
+    "size": 47537,
+    "sha256": "307ed689e5ef89c9a5cf092c7fd5cd53f12b7b5f497ba3523e8f8e5b7c90b967"
+  },
+  {
+    "path": "system/asix.ko",
+    "size": 98697,
+    "sha256": "43b9df9c4e39a972900847c77d6ef0b6276de08e2437aabab26da762ffb6bfe9"
+  },
+  {
+    "path": "system/ax88179_178a.ko",
+    "size": 71137,
+    "sha256": "402da603c59e0fb8774f285da8c1d508fd8e6ee08423fac146483320812c8850"
+  },
+  {
+    "path": "system/bluetooth.ko",
+    "size": 1222057,
+    "sha256": "a76f8849ca057ab16735fe4f7f31ba599131902b30e905fbb81ac623c632189d"
+  },
+  {
+    "path": "system/bsd_comp.ko",
+    "size": 21281,
+    "sha256": "589fda116e206f428ca74efff67035b48fee0ec56eef083ee88d375a7a2b3949"
+  },
+  {
+    "path": "system/btbcm.ko",
+    "size": 46321,
+    "sha256": "189ab21c54fa8d43f2fa4ab79b7f4bca75ba5f52082bc7cf71f98f3fa6338167"
+  },
+  {
+    "path": "system/btqca.ko",
+    "size": 46065,
+    "sha256": "c9aaead47011ccd6669f6b27aee6ad5f8ad541ee9631dbbf71870eb06001c716"
+  },
+  {
+    "path": "system/btsdio.ko",
+    "size": 31513,
+    "sha256": "79759bcd7ada40ab88b2f1e8173e631e9fc6b005c822bac662bf1c0d00e34b5d"
+  },
+  {
+    "path": "system/can-bcm.ko",
+    "size": 50777,
+    "sha256": "4ffc719e1577f2b49b5e3613f208c469f1281e2c3bc7c087783fe6c5a97eaf13"
+  },
+  {
+    "path": "system/can-dev.ko",
+    "size": 80697,
+    "sha256": "5a93e5a0e8817125625d0e32015a80bc83f5b923efc2bb9c3defa4088e2a1447"
+  },
+  {
+    "path": "system/can-gw.ko",
+    "size": 42961,
+    "sha256": "572c0764164cbc5922252c237552969b6f524282eb8ea09af245a8aab4382d11"
+  },
+  {
+    "path": "system/can-raw.ko",
+    "size": 40961,
+    "sha256": "fe3f1c5410c99e76e7db39671933052b0247f623c478ea4dbbfecbc16a032bfa"
+  },
+  {
+    "path": "system/can.ko",
+    "size": 50961,
+    "sha256": "048db3b8b735f4d0df06cc6de445150fe4871361792295b3e561c8bc391d6f56"
+  },
+  {
+    "path": "system/cctrng.ko",
+    "size": 27193,
+    "sha256": "cde2cd870296c3e854278a294d78617b38ad002242e043d56274cab36def6719"
+  },
+  {
+    "path": "system/cdc-acm.ko",
+    "size": 77209,
+    "sha256": "fccc28ed5a1e2385301f9780ccbed428969c4aa4b3fa0b935b55d60b16df4c32"
+  },
+  {
+    "path": "system/cdc_eem.ko",
+    "size": 19929,
+    "sha256": "c9416a4a91c9e61759c1749e15e2475cc6b70e7c6e47d33ef940fd468f7e5087"
+  },
+  {
+    "path": "system/cdc_ether.ko",
+    "size": 34345,
+    "sha256": "2a0d710de41e73f3d879685916fb3cbf99c995350dfed05126c21f25bc698f0a"
+  },
+  {
+    "path": "system/cdc_ncm.ko",
+    "size": 62665,
+    "sha256": "8a80e83deb925a54fbbe9363c50fc3ad7ed3a5759009a136af721dfb356d11ac"
+  },
+  {
+    "path": "system/diag.ko",
+    "size": 14593,
+    "sha256": "4c06b364db2f299e3800205e6a4de89bf367c9c2f4d5807a92d74a291397be1b"
+  },
+  {
+    "path": "system/ftdi_sio.ko",
+    "size": 159905,
+    "sha256": "8ba40872c2945a0a0fd84787b41386c0a62333d3a499c43f0adef0be0b97eb07"
+  },
+  {
+    "path": "system/gzvm.ko",
+    "size": 107529,
+    "sha256": "5317f69737d01826172e9100f8f53d09f5014ebd099388d4a8c089a2eceb3df1"
+  },
+  {
+    "path": "system/hci_uart.ko",
+    "size": 175897,
+    "sha256": "5af3705f9c17aba70e1e3352efd2f2c264e58f798047257e5442c57b3d59127b"
+  },
+  {
+    "path": "system/hidp.ko",
+    "size": 74537,
+    "sha256": "5c3f0ceedcf579025924203db1e32cc3eb5c29aa483f1971fa279ab6502fe556"
+  },
+  {
+    "path": "system/ieee802154.ko",
+    "size": 254433,
+    "sha256": "c10e007e52da7d627d5f84317cb1eb80f42bc56b8671c138a4a13b383c264ed3"
+  },
+  {
+    "path": "system/ieee802154_6lowpan.ko",
+    "size": 45929,
+    "sha256": "055822752a7f7d28361ea6de49ac544f04f43e72ec16e6b4f123af23f2e2c285"
+  },
+  {
+    "path": "system/ieee802154_socket.ko",
+    "size": 47521,
+    "sha256": "987ba60bd04e86403a4b2c8b9c718728c90c784a14ef8df89a668cdfe427057e"
+  },
+  {
+    "path": "system/kheaders.ko",
+    "size": 4265905,
+    "sha256": "3ab1f4da84993311cce0fb6d87708b4634a1d6fa3eb0c8b33876879977a27f21"
+  },
+  {
+    "path": "system/l2tp_core.ko",
+    "size": 107321,
+    "sha256": "ccc9290c2d0c7688a3705da4ed89aa8485389a9551395a08bb2bb5446a21ae54"
+  },
+  {
+    "path": "system/l2tp_ppp.ko",
+    "size": 52993,
+    "sha256": "aba9a99b5f2968e3967363a724a212af7573f5a0008f2c3eaed2659d68fb7087"
+  },
+  {
+    "path": "system/libarc4.ko",
+    "size": 11377,
+    "sha256": "ca1be92706074eca7cb0e16ecee0999de2dd765e33b2256df2bafb059723a6ae"
+  },
+  {
+    "path": "system/mac802154.ko",
+    "size": 246401,
+    "sha256": "936adf32dd10e045bbd970ebdb42e170eb378ca519ff36dff8fdecac9b7e9d1c"
+  },
+  {
+    "path": "system/macsec.ko",
+    "size": 109913,
+    "sha256": "c87236d6ffb3e3f2ce656a9c8731f02a23eff24e1fdcc16710fb5a73efe644c4"
+  },
+  {
+    "path": "system/mii.ko",
+    "size": 21849,
+    "sha256": "57a35e3b7fc757ab2e15ba6a36e3b0401e78475fe0034e6733468b053a03b117"
+  },
+  {
+    "path": "system/modules.alias",
+    "size": 69006,
+    "sha256": "bde76680c4fdd281376faa676eae6f0bbbc04cc3cca099bfad248a258c4766a7"
+  },
+  {
+    "path": "system/modules.blocklist",
+    "size": 90,
+    "sha256": "1d7ed9843004dd316f786872de360ca28265e849270d652bd06a89df6e07408d"
+  },
+  {
+    "path": "system/modules.dep",
+    "size": 5688,
+    "sha256": "d00f119a65454ee74a68bbc9d8733e9cc1d6dad9eac22d5427cfd54ac6e4907c"
+  },
+  {
+    "path": "system/modules.load",
+    "size": 933,
+    "sha256": "eca36a7b7e160c2dab173908fedf931e677bf343b962d9c0247ea9c4ad2f607c"
+  },
+  {
+    "path": "system/modules.softdep",
+    "size": 55,
+    "sha256": "ac2de753255c506934be29e69261f1485f51ee9cf9c2bf467bcc0c4cf95f8713"
+  },
+  {
+    "path": "system/nfc.ko",
+    "size": 185633,
+    "sha256": "e3deb206d869a3cccee94f979ff8cacd167e22c938b33c517af16d7f37b65058"
+  },
+  {
+    "path": "system/nhc_dest.ko",
+    "size": 12177,
+    "sha256": "ab7db687c647295416145c9f1457625dc8360747e7d1ffe7094d7ccc3e0cf7ac"
+  },
+  {
+    "path": "system/nhc_fragment.ko",
+    "size": 12177,
+    "sha256": "ea1a33bf8b287dbbb8f0b1eddc2dd9f5091fe7a81070b35c338e42d296be8eba"
+  },
+  {
+    "path": "system/nhc_hop.ko",
+    "size": 12177,
+    "sha256": "2aaec9127cca4de83b3fd43225d27f3f637be5ef609f3abc48eb396de9445d7a"
+  },
+  {
+    "path": "system/nhc_ipv6.ko",
+    "size": 12177,
+    "sha256": "8d290cda39e90a7886d45ec3d53180fadd25e3c0e558811c7873430462dba81a"
+  },
+  {
+    "path": "system/nhc_mobility.ko",
+    "size": 12177,
+    "sha256": "fc69a6a1b82a21f9bc7130965079bd06509996fd891fea23cd0488d4d969b1b5"
+  },
+  {
+    "path": "system/nhc_routing.ko",
+    "size": 12177,
+    "sha256": "74cbd40f6bc29af6592630cd640184590fde74bc96fe4011daac827b1ed56065"
+  },
+  {
+    "path": "system/nhc_udp.ko",
+    "size": 15441,
+    "sha256": "83d8a4b46974ce2c381481e62fb8954e1697c0cd355e5782dc4a54e622ae0882"
+  },
+  {
+    "path": "system/open-dice.ko",
+    "size": 18241,
+    "sha256": "4401d32cd5336b61a876149a5da92c7de1a16ae07cda4c444581839c54b4f50f"
+  },
+  {
+    "path": "system/ppp_deflate.ko",
+    "size": 22201,
+    "sha256": "909b6dc54ad7e04312b870e13f218d4fe675d2c87a080793f4f2222afd0a2b4d"
+  },
+  {
+    "path": "system/ppp_generic.ko",
+    "size": 82257,
+    "sha256": "0d16b9812420fbdae00f9c5d8908a9355e36ab0d2f4cc8423fca357a96ad823c"
+  },
+  {
+    "path": "system/ppp_mppe.ko",
+    "size": 24601,
+    "sha256": "c76af4051fdd1168e0487a88cbc40233445486eed2f4cd8086a7b238ac38530f"
+  },
+  {
+    "path": "system/pppox.ko",
+    "size": 19521,
+    "sha256": "8ce9786d7ad4096569c7fd522eb20d75b7f5d0fea029343aca503b71659fdf1a"
+  },
+  {
+    "path": "system/pps_core.ko",
+    "size": 36489,
+    "sha256": "08fd5ec27a07927f394f6601eb12a14a61543f3044132774c06532dfd7926759"
+  },
+  {
+    "path": "system/pptp.ko",
+    "size": 33665,
+    "sha256": "9258971872f58c4db4508faa3a02c1566aa73f6daf5731a56630f9604711ebe9"
+  },
+  {
+    "path": "system/ptp.ko",
+    "size": 66569,
+    "sha256": "8c88e8bf26ab34a49d42bfd574ac6f373ab2f7f1f35448ea18b1bf10ef173b30"
+  },
+  {
+    "path": "system/ptp_kvm.ko",
+    "size": 18561,
+    "sha256": "56128f0633b8bd33b19dceef0fa612d3a58cc8e07ef4cbce664014952dc1bf49"
+  },
+  {
+    "path": "system/r8152.ko",
+    "size": 219905,
+    "sha256": "e7135160ac879ee7d287e737cb19f26ee376ce68da2f8129b3a65b18247dfea0"
+  },
+  {
+    "path": "system/r8153_ecm.ko",
+    "size": 18729,
+    "sha256": "a2ac3a52d71aacbb63baab7e4aeb2c25c417abef46c3b4eec5d700beac5208d4"
+  },
+  {
+    "path": "system/rfcomm.ko",
+    "size": 138185,
+    "sha256": "3ed87f6af82cf4aa15d0f747210f34f3fceb9fa985c747cb46a05ad956dd7fe9"
+  },
+  {
+    "path": "system/rfkill.ko",
+    "size": 58049,
+    "sha256": "db838f4f3685b47e62466093311cb9c1ed1fa55df1c349481790d915816bfe20"
+  },
+  {
+    "path": "system/rtl8150.ko",
+    "size": 38201,
+    "sha256": "b643af4c0773a8d86fa2242a0dee1bd7b598505c7a6fe2bf3784da16f9178628"
+  },
+  {
+    "path": "system/slcan.ko",
+    "size": 36905,
+    "sha256": "a1b3ef1649a4823e3c2ea6e1d17afe04d7051cad88efb535184b9eeae6a338eb"
+  },
+  {
+    "path": "system/slhc.ko",
+    "size": 20465,
+    "sha256": "f53be46f9019e1d83d562ae1e5a33fb9e8fb1ca8b778ce820527cdc35334a9a7"
+  },
+  {
+    "path": "system/tipc.ko",
+    "size": 670281,
+    "sha256": "d582997d138d72e08ba60893513f05ebc8f9aaf0d04e565e82ff38563bfc0e0a"
+  },
+  {
+    "path": "system/usbmon.ko",
+    "size": 67009,
+    "sha256": "34fe6bd73d9b8596779fbe675a37ba3eb1aeb880626186d332717f55a9b071c3"
+  },
+  {
+    "path": "system/usbnet.ko",
+    "size": 81577,
+    "sha256": "e671aba3e1a5312c4c36914592fd336d1d98a5e8ea96dadf33e307b4cc779a53"
+  },
+  {
+    "path": "system/usbserial.ko",
+    "size": 86625,
+    "sha256": "1e25d5d21f355ff5e7926e40a145e716530fa59e61db48f177461e658123c2bb"
+  },
+  {
+    "path": "system/vcan.ko",
+    "size": 20681,
+    "sha256": "d93e1947fe32acc9a4d9786f49a681947855b1b120e44c9ac37623e85be672c0"
+  },
+  {
+    "path": "system/vcpu_stall_detector.ko",
+    "size": 21009,
+    "sha256": "10ede56c275b465ec0b1a83c05381e908ab2c7bf514a914ea3994465021fcb97"
+  },
+  {
+    "path": "system/virtio_balloon.ko",
+    "size": 42905,
+    "sha256": "eff9920b946ca947a1b543ac1ea72ec3b42306679c7152d9f8bca7fe4aabeaeb"
+  },
+  {
+    "path": "system/virtio_blk.ko",
+    "size": 53665,
+    "sha256": "bfbfbca18713bbdc94b30778922f315f7c7b4c266cba97cd7ed49563abcc61c5"
+  },
+  {
+    "path": "system/virtio_console.ko",
+    "size": 66065,
+    "sha256": "c327f9db9342ad4e2842d95dbcfec11163bc61e0c09ae0805f132936b54ad3f7"
+  },
+  {
+    "path": "system/virtio_pci.ko",
+    "size": 56289,
+    "sha256": "0e787c1a6559685f7ce4f3f0f5a7ba57e086ef7ce219f5f4bb987102680bcb81"
+  },
+  {
+    "path": "system/virtio_pci_legacy_dev.ko",
+    "size": 23505,
+    "sha256": "c7e27a1d3997e55e374dd501189c39f5dfe21d1757be8890ba6fcd0fa7b9523e"
+  },
+  {
+    "path": "system/virtio_pci_modern_dev.ko",
+    "size": 33857,
+    "sha256": "207a382d263f668ec44a60a928a0f3d21a79943d5498fc8a6aaa68019bb6cfa4"
+  },
+  {
+    "path": "system/vmw_vsock_virtio_transport.ko",
+    "size": 40721,
+    "sha256": "d9035581ca1a47974ec8d214e2c770cbdb786de1ff82151e1b5e171cf25247a5"
+  },
+  {
+    "path": "system/wwan.ko",
+    "size": 51913,
+    "sha256": "0166949c0ba1253d36b767cbaecd7a088462ebbc3b86a8acbd06801cfe4f7188"
+  },
+  {
+    "path": "system/zram.ko",
+    "size": 76081,
+    "sha256": "3c9e8ea343cb43d27b9b4650c3b8678820f48e9b998f4cd6f674596125bdf6f3"
+  },
+  {
+    "path": "system/zsmalloc.ko",
+    "size": 50545,
+    "sha256": "ba72eb19985fc43dbc9cc435e0ac4b3ec2eb76c9dcbaa1f7b364727d4f610a56"
+  },
+  {
+    "path": "vendor/adsp_loader_dlkm.ko",
+    "size": 25032,
+    "sha256": "b0dd30bba50c12c2eb7772dc8fb36da07f97246aefc489a30e9e0a7e28cd5ccf"
+  },
+  {
+    "path": "vendor/adsp_sleepmon.ko",
+    "size": 76488,
+    "sha256": "6ab339adf6df6b776fcee4ab238249c7e51a3484a5d9c7e7a37d7593eb277ffe"
+  },
+  {
+    "path": "vendor/altmode-glink.ko",
+    "size": 33960,
+    "sha256": "7124948c0e82fee4793a1851e67a749c43317101da9e708b41ccab832dcd1d40"
+  },
+  {
+    "path": "vendor/arm_smmu.ko",
+    "size": 256280,
+    "sha256": "15b783730ccb7cd8493be7beab399cc62125edebc4c42d83103c6a96bc6de05d"
+  },
+  {
+    "path": "vendor/atmel_mxt_ts.ko",
+    "size": 75496,
+    "sha256": "4d32285589c32063e957643190558db67dafd73f0e848777e44c72b277897146"
+  },
+  {
+    "path": "vendor/audio_pkt_dlkm.ko",
+    "size": 42200,
+    "sha256": "95fd61c1937a59d86ba701e730b97041fa634314714412f32d821cded8956f16"
+  },
+  {
+    "path": "vendor/audio_prm_dlkm.ko",
+    "size": 30968,
+    "sha256": "39ef326e0567edcfb70d05547def1684ec3d322a90c53394a432948998a13ee9"
+  },
+  {
+    "path": "vendor/audpkt_ion_dlkm.ko",
+    "size": 38176,
+    "sha256": "556cc955ea784ae3f490df105603623b437ec25df6d1adf5661c6d9c1e075494"
+  },
+  {
+    "path": "vendor/aw37004-regulator.ko",
+    "size": 23384,
+    "sha256": "58f1922fa6fe4abf06e110fcb3014641e401bbb9911652e66678ddc2ea222eeb"
+  },
+  {
+    "path": "vendor/aw882xx_dlkm.ko",
+    "size": 409472,
+    "sha256": "e2460cd73aa1e5ce4ff7f4c46e9f85c0f70a7fc1067b2b2683edd33f95a22ca3"
+  },
+  {
+    "path": "vendor/awinic_haptic.ko",
+    "size": 557624,
+    "sha256": "588d942d4791dd98298f63201abdb05cbcbf9dc8013d46e3520106ed08e91fa3"
+  },
+  {
+    "path": "vendor/bam_dma.ko",
+    "size": 58256,
+    "sha256": "27d0d7865a9261bbfc9b409f2d7adfe944cc688acb706d1d105d92981389a5bf"
+  },
+  {
+    "path": "vendor/bcl_pmic5.ko",
+    "size": 55728,
+    "sha256": "f8e7714e5ea440fe485ca90dcdb284dbb80d45d665cc8eac56bcaaf5c726f212"
+  },
+  {
+    "path": "vendor/bcl_soc.ko",
+    "size": 20184,
+    "sha256": "f81b9bb5d2bae6785061f4608aaef673a3f1f4e4fc3117e775e020f9573df9f9"
+  },
+  {
+    "path": "vendor/boot_stats.ko",
+    "size": 15664,
+    "sha256": "12c023f75105bb5a288b475c0569b6117ccc31c53011a2d6279bddba7b24d927"
+  },
+  {
+    "path": "vendor/bt_fm_swr.ko",
+    "size": 42592,
+    "sha256": "6d91e7d7eb395f3026a80e4a669a757071a29922676b8297026dcad93d62ba86"
+  },
+  {
+    "path": "vendor/btfm_slim_codec.ko",
+    "size": 55848,
+    "sha256": "4b46a03dcc3bc20bb497b0e1cfb19e5b8b566dbfbfadb7afbfd60efbcbece223"
+  },
+  {
+    "path": "vendor/btfmcodec.ko",
+    "size": 97952,
+    "sha256": "b9837176c7e0fc8623f3fa8705721a4b446d4b28e6e76a3caf905ee404e7ef95"
+  },
+  {
+    "path": "vendor/btpower.ko",
+    "size": 149128,
+    "sha256": "a0afe78483b1e2dfe90b65ee9cc98971051fb0b39ccc7962edf6ba1aefcc78be"
+  },
+  {
+    "path": "vendor/bwmon.ko",
+    "size": 82896,
+    "sha256": "00fa2e67bd264c171c351f026e94696281ddc337cea94a2927609cc554659e99"
+  },
+  {
+    "path": "vendor/c1dcvs_scmi_v2.ko",
+    "size": 28808,
+    "sha256": "3f11c5207ff638b4bd27b6ca3fe3fcafed5866c57fea1ffcc9b12ff561616f20"
+  },
+  {
+    "path": "vendor/cambistmclkcc-sun.ko",
+    "size": 35752,
+    "sha256": "a2b062ba37ba41917b49184c5edf2eaa88f2cf26cfc6724e4c128bfbe542fa98"
+  },
+  {
+    "path": "vendor/cambistmclkcc-tuna.ko",
+    "size": 34640,
+    "sha256": "a784d122bc3dbe35e6f6e106d6fe91422db3e6f6b702349f0465cb7bc20140a4"
+  },
+  {
+    "path": "vendor/camcc-kera.ko",
+    "size": 101464,
+    "sha256": "06d617005485f97ea9e2b83fe5207793ef8c75ed1c563b5c689b5d9a2d6b68a3"
+  },
+  {
+    "path": "vendor/camcc-sun.ko",
+    "size": 103384,
+    "sha256": "f985fda11cbdc7c83e21a480d754a8edea816b36912fb1c63683e1bd1684b5c3"
+  },
+  {
+    "path": "vendor/camcc-tuna.ko",
+    "size": 103616,
+    "sha256": "9a67d79d66bfc4b23e730c64efd42dc6f0efe2e3aea4f2ddb957f443e67bcd9e"
+  },
+  {
+    "path": "vendor/camera.ko",
+    "size": 6904880,
+    "sha256": "6663559a1b2776dffabee5ad56b0852edf61b93a893ffcb84b7bfcdc08adf165"
+  },
+  {
+    "path": "vendor/cdsprm.ko",
+    "size": 92280,
+    "sha256": "3af0ec35ced67ffb0150e1f98a8d8b7df3ce57e1b98783b4b8a1c674d5357860"
+  },
+  {
+    "path": "vendor/cfg80211.ko",
+    "size": 1973640,
+    "sha256": "ccbdb20c027bf4a916831e7ef7f47eef54353b9b79cc794ab485590acea37be8"
+  },
+  {
+    "path": "vendor/charger-ulog-glink.ko",
+    "size": 29848,
+    "sha256": "d3421d43974a320f46e6d2f0e7389e596b56dd0a1f456fd8afce8f96e90d26e5"
+  },
+  {
+    "path": "vendor/clk-dummy.ko",
+    "size": 17656,
+    "sha256": "e2e4f6522e909e369eb6bbf176160dad1a45319fbf1f0c9725e2fbeacd0d52dc"
+  },
+  {
+    "path": "vendor/clk-gate_test.ko",
+    "size": 60752,
+    "sha256": "804df928d887e9eb44d21cf7b285ad3be05b3b59fa778f0c01ad5a1ed838f8a7"
+  },
+  {
+    "path": "vendor/clk-qcom.ko",
+    "size": 408904,
+    "sha256": "3e36604702d4be6cd78fb80c591411992b86038ec6335b0c8378634341ad15f1"
+  },
+  {
+    "path": "vendor/clk-rpmh.ko",
+    "size": 80968,
+    "sha256": "9380448b753798aa2047a878e6f31273f90017e21de25006f2cd9d2163de7aa3"
+  },
+  {
+    "path": "vendor/clk-scmi.ko",
+    "size": 19696,
+    "sha256": "ead498317bfa863109576086e840c137e25092dc34ef4a5ba197cb6fca7a1d68"
+  },
+  {
+    "path": "vendor/clk_test.ko",
+    "size": 194280,
+    "sha256": "d3add626642c0b0f04de3d9cb18e9c852cd46a6d1e7be1e50528bd5d7d21163b"
+  },
+  {
+    "path": "vendor/cmd-db.ko",
+    "size": 22248,
+    "sha256": "e096d47bf46fe52c0b068ddfbe294039c669af11aed800d349068806435115dd"
+  },
+  {
+    "path": "vendor/cnss2.ko",
+    "size": 1016280,
+    "sha256": "024de9f0b79850cda1a977ba231e9b170466ebd5f69597cfecd31b73ae6190c5"
+  },
+  {
+    "path": "vendor/cnss_nl.ko",
+    "size": 17176,
+    "sha256": "2c2fa38dbb848f71721647182b2b908e857e8a040fede6a34dd3f733899c21d3"
+  },
+  {
+    "path": "vendor/cnss_plat_ipc_qmi_svc.ko",
+    "size": 54400,
+    "sha256": "e6f314424d3919e4c7f7d28a0cff60a85095758e9e09f50afca83a38cd1563db"
+  },
+  {
+    "path": "vendor/cnss_prealloc.ko",
+    "size": 25984,
+    "sha256": "f68cb25fc1bdf53daf2adfe569d5f768360dbe2d0dff285630a7bc77c0f963e0"
+  },
+  {
+    "path": "vendor/cnss_utils.ko",
+    "size": 36816,
+    "sha256": "59e40fec560ca4471b549370e97491c345c7d9091dc27ac98a3c4a686ea4b9ef"
+  },
+  {
+    "path": "vendor/coresight-csr.ko",
+    "size": 45416,
+    "sha256": "9838b948989a17f678b90e971802c5f7957d6668e3b99c24128128b9407a4937"
+  },
+  {
+    "path": "vendor/coresight-cti.ko",
+    "size": 95200,
+    "sha256": "a9913515f0e8a2497e620f10d962ed4d2be6741b28fdc7859014dcfdb8154af0"
+  },
+  {
+    "path": "vendor/coresight-dummy.ko",
+    "size": 23768,
+    "sha256": "cd5ff879e3d7f2e3be2b8c3b51529d3a58e8405411cdc244f0c6ae25c32827b3"
+  },
+  {
+    "path": "vendor/coresight-funnel.ko",
+    "size": 38304,
+    "sha256": "b7bf1b716d7059880fbe394e55e2a841acb3b2b7bb33bfbb1ea7c0d242d074c9"
+  },
+  {
+    "path": "vendor/coresight-qmi.ko",
+    "size": 32184,
+    "sha256": "ba5780a773e429e4bebd5cfd6492d73754402adcfb33fb971e4647d75ba4464f"
+  },
+  {
+    "path": "vendor/coresight-remote-etm.ko",
+    "size": 25744,
+    "sha256": "567d783e3fd303d3b27cda2b934b8d262d906ba9a728912c43a36252f96928f7"
+  },
+  {
+    "path": "vendor/coresight-replicator.ko",
+    "size": 39936,
+    "sha256": "e04c4968a731f2c23b19481c5ac3a67c4f46bbd83f43f9f436158078114b5932"
+  },
+  {
+    "path": "vendor/coresight-stm.ko",
+    "size": 40088,
+    "sha256": "2b35bf410ad1346d498b7c261cc7be60837b6d6098c89a4a177755244ab0c2c5"
+  },
+  {
+    "path": "vendor/coresight-tgu.ko",
+    "size": 26688,
+    "sha256": "974e9ce8fe05cca59adcca9f953e068dc95f7b58ce28b2f4926bae4ae6ca35ae"
+  },
+  {
+    "path": "vendor/coresight-tmc-sec.ko",
+    "size": 36128,
+    "sha256": "cd03becbf53085a0b8c344db871e3d421d0aab79d6a2b38eb091e7e8672b1f30"
+  },
+  {
+    "path": "vendor/coresight-tmc.ko",
+    "size": 125904,
+    "sha256": "175283cfaa172f1ebc6d167154f846d2c163d3015e6a6d4dfe74475d6baaaf4d"
+  },
+  {
+    "path": "vendor/coresight-tpda.ko",
+    "size": 35864,
+    "sha256": "cd26a041b44df76e2e41f55319a407003a05b302589955117d52206040a17a81"
+  },
+  {
+    "path": "vendor/coresight-tpdm.ko",
+    "size": 132456,
+    "sha256": "caf19f35c5d78d3baa41bc8e16c31833246f5864bdf7be0aac7eabdc53c6594f"
+  },
+  {
+    "path": "vendor/coresight-trace-noc.ko",
+    "size": 29520,
+    "sha256": "14fffd446e4397985fcffa623c8d4fd20f54a2819f77547aaa1725c054563df6"
+  },
+  {
+    "path": "vendor/coresight-uetm.ko",
+    "size": 38088,
+    "sha256": "d269828751053774320e8c84ca517e3cf8549c737eab8e30f5681f080163dcfa"
+  },
+  {
+    "path": "vendor/coresight.ko",
+    "size": 167528,
+    "sha256": "0404d172ac7d870962316670007c1417141b27a4a435d82f5b0430b8a5890439"
+  },
+  {
+    "path": "vendor/cpu_hotplug.ko",
+    "size": 21424,
+    "sha256": "79259d11b7f328f703d0062a56c2c70df11c5ef04f1dc1a05639947c4b387de6"
+  },
+  {
+    "path": "vendor/cpu_mpam.ko",
+    "size": 37760,
+    "sha256": "32770a2cb8425931f1e850791540b5ac0b69c8bf1f007554da1b8d5679a68019"
+  },
+  {
+    "path": "vendor/cpu_phys_log_map.ko",
+    "size": 13696,
+    "sha256": "f0e3017069a62d40f96af1b9ea356c37a016f9d6e9dd310b6ecec05c6942d8fb"
+  },
+  {
+    "path": "vendor/cpucp_fast.ko",
+    "size": 16328,
+    "sha256": "9974922875e9c5066f294e330178353b83b2b091d6d7f043dd81d100803753c2"
+  },
+  {
+    "path": "vendor/cpucp_log.ko",
+    "size": 51240,
+    "sha256": "63a1151f940efb0f9e6fb5faaf70a003b39cadcc41a16b2679e6175cd12500c6"
+  },
+  {
+    "path": "vendor/cpufreq_stats_scmi_v2.ko",
+    "size": 22152,
+    "sha256": "535c1469d46c549e4459606865de9d555acd693f7fbb6ea02d959cff4db55fae"
+  },
+  {
+    "path": "vendor/cpufreq_stats_scmi_v3.ko",
+    "size": 22608,
+    "sha256": "1c29f7a28eca9cc37ca4b5ceb63ebe5abe92920d6115113482bb0e8a7e51ecfb"
+  },
+  {
+    "path": "vendor/cqhci.ko",
+    "size": 53224,
+    "sha256": "9587fe7020b7f888a1f619630a847dbe1593ed401d7c6e13301850ed97c6a86d"
+  },
+  {
+    "path": "vendor/crm-v2.ko",
+    "size": 75480,
+    "sha256": "f4b151ab66035e0a63ddb109fe57728291d28318bad9d2b6b1187b3aa4c4d141"
+  },
+  {
+    "path": "vendor/dcc_v2.ko",
+    "size": 59592,
+    "sha256": "7c7aee862eec77e9088d6374f4dbd3280115c2a22fb9a296f9ac23e051a0e8ad"
+  },
+  {
+    "path": "vendor/dcvs_fp.ko",
+    "size": 19648,
+    "sha256": "1c9cc9c9df1dc4cb16498f5358b03ea4f0b3bf93f066f38c08c59225f73b05ce"
+  },
+  {
+    "path": "vendor/ddr_cdev.ko",
+    "size": 16424,
+    "sha256": "9a44316111a34c321849ffd2f3ea900eba4023b4c574246203f59a78e680dc79"
+  },
+  {
+    "path": "vendor/debug-regulator.ko",
+    "size": 47408,
+    "sha256": "4ac79c119e35cba42e5051e885df9fe30a3e38fbd65a465c2b14fe2fc9b41e9b"
+  },
+  {
+    "path": "vendor/debug_symbol.ko",
+    "size": 18240,
+    "sha256": "34b5087c2b1341db0623a05efeb08ff5052efbc9cf48f26d86a143d44c8ddb5c"
+  },
+  {
+    "path": "vendor/debugcc-kera.ko",
+    "size": 58496,
+    "sha256": "82d40e6628bb196bc110d8182b00a0f18926938b37d7cbd32e5a66bdd05caccb"
+  },
+  {
+    "path": "vendor/debugcc-sun.ko",
+    "size": 61896,
+    "sha256": "e275ea520e1e9e01119083f6e4a26302408571251e21702312bf9dda16844eac"
+  },
+  {
+    "path": "vendor/debugcc-tuna.ko",
+    "size": 65608,
+    "sha256": "fdad5c512106a95ffa1848fbc6d1611f4178666253ad4b39f3d4de72c0054a58"
+  },
+  {
+    "path": "vendor/dev_addr_lists_test.ko",
+    "size": 35896,
+    "sha256": "5908b960efdc385a06e4397972045656abb5120e809e2d74be3f820e833d8721"
+  },
+  {
+    "path": "vendor/dispcc-sun.ko",
+    "size": 91528,
+    "sha256": "8ea46b09e7e59818a390fee5555739467a5df5de3e78d863ccf0f0057669bf72"
+  },
+  {
+    "path": "vendor/dispcc-tuna.ko",
+    "size": 95392,
+    "sha256": "83b4a9e615cef9c15088c325369357406c44ff5022a8c899a3f1b1a516c0e3b9"
+  },
+  {
+    "path": "vendor/dmesg_dumper.ko",
+    "size": 33416,
+    "sha256": "ca7a9dc889d9a0b553c4bd77975d4a09d1a816f1c04bf76a53cb2cd29bbd782a"
+  },
+  {
+    "path": "vendor/drm_display_helper.ko",
+    "size": 270008,
+    "sha256": "2d64f16203eec227f3a86a7e862b7d0f1fda8de94fee660844af79a346c1a43e"
+  },
+  {
+    "path": "vendor/drm_dp_aux_bus.ko",
+    "size": 23960,
+    "sha256": "b531dc4d67ff6aa7f9eab00ed3ac7f665db2d557426c4206c0237265f85042da"
+  },
+  {
+    "path": "vendor/dwc3-msm.ko",
+    "size": 200848,
+    "sha256": "ebf3af639a5bb6f307a6d963bf2e38e0495f4f3ada8df6d38a14e7d46cf78aba"
+  },
+  {
+    "path": "vendor/dynpf_scmi.ko",
+    "size": 17520,
+    "sha256": "f0446ef42002b18cd67e445027d818b8c4800b07162d6906fa3a4fc9878b6d71"
+  },
+  {
+    "path": "vendor/eud.ko",
+    "size": 36424,
+    "sha256": "7ff219629b830a6e7d0c3e5b9bf37903a0affc9385d0efcf7324c902de1bf393"
+  },
+  {
+    "path": "vendor/evacc-sun.ko",
+    "size": 32688,
+    "sha256": "02a2d2431784e1e6c601f65619afbc533e1b3c9a67352cb6857577e09e667338"
+  },
+  {
+    "path": "vendor/evacc-tuna.ko",
+    "size": 31752,
+    "sha256": "e130910d6e261fb47e72e118f4e68553bced200670eebca404563594bc929599"
+  },
+  {
+    "path": "vendor/ext4-inode-test.ko",
+    "size": 16176,
+    "sha256": "aebb12cd69969af1e9c5c68d41c8cb4f5bb64c8a65178db60b6d3da257e3e8b5"
+  },
+  {
+    "path": "vendor/f_fs_ipc_log.ko",
+    "size": 76576,
+    "sha256": "5d5c5a0427f040dc81301639596b03d8c9e88fd1955a3772d76a44ddae9799ef"
+  },
+  {
+    "path": "vendor/fat_test.ko",
+    "size": 18472,
+    "sha256": "d3e90cb07c7bb0179d2441155cfe9775f6fb59b3ae9091d0deabfdc2db510878"
+  },
+  {
+    "path": "vendor/focaltech_fts.ko",
+    "size": 533160,
+    "sha256": "de19bca785fbb475a854a12fb683aa64ef238abcf1b0305ce1b9c6857e265d04"
+  },
+  {
+    "path": "vendor/frpc-adsprpc.ko",
+    "size": 271136,
+    "sha256": "3d24df8477976967ae8b5777fb60c28747325d328000e8715ec54ae71e9bd95a"
+  },
+  {
+    "path": "vendor/fsa4480-i2c.ko",
+    "size": 22944,
+    "sha256": "b433fd82790cd767d5f54e1671070d069fecbec1e0486968ee49c7ec49a757ec"
+  },
+  {
+    "path": "vendor/gcc-kera.ko",
+    "size": 116176,
+    "sha256": "c7f1da34fbb3140d4b72559021b614489ac425c4b189a8532268c9e43bde2b89"
+  },
+  {
+    "path": "vendor/gcc-sun.ko",
+    "size": 123200,
+    "sha256": "98d690a86776f2fe35f8fe9c27b4dd57b802b970532a544a021a4fd9f3b409e7"
+  },
+  {
+    "path": "vendor/gcc-tuna.ko",
+    "size": 110632,
+    "sha256": "f7e814d10646abdb8a8545adea711a299edfe2a83c30ebc152743052654d7a6f"
+  },
+  {
+    "path": "vendor/gdsc-regulator.ko",
+    "size": 50288,
+    "sha256": "70ae0b81085ff516290c6eaf6f021b7a22a2c2072c16b23aea80ac9e15b0f55a"
+  },
+  {
+    "path": "vendor/gh_arm_drv.ko",
+    "size": 16864,
+    "sha256": "714ba3a0729cd7a06c2bb1f3324c8917adec4d3fdb416c6361170f8ba505b56c"
+  },
+  {
+    "path": "vendor/gh_ctrl.ko",
+    "size": 24368,
+    "sha256": "bdba66f2310b92f9015b40f5ed83f37eed506ecf6f0c313bfe91f255968880aa"
+  },
+  {
+    "path": "vendor/gh_dbl.ko",
+    "size": 28464,
+    "sha256": "0b28c11676df060ba60465cdab4f6807a3273c2287ac988bca1cffa20ccc68a6"
+  },
+  {
+    "path": "vendor/gh_irq_lend.ko",
+    "size": 28384,
+    "sha256": "b50eb2f48da4846836104017cd76050c216c149bfdc9e19d8b846ff0895dbc12"
+  },
+  {
+    "path": "vendor/gh_mem_notifier.ko",
+    "size": 15808,
+    "sha256": "a6dbe809037269c25886563cfb25776a2b00c85350dd91df24c1243d8b2b85b0"
+  },
+  {
+    "path": "vendor/gh_msgq.ko",
+    "size": 30864,
+    "sha256": "691f20e6d06759f990e783551446b8a999396564ef51e92c29e762364ae30ed6"
+  },
+  {
+    "path": "vendor/gh_panic_notifier.ko",
+    "size": 36000,
+    "sha256": "a12cc37a42d70a72557249ef04066d72bcd2b5e64b4bd13076d30ffb63d7f44a"
+  },
+  {
+    "path": "vendor/gh_rm_booster.ko",
+    "size": 24408,
+    "sha256": "71b7a7c83e3b1214f8afd3f1bc4464427ef68164be954b4b80e6298e13fd147b"
+  },
+  {
+    "path": "vendor/gh_rm_drv.ko",
+    "size": 182432,
+    "sha256": "21989aeeba8310703ed4ff4667cb072127d7c36317139a9c86a9d270742e4a3e"
+  },
+  {
+    "path": "vendor/gh_tlmm_vm_mem_access.ko",
+    "size": 25120,
+    "sha256": "026ce9c594b00f191048210ba30095e0060820df347d8c6976ff169c348e4c0a"
+  },
+  {
+    "path": "vendor/gh_virt_wdt.ko",
+    "size": 19584,
+    "sha256": "9d61f0b55258e8844ea295d619d05c1d35a853ea436e06e2513409e77ea8bf90"
+  },
+  {
+    "path": "vendor/gic_intr_routing.ko",
+    "size": 33152,
+    "sha256": "1f2a3beb11749728d615d9f0be9686dbf57db104ac4571fb22813cf3f13e744b"
+  },
+  {
+    "path": "vendor/glink_pkt.ko",
+    "size": 68896,
+    "sha256": "3815b7431354bc28242168317ea9c40be248e1f1aeb97f16f4ffbe0d2b85e507"
+  },
+  {
+    "path": "vendor/glink_probe.ko",
+    "size": 23344,
+    "sha256": "3aefe29d2f44990522b704b8e47537c23129b0adf09b458e0e5ed89c9a914a37"
+  },
+  {
+    "path": "vendor/goodix_fp.ko",
+    "size": 50880,
+    "sha256": "9754dde28a10d5912fda379a76da6d00fe7463b4048c8161cb293d18c81c888f"
+  },
+  {
+    "path": "vendor/goodix_ts.ko",
+    "size": 322240,
+    "sha256": "fe66b6eaf992011c2d15f306d235972f476b412ffbf55b8a6e66712b22c71f89"
+  },
+  {
+    "path": "vendor/governor_gpubw_mon.ko",
+    "size": 17040,
+    "sha256": "66e04c9b9c8b3dbdccb8adfd5f8a21a31ae76bfcc5e59ab31b650752538e556e"
+  },
+  {
+    "path": "vendor/governor_msm_adreno_tz.ko",
+    "size": 25312,
+    "sha256": "8c60f705a74704dfd9eec877d994b325dfd855f036c0ba2668f083df85caf66f"
+  },
+  {
+    "path": "vendor/gpio-pca953x.ko",
+    "size": 48008,
+    "sha256": "689f33541b301011c1e27fecd7f0a65c4a0d1d1529d9670a752a8592de4d2d87"
+  },
+  {
+    "path": "vendor/gpr_dlkm.ko",
+    "size": 43016,
+    "sha256": "61b03adbe2f183990da73a2ab1abe8715fd1fe2a1867a72410ff3cdc2278e8bd"
+  },
+  {
+    "path": "vendor/gpu_dump_skip_cdev.ko",
+    "size": 15880,
+    "sha256": "b99fbf72244d306bf3db9e198404b715ed532efe22ca3e75736ef0b7c9b3dcb9"
+  },
+  {
+    "path": "vendor/gpucc-kera.ko",
+    "size": 43968,
+    "sha256": "9e824e47460d185241d6362de030baebf98e056d4c779c9002fa13d18a5a0556"
+  },
+  {
+    "path": "vendor/gpucc-sun.ko",
+    "size": 43568,
+    "sha256": "31c690169c776e684993e7c9d0747ad3bb5bd08f608d04437e50f846efffc78c"
+  },
+  {
+    "path": "vendor/gpucc-tuna.ko",
+    "size": 43568,
+    "sha256": "31f4c3e5989deb310e1d317af2232fcce493503b47c98618a2b4a8ce85e6994b"
+  },
+  {
+    "path": "vendor/gsim.ko",
+    "size": 555904,
+    "sha256": "4bda05055c99c4e62103c04b623be593ed3583be715e1792c66bc873ad671706"
+  },
+  {
+    "path": "vendor/gunyah_loader.ko",
+    "size": 191776,
+    "sha256": "495c72d8612caa09793c7459dc8c47d449297240fe863a7abe0c047403c7fdcc"
+  },
+  {
+    "path": "vendor/hapticdrv.ko",
+    "size": 149960,
+    "sha256": "56ce7734cf11bd8935b49edfa172974e19b30fd9327ff54322df520c5d5fa49f"
+  },
+  {
+    "path": "vendor/hdcp_qseecom_dlkm.ko",
+    "size": 98624,
+    "sha256": "256f9e8c9467ebea100289f5abf9f552449b19f3fd9f2f3e21ee8b960cb83c7c"
+  },
+  {
+    "path": "vendor/hdmi_dlkm.ko",
+    "size": 45488,
+    "sha256": "5883259988df786796c1486f9c7b2588340cb8ab278ace056b2ed3025335d6b1"
+  },
+  {
+    "path": "vendor/heap_mem_ext_v01.ko",
+    "size": 14704,
+    "sha256": "d1b4fb1a5831748b2b346870f9f36de816c60846b5445118412fd547d72d50c0"
+  },
+  {
+    "path": "vendor/hid-uclogic-test.ko",
+    "size": 42240,
+    "sha256": "fca4490060b274acc3a8e0aadbdd6fb3e820a02daf1ff8500f2a34787ef17921"
+  },
+  {
+    "path": "vendor/hung_task_enh.ko",
+    "size": 20608,
+    "sha256": "26932956a4b3cea36fab6d645d4d7b222217dc8d25c8f36b27e4fff9b08903cd"
+  },
+  {
+    "path": "vendor/hvc_gunyah.ko",
+    "size": 23368,
+    "sha256": "d3007625ddebcb38d4ec1b4e7b6e7c3df0f19b03cda97944156e42059a0bea35"
+  },
+  {
+    "path": "vendor/hwmon.ko",
+    "size": 64704,
+    "sha256": "4b0491905120d2a13f79a04b9b24406c23cfaac80123876ddf33c18923830d79"
+  },
+  {
+    "path": "vendor/i2c-msm-geni.ko",
+    "size": 139256,
+    "sha256": "d3ae12b35f09fd775cd71aa56d9eb8940f1717587dd699d61e863ce1431b7f02"
+  },
+  {
+    "path": "vendor/i3c-master-msm-geni.ko",
+    "size": 173160,
+    "sha256": "e5162b428205b9364d30c309f0b5e14cc9a80ab4b49ba547992a5cb74963774a"
+  },
+  {
+    "path": "vendor/icc-bcm-voter.ko",
+    "size": 35520,
+    "sha256": "e4d6f7b08a3330c2f04f58bd98afee514d4ca2b6fc78b812b51d54e8f272f4cf"
+  },
+  {
+    "path": "vendor/icc-debug.ko",
+    "size": 20600,
+    "sha256": "3eeba3bd48e50aead22181f9eef4a441ebf47b4e721b155ba841e530086ac778"
+  },
+  {
+    "path": "vendor/icc-rpmh.ko",
+    "size": 29256,
+    "sha256": "2d0667c22fa3070149433c872279a49f901b795e71ea0b22e6f4542a455c4988"
+  },
+  {
+    "path": "vendor/icnss2.ko",
+    "size": 1651976,
+    "sha256": "059a5e4a58cbc6d47b3a3210b8e239108aa0027b5893ec118dc42d4296a6d912"
+  },
+  {
+    "path": "vendor/iio-test-format.ko",
+    "size": 61504,
+    "sha256": "2975027fc50191b41094997747ee72295805456b776568efc0f9e5845a997860"
+  },
+  {
+    "path": "vendor/input_test.ko",
+    "size": 24912,
+    "sha256": "ef3fa25e2106d5ad88e3e898e7d7e1323dbf59c346830058d8f0dd55de32f2f4"
+  },
+  {
+    "path": "vendor/iommu-logger.ko",
+    "size": 14664,
+    "sha256": "f3b34d885664565249989a8fd394bbc7d5b39a21b339ee153c6bbbf2f7d3e846"
+  },
+  {
+    "path": "vendor/ipam.ko",
+    "size": 6456048,
+    "sha256": "9ab6fba5f64b1e6862be63334845195c7978ee3d23192c948d53dde097a9cb61"
+  },
+  {
+    "path": "vendor/ipanetm.ko",
+    "size": 13464,
+    "sha256": "aad43eb069bf6112950ba2c38e01b5a65f050449e0a6b79f9b8c1c96ba868dd0"
+  },
+  {
+    "path": "vendor/ipatestm.ko",
+    "size": 147304,
+    "sha256": "df44acb1af1fe12ab0bc97e45b18b285d5c955320ce1fa62c4c461dd9bad09e5"
+  },
+  {
+    "path": "vendor/ipclite.ko",
+    "size": 136312,
+    "sha256": "7557fd66fa01ef98079bab7415489af5a817d8dff5d564efbd845f6deb0baa68"
+  },
+  {
+    "path": "vendor/ipclite_test.ko",
+    "size": 85440,
+    "sha256": "bf728435167a35d768bf64e32663ea84869e47c9d8a6fc800ed2a2bd18b09321"
+  },
+  {
+    "path": "vendor/kunit-example-test.ko",
+    "size": 25640,
+    "sha256": "e97febfa7758e219b02feb3fed656af66e656d991c03f5fb142cc08c49debbe1"
+  },
+  {
+    "path": "vendor/kunit-test.ko",
+    "size": 73768,
+    "sha256": "9e2d93a51235aee5303ef71023c97c85dea49042c98cd999c56b5fb789884dbd"
+  },
+  {
+    "path": "vendor/kunit.ko",
+    "size": 100888,
+    "sha256": "a0f4e60bfc5242e87245542a9ba2b88a02a3d7c235f6a4f5535f65847035cd74"
+  },
+  {
+    "path": "vendor/leds-aw20144.ko",
+    "size": 94120,
+    "sha256": "9c3c8a49086044c33288cf03f8c95a1ba34997e0a2e828e4451fdac2e3d224ff"
+  },
+  {
+    "path": "vendor/leds-qcom-flash.ko",
+    "size": 28040,
+    "sha256": "7bbd7c99ecac1a253da2499bb1d9d7c3928c10a3efc08be3fafa34bc54792ca6"
+  },
+  {
+    "path": "vendor/leds-qcom-lpg.ko",
+    "size": 44520,
+    "sha256": "f096b8e588da39b6be8e68ae702cf25eb4c34ce3fd43adfe9e1624fbd9ab0714"
+  },
+  {
+    "path": "vendor/leds-qpnp-vibrator-ldo.ko",
+    "size": 26032,
+    "sha256": "dd66e7e9dfec9bd618ecb222cc07f4a6326aae14133a2e245a8d400f5f463b9a"
+  },
+  {
+    "path": "vendor/leds-qti-flash.ko",
+    "size": 54712,
+    "sha256": "6473f6c09dfdc1b40c6e53620a22eb1f0981f80def1ca255acf4ddb38c9bf767"
+  },
+  {
+    "path": "vendor/lib_test.ko",
+    "size": 14656,
+    "sha256": "53d8629521a20abead518c354874cf0e5aa0633f0c89e7b032a8ddd64c19688a"
+  },
+  {
+    "path": "vendor/llcc-qcom.ko",
+    "size": 66584,
+    "sha256": "d4195000d57b79f2f84fa89c81cdf195719d0f809037116e9cf7e6d5b4655d43"
+  },
+  {
+    "path": "vendor/llcc_heuristics.ko",
+    "size": 19832,
+    "sha256": "74fd075121289fdc14b17e8019da7b1367ded2cce34254ff7d6801d90c8c4478"
+  },
+  {
+    "path": "vendor/llcc_perfmon.ko",
+    "size": 65528,
+    "sha256": "8123345d21d448c34bcb5dc0ff65f585463eaa6758533552663e66d1a8b42346"
+  },
+  {
+    "path": "vendor/lpass_bt_swr_dlkm.ko",
+    "size": 34432,
+    "sha256": "85f87373467e36e890ee17f5a8bfc07ee7f407335525e7589c072260df30f5f3"
+  },
+  {
+    "path": "vendor/lpass_cdc_dlkm.ko",
+    "size": 125880,
+    "sha256": "7a4b33e76e7ca35a0dc88877add0e3164c2e60a9055cfc5a440839a3ed361b15"
+  },
+  {
+    "path": "vendor/lpass_cdc_rx_macro_dlkm.ko",
+    "size": 224680,
+    "sha256": "13084d4636ae81b85d5620e9573f5131ff74c064154b650df361b940f65963f3"
+  },
+  {
+    "path": "vendor/lpass_cdc_tx_macro_dlkm.ko",
+    "size": 142656,
+    "sha256": "1646ea3fee8032d4ef7ac95bd5c06b299ec13e62d9b122d69504b0f429a61c5f"
+  },
+  {
+    "path": "vendor/lpass_cdc_va_macro_dlkm.ko",
+    "size": 132664,
+    "sha256": "f557835fa5e92ac09d841871d0a6537f2dbdd4a83797045304fd7ade75704a0e"
+  },
+  {
+    "path": "vendor/lpass_cdc_wsa2_macro_dlkm.ko",
+    "size": 216224,
+    "sha256": "d0b63165425fc94b561a40a61ce04c9638c7f2035b19f631ee760bb3631be185"
+  },
+  {
+    "path": "vendor/lpass_cdc_wsa_macro_dlkm.ko",
+    "size": 212432,
+    "sha256": "fdb29510ccd04532453f656c454cb35f7abee2db521ab4a575e81f8ccc3b2503"
+  },
+  {
+    "path": "vendor/lt9611uxc.ko",
+    "size": 77800,
+    "sha256": "47889dd8ef385ed94e90a6675b4c3d997796a91dac581294d592ea8759227a74"
+  },
+  {
+    "path": "vendor/mac80211.ko",
+    "size": 1877928,
+    "sha256": "98a62f1dc23e3d25bbdac8fe37ef98ede23a93c250bfe59528d19a28edac2a26"
+  },
+  {
+    "path": "vendor/machine_dlkm.ko",
+    "size": 167256,
+    "sha256": "6236a53dcebfafa3a677a0f74889b97fc56614cc5fe195413244cd81d991c1dc"
+  },
+  {
+    "path": "vendor/max31760_fan.ko",
+    "size": 28720,
+    "sha256": "18937318405875ea877b870fbfb8115287ec0b26f3a16cc52bb9c9e11f0c3b2a"
+  },
+  {
+    "path": "vendor/mbhc_dlkm.ko",
+    "size": 92880,
+    "sha256": "008f508c0387e81fa18c9259a98c14bc21e1c4820c90c42716f4c787d32f5447"
+  },
+  {
+    "path": "vendor/mdt_loader.ko",
+    "size": 18696,
+    "sha256": "137b4c1ed1667f461711be4e605600b2337b940e85ac799b59385c87c7b1a929"
+  },
+  {
+    "path": "vendor/mem-hooks.ko",
+    "size": 10744,
+    "sha256": "56a27bdbad7132be63cdde323594538a66c61f92897743da4e3772a61c6297f4"
+  },
+  {
+    "path": "vendor/mem-offline.ko",
+    "size": 60960,
+    "sha256": "3cf16b5bc547fc9dc6654aaaeae8332f961343247eec0f58be03281deba87f8f"
+  },
+  {
+    "path": "vendor/mem_buf.ko",
+    "size": 70000,
+    "sha256": "6225a9ed844866351c5b57715b523ff13917205114020f20566084b2609dde43"
+  },
+  {
+    "path": "vendor/mem_buf_dev.ko",
+    "size": 162584,
+    "sha256": "7e9be61cd8246ad153ddc8f8051f997af23d1bac8a8db15b9e379bb401e33acb"
+  },
+  {
+    "path": "vendor/mem_buf_msgq.ko",
+    "size": 32480,
+    "sha256": "4f1b8016195ea8293cda814a9969dd27f6a2363a111369a109c8f9f116d70683"
+  },
+  {
+    "path": "vendor/mem_object.ko",
+    "size": 29432,
+    "sha256": "9a765fca28823425bf29239158065f252ef5e80cdf5aed229c2957bca8ea1abd"
+  },
+  {
+    "path": "vendor/memlat.ko",
+    "size": 77784,
+    "sha256": "040cca740be23b77094f2276ed0da3c1c7d72f5905648ca2df167f7f9b369f5f"
+  },
+  {
+    "path": "vendor/memory_dump_v2.ko",
+    "size": 46632,
+    "sha256": "0dab32852242eeeda3b2b3b90f509c4f72f0257bdf887d077ffbe4d38f841345"
+  },
+  {
+    "path": "vendor/mhi.ko",
+    "size": 260760,
+    "sha256": "451092911a9ad4d46e9cf96bd8353e95219e1089987109a1195f5cb5e939b4a0"
+  },
+  {
+    "path": "vendor/mhi_dev_satellite.ko",
+    "size": 48640,
+    "sha256": "7f49966dfb5ee93178107d1a57f2bf12b5b5298b79fe347776a33cbad4a9c16b"
+  },
+  {
+    "path": "vendor/mhi_dev_uci.ko",
+    "size": 47000,
+    "sha256": "4fd34bd878c6e7338dbc21e41a9f969b47acc904175dd587dad948e780ca2dca"
+  },
+  {
+    "path": "vendor/minidump.ko",
+    "size": 146072,
+    "sha256": "b19a38aae5ec5dc0730e643b80d1a541e36468f533f337221352dc08b4c7d515"
+  },
+  {
+    "path": "vendor/modules.alias",
+    "size": 141181,
+    "sha256": "1e5df80438b4b1463af9758ca75f4941b8ae347d684d7d7688e6bcff52e3ec31"
+  },
+  {
+    "path": "vendor/modules.blocklist",
+    "size": 1205,
+    "sha256": "b4a18d3f2b137c307166b305c315912ac2a5b1cdb4b2f793c6d417d1b7976b47"
+  },
+  {
+    "path": "vendor/modules.dep",
+    "size": 189781,
+    "sha256": "b5d04dcfa75c9a681d7d2780e0409a786df1d8da956f1b03869b7cdcefdee66c"
+  },
+  {
+    "path": "vendor/modules.load",
+    "size": 4640,
+    "sha256": "16d0ca016389902152596b63ee847e493d3e1e0262c282f3c3ba3b5560e22cf0"
+  },
+  {
+    "path": "vendor/modules.softdep",
+    "size": 1516,
+    "sha256": "4b5a12c55d2ef7e7f4479870d4546fdff6025bb0abc29994eb773d580bbbfdc3"
+  },
+  {
+    "path": "vendor/mpam.ko",
+    "size": 21472,
+    "sha256": "504974899748f68e85df0d4dc1358ab35305d3057c82f0a75621f746e28c4a34"
+  },
+  {
+    "path": "vendor/mpam_msc.ko",
+    "size": 24528,
+    "sha256": "b17bc77b35d1f85526cfb8fccd1d571a57789faca3f8de59864194ca2a7b390f"
+  },
+  {
+    "path": "vendor/mpam_msc_slc.ko",
+    "size": 27336,
+    "sha256": "976d2dcd17568016583245e35ba7fffa4564cd21ceb17b77af4baaebaba3b0e4"
+  },
+  {
+    "path": "vendor/msm-eva.ko",
+    "size": 1012872,
+    "sha256": "ae240aab4b158a755807326ab2215c0e5c674b16927f3e992506507993c84a70"
+  },
+  {
+    "path": "vendor/msm-mmrm.ko",
+    "size": 106120,
+    "sha256": "871ae2f6c9313cfe7fe9796141852c0b2d0df90dfaff5192d075f577f34c49d0"
+  },
+  {
+    "path": "vendor/msm_dma_iommu_mapping.ko",
+    "size": 24216,
+    "sha256": "c7e26505512c4870a521b5529fa5296a5ad969c2e155e516aa8fec8f8fec282b"
+  },
+  {
+    "path": "vendor/msm_drm.ko",
+    "size": 5416616,
+    "sha256": "1a6e1afc6799f1262812ad84a0017fcb62bea6c241f16e4c858d1aa1a0bfa74e"
+  },
+  {
+    "path": "vendor/msm_ext_display.ko",
+    "size": 29160,
+    "sha256": "d66cd5d237242e6b69484628541bf489377889f834be3e223701ea868d3c4096"
+  },
+  {
+    "path": "vendor/msm_geni_serial.ko",
+    "size": 182312,
+    "sha256": "f1f1b1e9f2bf025206131ab89397926d9a72d00b1c94974a0f3d9728c3f36340"
+  },
+  {
+    "path": "vendor/msm_gpi.ko",
+    "size": 148776,
+    "sha256": "dfa8e4e0ba068fe3feacb04351994cf0810d6e331524bca25ca90c8f178c02ae"
+  },
+  {
+    "path": "vendor/msm_hw_fence.ko",
+    "size": 340192,
+    "sha256": "8872d12a56ad0339b6ae3bff6c5999656c77e5e75888598cfccf57935f0d371d"
+  },
+  {
+    "path": "vendor/msm_kgsl.ko",
+    "size": 3026560,
+    "sha256": "857dd041153da60e398d557b6f860217a3f73562fe753164791e5f06f8592c6a"
+  },
+  {
+    "path": "vendor/msm_memshare.ko",
+    "size": 48512,
+    "sha256": "5af5a7f78badca779eaadd6576b2ec949aacb11c88c62459612223bc1f22075b"
+  },
+  {
+    "path": "vendor/msm_performance.ko",
+    "size": 43040,
+    "sha256": "b18d88dcb27e3ac2abc6f4c590303dc139d3c57acc9c8c966e5e2c5c3a863a0c"
+  },
+  {
+    "path": "vendor/msm_qmp.ko",
+    "size": 44288,
+    "sha256": "88d94b40639084b17097c962826de89aae2b1e3386f4dc6ad65afd6542cb9f45"
+  },
+  {
+    "path": "vendor/msm_sharedmem.ko",
+    "size": 19224,
+    "sha256": "6b51d496dc0365ceb1bcc1881052e9f159e8871af1b07363a223eeab616b74c0"
+  },
+  {
+    "path": "vendor/msm_show_epoch.ko",
+    "size": 11528,
+    "sha256": "bd45fb0b6223ff613d7dfbeca7531ab7ea29ca8567ddf7f3f6f0b1ab500ebae4"
+  },
+  {
+    "path": "vendor/msm_show_resume_irq.ko",
+    "size": 19504,
+    "sha256": "91e6415af19f1a4e848fcd36b31689b1eee72919ce01b5e4d9618fabf68a5b19"
+  },
+  {
+    "path": "vendor/msm_sysstats.ko",
+    "size": 33400,
+    "sha256": "9244298f6415b3e963320ef3c3f0508018e7bcf6f16b13525db42e46dd413358"
+  },
+  {
+    "path": "vendor/msm_video.ko",
+    "size": 1511336,
+    "sha256": "45557745335a1a79b4000088f3728ed9d52789292cb45b2f49d5fbf38f97772b"
+  },
+  {
+    "path": "vendor/nb7vpq904m.ko",
+    "size": 37792,
+    "sha256": "cc410285d2acdb78288591df1864a1b620efbda59d7b84a12d56c981576e3f4e"
+  },
+  {
+    "path": "vendor/nothing_virtual_ntc.ko",
+    "size": 25416,
+    "sha256": "efb283191caa65a9aeb2d33100c66f7f1b162ead709aa3d573c34bb1d366e43e"
+  },
+  {
+    "path": "vendor/nt36xxx-i2c.ko",
+    "size": 233840,
+    "sha256": "73db12e189d7d90be855ce9e98d8a51b9c717abb17ae7cfae03fc26460afd4fa"
+  },
+  {
+    "path": "vendor/nt_display_notifier.ko",
+    "size": 12896,
+    "sha256": "80877302bd1ce0ded1a26beab822c2e8ba284c07096099f1950f938944188a35"
+  },
+  {
+    "path": "vendor/ntfs3.ko",
+    "size": 441592,
+    "sha256": "b7db9dcfffc308bf92bccfbe694b86161f48e38dc9586fbd792ac468b8560dc2"
+  },
+  {
+    "path": "vendor/nvmem_qcom-spmi-sdam.ko",
+    "size": 16112,
+    "sha256": "f37727a511c76ad5504872e318ebc6c28e2c282c129d20adc79befc2fe7f24ea"
+  },
+  {
+    "path": "vendor/nvmem_qfprom.ko",
+    "size": 31544,
+    "sha256": "c5032d58f17484f22a73c9a0cb8a6d7a971cd3516baf965ab5636dbab060fba5"
+  },
+  {
+    "path": "vendor/panel_event_notifier.ko",
+    "size": 16128,
+    "sha256": "2fca26465196d67edceb55fc2a19b808fdb88bcd29823b8ac43edd23fd036fe9"
+  },
+  {
+    "path": "vendor/pci-msm-drv.ko",
+    "size": 476592,
+    "sha256": "7ab09ca9c11487c4cd153cef00d17938488945c403aca5403967c55e379b6ede"
+  },
+  {
+    "path": "vendor/pcie-pdc.ko",
+    "size": 19992,
+    "sha256": "0041c3194d82d3ccb9b4d448c93371b128cb8dddf1382c03231fc6350d0843bb"
+  },
+  {
+    "path": "vendor/pdr_interface.ko",
+    "size": 36496,
+    "sha256": "13d71231ab17b938ec593628bdf63ce5a557b163712e7e15955c705fec793cfc"
+  },
+  {
+    "path": "vendor/phy-generic.ko",
+    "size": 24640,
+    "sha256": "64390f03dc6c5c90f899df4d26bf0a160192866cd4a5c08b78d8b91c2094b833"
+  },
+  {
+    "path": "vendor/phy-msm-m31-eusb2.ko",
+    "size": 34992,
+    "sha256": "dea90ebbaf53cdcf84f7607e7c32ee7b371cf9a109edeba00e15f0564d6032a3"
+  },
+  {
+    "path": "vendor/phy-msm-snps-eusb2.ko",
+    "size": 49488,
+    "sha256": "3c146690db442f3e28f962aab21c9bef5f2b66a9221d5dbbaad67fff0f4ed96a"
+  },
+  {
+    "path": "vendor/phy-msm-ssusb-qmp.ko",
+    "size": 40040,
+    "sha256": "d4ac363a578635ff58fd55aa030c2bcd6a5ebec3c598fa83e74c93f12641cf15"
+  },
+  {
+    "path": "vendor/phy-qcom-emu.ko",
+    "size": 18808,
+    "sha256": "593b75810850d616a63c9cdb5eaf777654da46aee3f390f66a83b80f0826c16d"
+  },
+  {
+    "path": "vendor/phy-qcom-ufs-qmp-v4-niobe.ko",
+    "size": 28184,
+    "sha256": "14475bc156dc26a00d77d6f4acfc4bd602aa3a42d16e630d81e838affec27b21"
+  },
+  {
+    "path": "vendor/phy-qcom-ufs-qmp-v4-sun.ko",
+    "size": 28584,
+    "sha256": "e51180e33c8d6c7eba34a41da4024450b944f45be6622f07968d53877d4b5876"
+  },
+  {
+    "path": "vendor/phy-qcom-ufs-qrbtc-sdm845.ko",
+    "size": 23744,
+    "sha256": "2d5345ad2aaa88244b186ccffcd79f570891f0722709ab3d7af02cb04c654c30"
+  },
+  {
+    "path": "vendor/phy-qcom-ufs.ko",
+    "size": 47432,
+    "sha256": "60ff6dece559dd6261dcd6d928779e974b71a6f754eded1327ab976c0e4cb0fc"
+  },
+  {
+    "path": "vendor/pinctrl-kera.ko",
+    "size": 134296,
+    "sha256": "ed9b6d2016d637ef399d948347093247574a9451736ed2eaef6053d81264499e"
+  },
+  {
+    "path": "vendor/pinctrl-msm.ko",
+    "size": 63856,
+    "sha256": "a57bd198bbda26e88bc014d3809a0b865d8c3273db41402116e51bc0528ffc51"
+  },
+  {
+    "path": "vendor/pinctrl-spmi-gpio.ko",
+    "size": 62576,
+    "sha256": "1e5095212d8975b1389622eee0ddac93eb0de58fbe1f3e736897e623a699991b"
+  },
+  {
+    "path": "vendor/pinctrl-spmi-mpp.ko",
+    "size": 39424,
+    "sha256": "9e4b83bfa0713d3c8241ee614f2795a239f224de113866a7406851b3fa235a4b"
+  },
+  {
+    "path": "vendor/pinctrl-sun.ko",
+    "size": 151416,
+    "sha256": "123b9bfc5ffffc0400f8d2ee2869cd5103a6e3531e6ca4ec88b2f3ff8029491f"
+  },
+  {
+    "path": "vendor/pinctrl-tuna.ko",
+    "size": 135808,
+    "sha256": "0b82f4e95ee53bff3e5ffef015cc55fb3d04aa9470b36ad39fdc19e1035a7be3"
+  },
+  {
+    "path": "vendor/pinctrl_lpi_dlkm.ko",
+    "size": 45816,
+    "sha256": "5b3b3ee836975cac014ea9f7b635d1394b050e41ca56e8f13a472fbc83d50bf0"
+  },
+  {
+    "path": "vendor/platform_mpam.ko",
+    "size": 27312,
+    "sha256": "3dc1853e98bd119e3091f5f9064532859803b05385e3d790e76a813d7bbef225"
+  },
+  {
+    "path": "vendor/pm8941-pwrkey.ko",
+    "size": 23272,
+    "sha256": "18aa0d038a86bd2355197fc7e36d6bcac592ab83254ddcb66c457a43a5d93bd1"
+  },
+  {
+    "path": "vendor/pmic-glink-debug.ko",
+    "size": 25544,
+    "sha256": "843cc454137a42b36962fc816096dbab18c67207bd99ebdd2707483193e2bd57"
+  },
+  {
+    "path": "vendor/pmic-pon-log.ko",
+    "size": 32456,
+    "sha256": "dddb81dc7d12603f50fd1d753c2912ebe57c7871961e2844218cb3b62d446e7b"
+  },
+  {
+    "path": "vendor/proxy-consumer.ko",
+    "size": 23104,
+    "sha256": "72f191a3e730981471c10da3e145eed477855f60bf6e2dd035f2d2404184144f"
+  },
+  {
+    "path": "vendor/q2spi-geni.ko",
+    "size": 330192,
+    "sha256": "d27bd460e236e0901d20909598cc038194655ce85f819a888652e17b1e58494f"
+  },
+  {
+    "path": "vendor/q6_dlkm.ko",
+    "size": 16232,
+    "sha256": "f1492435f418071d10deacf3fb82ff4e7ab1f0bce320a9c1be721a0a7e3bada0"
+  },
+  {
+    "path": "vendor/q6_notifier_dlkm.ko",
+    "size": 38496,
+    "sha256": "ec597664c3756e5d082892be0ac004e7b872d8c9bff692a3f9e95f6940d9cd6d"
+  },
+  {
+    "path": "vendor/q6_pdr_dlkm.ko",
+    "size": 13512,
+    "sha256": "c2c1e4c3bd565d2b690245a07ef914a8a2c9fad2bbaada3c20296968b08730bc"
+  },
+  {
+    "path": "vendor/qca_cld3_qca6750.ko",
+    "size": 20184224,
+    "sha256": "ae3619d81b1102ed14d352ac74b89679f72b32ef0fe5f16104d315ec1e309935"
+  },
+  {
+    "path": "vendor/qce50_dlkm.ko",
+    "size": 143896,
+    "sha256": "e7852418e77cdfb064d789118e2fd326055207f43b5e9e13d9fe5820242cce9e"
+  },
+  {
+    "path": "vendor/qcedev-mod_dlkm.ko",
+    "size": 137544,
+    "sha256": "a46da3bc03debdcacb03d567ba936874af6ef7aea05f46e3d967b46591c8e7f2"
+  },
+  {
+    "path": "vendor/qcom-amoled-regulator.ko",
+    "size": 33024,
+    "sha256": "3a5790404af9cd55a8b3ba8d85403200ec6b83bfd79877edb48884cfaed7065f"
+  },
+  {
+    "path": "vendor/qcom-cpufreq-hw-debug.ko",
+    "size": 22352,
+    "sha256": "6f0d45dfc2a8c9a7dad6d8835ceddc0b934024133ba5847d1f59cfc626a4b06e"
+  },
+  {
+    "path": "vendor/qcom-cpufreq-hw.ko",
+    "size": 54544,
+    "sha256": "65aaa11bde1608597fdec06c04eff05a6bbce65d3090f6048d1d2d50ede2b57b"
+  },
+  {
+    "path": "vendor/qcom-cpufreq-thermal.ko",
+    "size": 16688,
+    "sha256": "8ac5a0e4b5c76641006cf46b8643f8d4d4dbfbe2048b77a3bd671e893b485f44"
+  },
+  {
+    "path": "vendor/qcom-dcvs.ko",
+    "size": 109056,
+    "sha256": "b67961e8fa0ed638a06bd5d3b4bc34a658f97b311df645fc846bc087ba753741"
+  },
+  {
+    "path": "vendor/qcom-dload-mode.ko",
+    "size": 26440,
+    "sha256": "3d87cf7ce12760fac7c9edf5f1cbe7145e70f48e3fdd72d8c17a38aa10e37fa8"
+  },
+  {
+    "path": "vendor/qcom-hv-haptics.ko",
+    "size": 181456,
+    "sha256": "9f452bf307eb6a4803b0c259b058640c4a243bf38a7655415eb1a7eb61d0a4c1"
+  },
+  {
+    "path": "vendor/qcom-i2c-pmic.ko",
+    "size": 33616,
+    "sha256": "d2435648402db0068c02bcd05b6b715c0fbf059a0b669ed90dcff71b08031eda"
+  },
+  {
+    "path": "vendor/qcom-ipcc.ko",
+    "size": 23128,
+    "sha256": "6c7042d2697f6125fcebcae1f50b20d4058c83871c0412e7f1bd60dae256acbc"
+  },
+  {
+    "path": "vendor/qcom-pdc.ko",
+    "size": 29376,
+    "sha256": "8eac3a9148fe33ce153f3a2dd13e0752c2a97448f12c1f63bac5d598d775f64d"
+  },
+  {
+    "path": "vendor/qcom-pmu-lib.ko",
+    "size": 54032,
+    "sha256": "94829fc9406f0ad472deb4c07778dca6b0ae10d6a5793f385ccc095b482ad5ae"
+  },
+  {
+    "path": "vendor/qcom-pon.ko",
+    "size": 16184,
+    "sha256": "de8d66cd3d3eebd6e0b365386f86f67ae3ee42bade22d32b53ca9f681cfd54bf"
+  },
+  {
+    "path": "vendor/qcom-reboot-reason.ko",
+    "size": 15432,
+    "sha256": "1b74d3ba52e674a235a956f8e1d8bb534de49524633d159e2ad3d7f86df3ca34"
+  },
+  {
+    "path": "vendor/qcom-rng.ko",
+    "size": 22960,
+    "sha256": "0bd913f18b27ccd550392d22f18b55b5c47256e3d2ba302bb3524be4e028c865"
+  },
+  {
+    "path": "vendor/qcom-scm.ko",
+    "size": 174632,
+    "sha256": "8c46ac1a04b91916a94db4d0de336bb0cc29d9d46f0174f4b2d2a39cb31fbd91"
+  },
+  {
+    "path": "vendor/qcom-spmi-adc5-gen3.ko",
+    "size": 68992,
+    "sha256": "0a57e9f0bd6a5f5e6e7c54ffcc2ba779c1778ec9e28d0dcbbce7c8279e408d1f"
+  },
+  {
+    "path": "vendor/qcom-spmi-pmic.ko",
+    "size": 28704,
+    "sha256": "2f53e8dc73a7941cdc9939fa94b968dc5455e738dcf02b2a62711f2760dbbc39"
+  },
+  {
+    "path": "vendor/qcom-spmi-temp-alarm.ko",
+    "size": 27112,
+    "sha256": "3b253de30664054855b04bb890d64a9de1239124f0227d85b79dc7a5d37849ff"
+  },
+  {
+    "path": "vendor/qcom-vadc-common.ko",
+    "size": 37280,
+    "sha256": "380b856274e780c4d8548a0d1f3c2f949dd244af408d9f27acc6fb9b75456ab0"
+  },
+  {
+    "path": "vendor/qcom_aoss.ko",
+    "size": 37096,
+    "sha256": "e4747265bb4a019c007d91c05989f781def5b5a6bc8d3a76ca69e184537c37fa"
+  },
+  {
+    "path": "vendor/qcom_cpu_vendor_hooks.ko",
+    "size": 17624,
+    "sha256": "f729bfe034b1acc8a7179d54d3592335dd96c8f0c9c5d83b5c8be3436a3d2358"
+  },
+  {
+    "path": "vendor/qcom_cpucp.ko",
+    "size": 23096,
+    "sha256": "b73a608e8126ffaefeb8e13608bfd5b1db359512bbe952785d61dad146b082ec"
+  },
+  {
+    "path": "vendor/qcom_cpuss_sleep_stats.ko",
+    "size": 30064,
+    "sha256": "745b8873540cf278162d13ca2f9a278be9870fd1f5950f614aa5c50b90853aae"
+  },
+  {
+    "path": "vendor/qcom_cpuss_sleep_stats_v4.ko",
+    "size": 18928,
+    "sha256": "a941106be9b178bfd4782760b7b3bdb68cbea0ccc883f7f084c2b2c0cc13cca6"
+  },
+  {
+    "path": "vendor/qcom_dma_heaps.ko",
+    "size": 108136,
+    "sha256": "ac725073b6b634fe0cc5bcd8c543c65c0a05eba48ef5385f55811f1be15aca51"
+  },
+  {
+    "path": "vendor/qcom_dynamic_ramoops.ko",
+    "size": 18000,
+    "sha256": "6867a5841eb0ff20f2e406c0bc19ff580658d3b90b8b4fd050dd4838dd3cbe2d"
+  },
+  {
+    "path": "vendor/qcom_edac.ko",
+    "size": 20032,
+    "sha256": "c63bd3e2ce45a0c0fdae5359a890d02551b19b0217613d0e6dfdae08f51092c3"
+  },
+  {
+    "path": "vendor/qcom_glink.ko",
+    "size": 99056,
+    "sha256": "9ea8e25bf45601b3ed02b25735a98cd43604b3df875e8c28f6b61265c0a9922d"
+  },
+  {
+    "path": "vendor/qcom_glink_smem.ko",
+    "size": 24104,
+    "sha256": "4b1a432bd4d5421a67dc920517dafca655cabcf7fb2b64a6afacaca507ba058a"
+  },
+  {
+    "path": "vendor/qcom_glink_spss.ko",
+    "size": 23384,
+    "sha256": "a4fd738d842a3b5599657d44a2df2acce9914673653d8ed4f32cdf360271ed0d"
+  },
+  {
+    "path": "vendor/qcom_hwspinlock.ko",
+    "size": 20560,
+    "sha256": "d566c6b1d4d138c8ecba6b456f821fc59de24e90f417b2198e3def76675164d9"
+  },
+  {
+    "path": "vendor/qcom_ice.ko",
+    "size": 33560,
+    "sha256": "7b2a2674d9a673882978ac09e10643461ec86d9b206b592e7af90ac5bcbbba31"
+  },
+  {
+    "path": "vendor/qcom_iommu_debug.ko",
+    "size": 94296,
+    "sha256": "3a903167b210e6819120460557764c214151b110e8c7aafecdd1a7362a047a21"
+  },
+  {
+    "path": "vendor/qcom_iommu_util.ko",
+    "size": 138464,
+    "sha256": "ff2dd8c8078f0d77cd8afa50418066c92149d682bda2df708e4d512758336e9c"
+  },
+  {
+    "path": "vendor/qcom_ipc_logging.ko",
+    "size": 50688,
+    "sha256": "837ab8dbf62cb68ba1586a99c8d6416e8f60c8edbd9e4b4cf94a1aae815e71f9"
+  },
+  {
+    "path": "vendor/qcom_llcc_pmu.ko",
+    "size": 27104,
+    "sha256": "63e11a4da96fdfc8a74a2f952a170e3a9329405a06895485b29cde19abdfa7db"
+  },
+  {
+    "path": "vendor/qcom_logbuf_boot_log.ko",
+    "size": 14736,
+    "sha256": "adc71b39e1856763994f4d1d39364efde44c901d272d0707195cb39b3970d0f2"
+  },
+  {
+    "path": "vendor/qcom_logbuf_vendor_hooks.ko",
+    "size": 12824,
+    "sha256": "5088ebf2b7b3216834fc5bb7f8cbe7462d5780a875b23b32c3cb7ed4f7fc4bf2"
+  },
+  {
+    "path": "vendor/qcom_lpm.ko",
+    "size": 93608,
+    "sha256": "3173e635aa77ad79b6ae665364b8199441d1c37e62dec51fd0a7de506f232cd1"
+  },
+  {
+    "path": "vendor/qcom_pil_info.ko",
+    "size": 17576,
+    "sha256": "c9f60882d51b6c5986a8eaa8f32c62cb958d12c88192516aefbecf099298b271"
+  },
+  {
+    "path": "vendor/qcom_q6v5.ko",
+    "size": 29192,
+    "sha256": "9f27393ec5e266bfd933247fa5d771ed43184043736889633b963184cef95f9b"
+  },
+  {
+    "path": "vendor/qcom_q6v5_pas.ko",
+    "size": 116376,
+    "sha256": "552ebb28ed2d2e88227c13f0a193d3d76e6918bb4136c90d832a7fa1ea3909a6"
+  },
+  {
+    "path": "vendor/qcom_ramdump.ko",
+    "size": 25096,
+    "sha256": "1ec7990ef0869bfaacb22cf103202a74cd8a3785d2358dcfdf59bf2075c00412"
+  },
+  {
+    "path": "vendor/qcom_rpmh.ko",
+    "size": 105552,
+    "sha256": "fa944641f5ea00e1c0852a669362ee2c3b59244fe67cd3b1632e0a6382de8eea"
+  },
+  {
+    "path": "vendor/qcom_scmi_client.ko",
+    "size": 13824,
+    "sha256": "2808ee5ccae840d1f2813d567253130026808242ca9b299d72e7bab037bf5be8"
+  },
+  {
+    "path": "vendor/qcom_scmi_vendor.ko",
+    "size": 15360,
+    "sha256": "a894004840971869cff5b1bcb26636bb977aade0b509bc87dbfc7a6342d666db"
+  },
+  {
+    "path": "vendor/qcom_smd.ko",
+    "size": 41832,
+    "sha256": "874f3f75862c963cb711840dda065181a0797a4cd7c370de806b3d760e50dc77"
+  },
+  {
+    "path": "vendor/qcom_spss.ko",
+    "size": 48168,
+    "sha256": "e1b0e3f86dc08afde61b11a0f835d8b9e28ba78e61df8e3a3062f13fdfcd998f"
+  },
+  {
+    "path": "vendor/qcom_stats.ko",
+    "size": 60616,
+    "sha256": "a75cc6868a71495053d46e71e3171467653d2237c40b313399f5b654697e17bb"
+  },
+  {
+    "path": "vendor/qcom_sysmon.ko",
+    "size": 42776,
+    "sha256": "647d240b5de143427b86c7f2ee39146deec41231fd3860ce722994f1a45ec6c2"
+  },
+  {
+    "path": "vendor/qcom_tsens.ko",
+    "size": 100336,
+    "sha256": "cae028e2c26b36753e6da5a40eace661654199d5b48e68838f0b89fafc93a789"
+  },
+  {
+    "path": "vendor/qcom_va_minidump.ko",
+    "size": 37696,
+    "sha256": "2307feb98384f1c006b58a11736c6f73c50d17a85a18964d88b039415997de1d"
+  },
+  {
+    "path": "vendor/qcom_wdt_core.ko",
+    "size": 40560,
+    "sha256": "ec941ee54e33cb58f3de7c80b379c38abfce813cf4bb438d41ef1abcb606e698"
+  },
+  {
+    "path": "vendor/qcrypto-msm_dlkm.ko",
+    "size": 143184,
+    "sha256": "ebdc8187c80f9ce030883741933732531710975e2909f12e75f9d1eaba81b1ef"
+  },
+  {
+    "path": "vendor/qfprom-sys.ko",
+    "size": 15840,
+    "sha256": "ecbeb651b3a61261403dd668ffb6a46e5d2f694538cd228a000ff15f348f9281"
+  },
+  {
+    "path": "vendor/qmi_helpers.ko",
+    "size": 39640,
+    "sha256": "e1ed69765724a51570959e6e21477cd5e4b2cca8582c0e103b2a76570cf0390b"
+  },
+  {
+    "path": "vendor/qmp_dlkm.ko",
+    "size": 66176,
+    "sha256": "96e04558b5b30003d663786be7109c1a46ad8879b24b2f0b95e1947f03480f13"
+  },
+  {
+    "path": "vendor/qnoc-kera.ko",
+    "size": 421552,
+    "sha256": "8b5218340da372ba07860697a6047a114aa496fe50e6928b362eb3dd7ebda2ac"
+  },
+  {
+    "path": "vendor/qnoc-qos.ko",
+    "size": 12488,
+    "sha256": "d34d18b5c801454650405f02cf889f113f68945e9eece7300f2bd5c77ecad9e2"
+  },
+  {
+    "path": "vendor/qnoc-sun.ko",
+    "size": 613672,
+    "sha256": "69d586234e2c63e0007338d39f4564ed69690025f9ab8309a3d28f03ae00b648"
+  },
+  {
+    "path": "vendor/qnoc-tuna.ko",
+    "size": 568248,
+    "sha256": "85216a47e920a86ef0211b8982db7171546085c737a173f772dd59f2e703c7c5"
+  },
+  {
+    "path": "vendor/qrng_dlkm.ko",
+    "size": 29824,
+    "sha256": "727bb00e9d55518fb1a84c732492ae62057707d436b02277e17179f0e0d12a64"
+  },
+  {
+    "path": "vendor/qrtr-gunyah.ko",
+    "size": 34128,
+    "sha256": "0b76a0f1b1847f5fa70ccb0d03c6636b48f1d900bf9f08945f6860c027da1c3b"
+  },
+  {
+    "path": "vendor/qrtr-mhi.ko",
+    "size": 22800,
+    "sha256": "99770bf6f38d11a952c8b994bd60d059f6f50f612c50f50465d9d7ade7284946"
+  },
+  {
+    "path": "vendor/qrtr-smd.ko",
+    "size": 16976,
+    "sha256": "71dfa1b1df047283f5a80f0519707afdf564c0a059d7b457d7197e744b109aa2"
+  },
+  {
+    "path": "vendor/qrtr-tun.ko",
+    "size": 18040,
+    "sha256": "83d55bbe6ed6fc615ae04e599680d427494b2027c5edd1e3868f4afa48c8b31f"
+  },
+  {
+    "path": "vendor/qrtr.ko",
+    "size": 118200,
+    "sha256": "73f157347d0334a04ca8faac1b18452ba2fb0a73dc9685f3f3e291f4d00e9d0a"
+  },
+  {
+    "path": "vendor/qsee_ipc_irq_bridge.ko",
+    "size": 32560,
+    "sha256": "25a421cb980f57df727852220aad5abf2fdb4e7b0471b394dd0e386da9c9b2bc"
+  },
+  {
+    "path": "vendor/qseecom_dlkm.ko",
+    "size": 287856,
+    "sha256": "697f0bd0e2ccb280f1dca6920e24cedb9fd5abf80efed40c241110dccd8e2dfc"
+  },
+  {
+    "path": "vendor/qseecom_proxy.ko",
+    "size": 16376,
+    "sha256": "a00d9ac05e15aa315daaebb81638f1cd0ae23689b2f91acfc76e0e13655e79d7"
+  },
+  {
+    "path": "vendor/qti-fixed-regulator.ko",
+    "size": 21856,
+    "sha256": "1dc23928b8eeb2d6d43a39cd9eea4f4967176d5a87e152880220519938dc0b34"
+  },
+  {
+    "path": "vendor/qti-glink-adc.ko",
+    "size": 21584,
+    "sha256": "2c54abafb88996ba2903f336c35e9ddd78677e9b61596fe867cbaf11ec2d0117"
+  },
+  {
+    "path": "vendor/qti-ocp-notifier.ko",
+    "size": 21432,
+    "sha256": "4e3aebd93ac9ea1b4086993d001e2ba1edf6a4fae49e39761b18c761f46c5a48"
+  },
+  {
+    "path": "vendor/qti-regmap-debugfs.ko",
+    "size": 26848,
+    "sha256": "0a340ad080a70597b80b85a05478fdc80b944a7dc0df13ca80f5a079629c0bc5"
+  },
+  {
+    "path": "vendor/qti_amoled_ecm.ko",
+    "size": 36360,
+    "sha256": "7b730eba14a6277e184846a053b08a4524ae7485fe0a82c70a197b6fd63de5a9"
+  },
+  {
+    "path": "vendor/qti_battery_charger.ko",
+    "size": 160136,
+    "sha256": "29dfa084bed0306e6d21f4b57635fa218342ff5016cd9f9c01031de5e623cc69"
+  },
+  {
+    "path": "vendor/qti_battery_debug.ko",
+    "size": 37264,
+    "sha256": "c205109db6a8ed73cd39498a1899a02d44c58e1b12a30578d450a64ae036237f"
+  },
+  {
+    "path": "vendor/qti_cpufreq_cdev.ko",
+    "size": 21304,
+    "sha256": "666b5d1c25baf6fc3a041e90df32db2611690de95018c71967f8a67908988eb8"
+  },
+  {
+    "path": "vendor/qti_devfreq_cdev.ko",
+    "size": 18368,
+    "sha256": "fa55d43e093f2e6bf96fef13013a99952b3babf7560175b7a27b024de09e5ee7"
+  },
+  {
+    "path": "vendor/qti_dmof_scmi.ko",
+    "size": 29864,
+    "sha256": "68a436a740d449b2d2aab1b235494aeb9d79fd4363ef31dd18b234ea5424503c"
+  },
+  {
+    "path": "vendor/qti_pmic_glink.ko",
+    "size": 40256,
+    "sha256": "b7b9b2f0477f32d94a39dfbd5d284e6ea6dfe684b707711f7732f7fcf8721362"
+  },
+  {
+    "path": "vendor/qti_qmi_cdev.ko",
+    "size": 34024,
+    "sha256": "408bbfa333fa7784b0f6b2e77050da4d5985abe74b29683c1c28ad683e98f2a9"
+  },
+  {
+    "path": "vendor/qti_qmi_sensor_v2.ko",
+    "size": 41424,
+    "sha256": "a5ccb1a33c46d13b06fd3e795e0c2e08a39f450a7bf815d4429b53a5df081051"
+  },
+  {
+    "path": "vendor/qti_thermal_vendor_hooks.ko",
+    "size": 12416,
+    "sha256": "ebafd87cba9c24c6b4d1fccdf74770ce4f51ed427d8269d496b3bfab400629df"
+  },
+  {
+    "path": "vendor/qti_userspace_cdev.ko",
+    "size": 15736,
+    "sha256": "46205b1e8410fe63ebd1fe0b0023aedca6bd6b82c77dd4c3060769ab7b601e31"
+  },
+  {
+    "path": "vendor/qts.ko",
+    "size": 52320,
+    "sha256": "e0406a02969dc9501f7625a177e6518c8c33dabd4447534e6f0ab47a75820994"
+  },
+  {
+    "path": "vendor/radio-i2c-rtc6226-qca.ko",
+    "size": 87376,
+    "sha256": "3038ef4362d3727e386d10af40259f7da2b0bcef8e6d368315313da4d8abb153"
+  },
+  {
+    "path": "vendor/rdbg.ko",
+    "size": 34232,
+    "sha256": "b0667b915371951e2f1c0d064c566ff4ee6ebbbac89540ce9e5271e47dcca9f6"
+  },
+  {
+    "path": "vendor/reboot-mode.ko",
+    "size": 16656,
+    "sha256": "73132bd376aad3cadbe23bc34040bf96b6514c3abb8f19fdf3e358cfaf47c9d8"
+  },
+  {
+    "path": "vendor/redriver.ko",
+    "size": 18480,
+    "sha256": "7ab638ada6fa4295bc5207cd692b0c64a525356487278196cfc69181f2269487"
+  },
+  {
+    "path": "vendor/regmap-kunit.ko",
+    "size": 110192,
+    "sha256": "54b46e40ac595c5d70dc8be10539cf81708229e66b8af7f6a3d66ac30ed5873c"
+  },
+  {
+    "path": "vendor/regmap-ram.ko",
+    "size": 12136,
+    "sha256": "05a8f97324f4541d7866a3d88bb5a6c9eeba973746927d7afcc6c1b95a8fbc6b"
+  },
+  {
+    "path": "vendor/regmap-raw-ram.ko",
+    "size": 13040,
+    "sha256": "06f0aa058b01be60547d7e3ec0fbfdb11a0996ec171a36a6d93b1268a1c8b28e"
+  },
+  {
+    "path": "vendor/repeater-qti-pmic-eusb2.ko",
+    "size": 27688,
+    "sha256": "108c035760d3459425b46874e4da7ea4179b62f00022caa8b686a0842cdad10b"
+  },
+  {
+    "path": "vendor/repeater.ko",
+    "size": 19128,
+    "sha256": "fd36fcebb2cce2678fca6d0484154bce7a5b5294dce7deda553286098e301523"
+  },
+  {
+    "path": "vendor/rmnet_aps.ko",
+    "size": 55216,
+    "sha256": "44862393376bfb3d7551dcd98e986640fe16b5bd99ace2380cf6695704b32a8c"
+  },
+  {
+    "path": "vendor/rmnet_core.ko",
+    "size": 485864,
+    "sha256": "9bcd3cf2f76ce94ef7e6f5bc6fefafa02358aa3d8688466a7fe3f523aa3e81d7"
+  },
+  {
+    "path": "vendor/rmnet_ctl.ko",
+    "size": 27288,
+    "sha256": "487920365095b32a088c7ae73d6577bd4f4fd1e2f2997fe30ce46f3d6c45d67a"
+  },
+  {
+    "path": "vendor/rmnet_mem.ko",
+    "size": 46192,
+    "sha256": "f9573bb3715a1818e03ccbc0292ef2df963f606e28506adce6ff79228e0014c8"
+  },
+  {
+    "path": "vendor/rmnet_offload.ko",
+    "size": 49664,
+    "sha256": "b16fdb65a57e6e6f5bb9723c5404bab6f4e03cd4d3b392dd5c966527aa038b98"
+  },
+  {
+    "path": "vendor/rmnet_perf.ko",
+    "size": 57032,
+    "sha256": "ccdfd76e7450d96ea866ac588550b94435145b75b3c0cc9d5a99f9e6db43241f"
+  },
+  {
+    "path": "vendor/rmnet_perf_tether.ko",
+    "size": 26824,
+    "sha256": "8d248b665713a246d68e0bdc95fc043286a0ea3d92699e974e55a4744b51611e"
+  },
+  {
+    "path": "vendor/rmnet_sch.ko",
+    "size": 18832,
+    "sha256": "7facbe41f74f0b342383b6996d43be553fb02c0725687e67a6ff8ebbe63d5a0d"
+  },
+  {
+    "path": "vendor/rmnet_shs.ko",
+    "size": 329696,
+    "sha256": "aa2de26be28cd1d8111a67f8d4b70dda7543f901f71ca6af2ab7332c542b5997"
+  },
+  {
+    "path": "vendor/rmnet_wlan.ko",
+    "size": 92776,
+    "sha256": "ab874334375d0cd932df673cdaa9376e3930518f5360ee4be30d2e253bc740ca"
+  },
+  {
+    "path": "vendor/rpmh-regulator.ko",
+    "size": 52664,
+    "sha256": "14d8099d7378c6f4489f77a40360559711ad3cd5cf654822102c63f91437848e"
+  },
+  {
+    "path": "vendor/rproc_qcom_common.ko",
+    "size": 60432,
+    "sha256": "00339e6a67b14f93221c70078123748be8d26ec176367c05b02d26fd2c2f985f"
+  },
+  {
+    "path": "vendor/rtc-pm8xxx.ko",
+    "size": 24592,
+    "sha256": "487fab87536c9e206ed903b9ab3010088986921c0b37c79a49fb39201f7e1d5f"
+  },
+  {
+    "path": "vendor/sched-walt.ko",
+    "size": 949360,
+    "sha256": "607d3e8522c78f044ca848cd224697d9a6bcc5fa7d496b8883749c071bc2033f"
+  },
+  {
+    "path": "vendor/sdhci-msm.ko",
+    "size": 119976,
+    "sha256": "d705ef94d55e6b0f4593db4fdfe4c8fe8f5ecaaca2411c9f390c767a2f7bb3d6"
+  },
+  {
+    "path": "vendor/secure_buffer.ko",
+    "size": 51824,
+    "sha256": "f1e86c4bf035de9d8e7d9299239db9d82b4330223394215ffd00d6210395d7ef"
+  },
+  {
+    "path": "vendor/sg.ko",
+    "size": 68872,
+    "sha256": "20327303a1e84635fb2dfc8ae90df070f47456234caa4000c7916581eca98692"
+  },
+  {
+    "path": "vendor/sgm38120-regulator.ko",
+    "size": 33392,
+    "sha256": "64573782f8784fee7b6e6ceb5e5e68d37b9c31719942074271dbc4adc93e5f2b"
+  },
+  {
+    "path": "vendor/si_core_module.ko",
+    "size": 53096,
+    "sha256": "01b97020390c3ac10ad8e20300d941a52fb9e06e618835c6c30b3a8369e1158c"
+  },
+  {
+    "path": "vendor/slc_mpam.ko",
+    "size": 28648,
+    "sha256": "1de36c9a57a690302f31c3236683bba7c89c105635d63194b4f87800abbce1dd"
+  },
+  {
+    "path": "vendor/slim-qcom-ngd-ctrl.ko",
+    "size": 118768,
+    "sha256": "e3e7db01d158eefe0dbb4204704fdecde815db20207f8b330d17bc27ba6c4ffd"
+  },
+  {
+    "path": "vendor/slimbus.ko",
+    "size": 56040,
+    "sha256": "20dfc3b99a4c40aeb851e5b13af4bd4388b3fccf83acb45cc7fd4eb88d541fac"
+  },
+  {
+    "path": "vendor/smcinvoke_dlkm.ko",
+    "size": 257920,
+    "sha256": "320579e437863e87b007a38250d5e92e0b7087c0d2e8ae47a365d1614584c46b"
+  },
+  {
+    "path": "vendor/smem-mailbox.ko",
+    "size": 28944,
+    "sha256": "6a49de804238ddeaa74d88688ca41f035e221d4709c6b36e2426a8956161b767"
+  },
+  {
+    "path": "vendor/smem.ko",
+    "size": 32928,
+    "sha256": "1618480de1e7fd0e660a65932d5c04fe108c15a1efae910d3431ad51c2e6c762"
+  },
+  {
+    "path": "vendor/smmu_proxy_dlkm.ko",
+    "size": 38896,
+    "sha256": "74ab49b739ff28104f5d7b9b299d27ddc490ee30b5ab8a145730db36e8891e39"
+  },
+  {
+    "path": "vendor/smp2p.ko",
+    "size": 32488,
+    "sha256": "9d6020f032b6bf3ed5201ee4967956aecb9c97721716506d220e7b2006abb023"
+  },
+  {
+    "path": "vendor/smp2p_sleepstate.ko",
+    "size": 15352,
+    "sha256": "5aa8e1dc852ee4fdc0be4b650105196b347da935e214667475656a2142621f3a"
+  },
+  {
+    "path": "vendor/snd-soc-hdmi-codec.ko",
+    "size": 31832,
+    "sha256": "6504c338ee24db7fdda7019b9488330995e4591bee2be4bf04c64172812b1e9b"
+  },
+  {
+    "path": "vendor/snd-usb-audio-qmi.ko",
+    "size": 79104,
+    "sha256": "f38c7f8e7c70ce97a08fd1d082ca799bf958dc77aad5a66302181a5079b52d4b"
+  },
+  {
+    "path": "vendor/snd_event_dlkm.ko",
+    "size": 25048,
+    "sha256": "c241f49fafb8191c27525971a69ecabd9219ecb68cf97d4c8a5e0844bc9a601c"
+  },
+  {
+    "path": "vendor/soc-topology-test.ko",
+    "size": 56408,
+    "sha256": "bb50756b7c2432791056eb15bb681abc5fb993eea3903b1054928e813e068667"
+  },
+  {
+    "path": "vendor/soc-utils-test.ko",
+    "size": 16584,
+    "sha256": "11c735d1e5825597076437ec8c7dad45c2c6daf41f73076c4ea34790f6f390b0"
+  },
+  {
+    "path": "vendor/socinfo.ko",
+    "size": 92936,
+    "sha256": "c7ca91a9b21fe39c8fd452fa2c93eb7fd2ba4b095e0cf8e7d406218cd6855c7c"
+  },
+  {
+    "path": "vendor/spcom.ko",
+    "size": 162224,
+    "sha256": "93a1ce377ce6103d36145db88748b755d86967461525e561e34b12ae8ca8a335"
+  },
+  {
+    "path": "vendor/spf_core_dlkm.ko",
+    "size": 36688,
+    "sha256": "c02948c0359c8fc0df444c89c4b0e62af09ffd463b22c973636c65d3412afba4"
+  },
+  {
+    "path": "vendor/spi-msm-geni.ko",
+    "size": 118064,
+    "sha256": "0905f9d3baa70d175ad087561a9d8376ff642787fb7617a19f846f22d2daf34f"
+  },
+  {
+    "path": "vendor/spmi-pmic-arb-debug.ko",
+    "size": 24232,
+    "sha256": "0a6ef2ed85dacc5c64d348141420e09d0519ac32bbfed6cc718893c832c09f03"
+  },
+  {
+    "path": "vendor/spmi-pmic-arb.ko",
+    "size": 62080,
+    "sha256": "dd70b64f2a342625a063a4dc5d17a4e9287460e8995bc1f370bc897112556090"
+  },
+  {
+    "path": "vendor/spmi-pmic-err-debug.ko",
+    "size": 21784,
+    "sha256": "a72ef944c336a145bc4f2eca12bd8dc1357f106cf6632cf5305187c44fda795c"
+  },
+  {
+    "path": "vendor/sps_drv.ko",
+    "size": 484864,
+    "sha256": "258ccbd312f4421d2166416c8f7298ead13dcc6f1c3e369965bee8a0b2f71413"
+  },
+  {
+    "path": "vendor/spss_utils.ko",
+    "size": 55256,
+    "sha256": "6bfa5c540ae85c6f844c76f195af7a66e9635b73aa79e268d32220994d1ad053"
+  },
+  {
+    "path": "vendor/st_fts.ko",
+    "size": 655560,
+    "sha256": "8711131221756bc1b3e89f9f9e341606ec7dfa187d4ce930fb4f274b7026cf53"
+  },
+  {
+    "path": "vendor/stm_console.ko",
+    "size": 12664,
+    "sha256": "0e58ebae458f07da356d8b6a971e905a708a3488c4d270ffacb4ff34a50945e8"
+  },
+  {
+    "path": "vendor/stm_core.ko",
+    "size": 60592,
+    "sha256": "219aa8882eb6681706222b8954fbe50565b637082e9f81dfb0d11219b24c0160"
+  },
+  {
+    "path": "vendor/stm_ftrace.ko",
+    "size": 13800,
+    "sha256": "e861f526f2baa4c703969e8305f1b357f2ceaa616178579c129146698eca8ae7"
+  },
+  {
+    "path": "vendor/stm_heartbeat.ko",
+    "size": 15208,
+    "sha256": "520ce4d5c56a345da9f4bbf185ccf5afdb50092796a32e9988ce8d25bafbb93a"
+  },
+  {
+    "path": "vendor/stm_nfc_i2c.ko",
+    "size": 46712,
+    "sha256": "8dbf1da4808a52839531fd12cbfabc59c0c9635ace4923df17151797fa153e9a"
+  },
+  {
+    "path": "vendor/stm_p_ost.ko",
+    "size": 17416,
+    "sha256": "2ac682d6ec39b0d64582e761ac6aa39c73325b427594aa83467815160475aec9"
+  },
+  {
+    "path": "vendor/stm_st54se_gpio.ko",
+    "size": 21168,
+    "sha256": "0a118a6276e9bb500457d047a95ec14e0c3c1da43c344c37fd866fd726e75456"
+  },
+  {
+    "path": "vendor/stub-regulator.ko",
+    "size": 18224,
+    "sha256": "61b30eeac47057a6ae7c018e295cafc719050deb41976e9e6b9d43092a15ab7d"
+  },
+  {
+    "path": "vendor/stub_dlkm.ko",
+    "size": 13968,
+    "sha256": "6f7030c81e45812942ef12304a5ca28a698b48f116bbf9625147e0b78e9b677b"
+  },
+  {
+    "path": "vendor/swr_ctrl_dlkm.ko",
+    "size": 131752,
+    "sha256": "cee255ad6748ed7174a623789e81abcb0666cad0793bf9d5b6c1b24840c63423"
+  },
+  {
+    "path": "vendor/swr_dlkm.ko",
+    "size": 61864,
+    "sha256": "bd4ce35f9ef878c4f372d0c289474a5abd3b9a99f45c0b160814f5871d2101b6"
+  },
+  {
+    "path": "vendor/swr_dmic_dlkm.ko",
+    "size": 48024,
+    "sha256": "4fb65346732a7b653f0da9e334a2158e859253e9888ba8227c3216468ae0e239"
+  },
+  {
+    "path": "vendor/swr_haptics_dlkm.ko",
+    "size": 48440,
+    "sha256": "7f2bc52dac466a8745709d7d7e344dcf5f1955fbfbb849a024c35aaa3c590a61"
+  },
+  {
+    "path": "vendor/sync_fence.ko",
+    "size": 34656,
+    "sha256": "6cf9b942b597054248ea8cdbd6922b1f12278e1f4a1d428472825015d695735b"
+  },
+  {
+    "path": "vendor/synx-driver.ko",
+    "size": 288496,
+    "sha256": "d5577e84494c76cbbd989e84151489a965438e0eaff003dcd55dead0bdcf61bc"
+  },
+  {
+    "path": "vendor/sys_pm_vx.ko",
+    "size": 45096,
+    "sha256": "95beb9981ce4bcbd5de4e53e4851d65c5cb3e4a0e0dc8d7fa3dde6d0a9d8a92a"
+  },
+  {
+    "path": "vendor/sysmon_subsystem_stats.ko",
+    "size": 53520,
+    "sha256": "e4684280fbac175d9a9f7055961502909a83e22ed7bbc1613cccd2ea052dad6c"
+  },
+  {
+    "path": "vendor/tcsrcc-sun.ko",
+    "size": 18424,
+    "sha256": "7d5d83ae0a31d7ac152d82ccfdd8d2099fca019af207dc6d99770f89782bdbab"
+  },
+  {
+    "path": "vendor/tcsrcc-tuna.ko",
+    "size": 20320,
+    "sha256": "723711c0b091527a633c9202f3f24e6ae15ff05ad7bf4141a1a07cb8686d47aa"
+  },
+  {
+    "path": "vendor/thermal_config.ko",
+    "size": 22264,
+    "sha256": "f21c145e9634bbdcbeb1fd6a966b7f6336516b71ca7e3a51e888bcad6afbaeb8"
+  },
+  {
+    "path": "vendor/thermal_pause.ko",
+    "size": 26496,
+    "sha256": "5b81b8f71e5a35ab5a1d0def5aaf13f94d279abe60d17b7c84e453c8d7e8c447"
+  },
+  {
+    "path": "vendor/time_test.ko",
+    "size": 14728,
+    "sha256": "5514a885fbddedd4ea162dae383104d43bb7787bb954bd0234f4c8fbe5365500"
+  },
+  {
+    "path": "vendor/tmecom-intf.ko",
+    "size": 22264,
+    "sha256": "1ef4efdd8ce3273afba68e730f6e5a87f185d6b7c0eabdff217951920aef246b"
+  },
+  {
+    "path": "vendor/touchpanel_event_notify.ko",
+    "size": 12552,
+    "sha256": "6fb4f5f8ec35b4187a37c134843a617326fe32720b90a81b6ef1856dd0335f7f"
+  },
+  {
+    "path": "vendor/tz_log_dlkm.ko",
+    "size": 60680,
+    "sha256": "8fd3c0636296574cb26670109adb6d1ab5e4e1d2f3fa817dd5bfa2adba6547a4"
+  },
+  {
+    "path": "vendor/ucsi_qti_glink.ko",
+    "size": 35720,
+    "sha256": "12c423ab52dd4b5ce8d5e4b1e3b1621948c9f849c8c0685d5da316184fa6f9bb"
+  },
+  {
+    "path": "vendor/ufs-qcom.ko",
+    "size": 248080,
+    "sha256": "2b847f9798af820ce277e4b09411b40508196c276f5f82337458b4e816828db3"
+  },
+  {
+    "path": "vendor/ufshcd-crypto-qti.ko",
+    "size": 22536,
+    "sha256": "8f281be4a3c33e355fa7bad696a3679caf89fe85d46750bdd14a90c3e29cb6f7"
+  },
+  {
+    "path": "vendor/usb_f_ccid.ko",
+    "size": 44992,
+    "sha256": "30559709c8055799064e100839ad00851a1c95193a4a75e25bc4eb6923129b52"
+  },
+  {
+    "path": "vendor/usb_f_cdev.ko",
+    "size": 59816,
+    "sha256": "9d8fe375be79219a8d987ac6b0db330341fc90f861f7574432d90f1fe58644c8"
+  },
+  {
+    "path": "vendor/usb_f_gsi.ko",
+    "size": 168104,
+    "sha256": "2ed98d31cda6334e4aa1057153a389f95845620ac3c20589a9991fc308e816ba"
+  },
+  {
+    "path": "vendor/usb_f_qdss.ko",
+    "size": 52592,
+    "sha256": "d43fbc1a5451d61df454da7d62288bc3e7840fdb41c7aecedb277c3abcb8a3b4"
+  },
+  {
+    "path": "vendor/video.ko",
+    "size": 1369960,
+    "sha256": "cef5db270320ab140d152ad819d3a1bd457af7cbba09cba9c0b27f917b2c3542"
+  },
+  {
+    "path": "vendor/videocc-sun.ko",
+    "size": 37232,
+    "sha256": "6f91998a2407f6b8d6730bc8ea95541a031dc735f5c8a6cdde518c7f6a3b8c7c"
+  },
+  {
+    "path": "vendor/videocc-tuna.ko",
+    "size": 34472,
+    "sha256": "dd22c2191253fe1e603c09e8a1dccd772349d12642595f32100686b85b07be71"
+  },
+  {
+    "path": "vendor/wcd9378_dlkm.ko",
+    "size": 486248,
+    "sha256": "1a8f00b8c6aa2641b0fe9633e4ab6d30d66fbc8601c83ac614c0e8c3dc63ee34"
+  },
+  {
+    "path": "vendor/wcd9378_slave_dlkm.ko",
+    "size": 26720,
+    "sha256": "06fc2f650949511d1c7b56c111b4b9099db3510a7d4718f31803e3a70a4a23f2"
+  },
+  {
+    "path": "vendor/wcd938x_dlkm.ko",
+    "size": 255448,
+    "sha256": "0b79f3893e568aac1fce3b2b26f54cb559c8f044ffb0c039836961f3bb66d1cb"
+  },
+  {
+    "path": "vendor/wcd938x_slave_dlkm.ko",
+    "size": 27432,
+    "sha256": "0ba24afbd212506e183db5bfc54636905afe72ce6e3275a070ede4a538339d5f"
+  },
+  {
+    "path": "vendor/wcd939x_dlkm.ko",
+    "size": 307296,
+    "sha256": "faff20529e007d1f31523f6668b5fd21924cf6287ced6b71c8709d4c4f95ffca"
+  },
+  {
+    "path": "vendor/wcd939x_slave_dlkm.ko",
+    "size": 28792,
+    "sha256": "e22ab1c112aa6cebef6971853eaa838b1d762afd6addbb6f959bd8afbe79a222"
+  },
+  {
+    "path": "vendor/wcd9xxx_dlkm.ko",
+    "size": 53528,
+    "sha256": "2c2c4b69b82f658d256dc098180807f34a51de1dd2494e8a12042c6bdbc5d2cf"
+  },
+  {
+    "path": "vendor/wcd_core_dlkm.ko",
+    "size": 74800,
+    "sha256": "15d96af4ee6d8253e3d1cff651d164e38d34016e06420fa5fece6b8a8690819a"
+  },
+  {
+    "path": "vendor/wcd_usbss_i2c.ko",
+    "size": 83096,
+    "sha256": "9fbf5925733216826b142567df7d720c681bc28ddfc48a5f792abea17c1c1ff7"
+  },
+  {
+    "path": "vendor/wlan_firmware_service.ko",
+    "size": 101640,
+    "sha256": "0159b37f44ddc250cab5517a97fb21897b1949d506d348553446903899d73515"
+  },
+  {
+    "path": "vendor/wsa883x_dlkm.ko",
+    "size": 99920,
+    "sha256": "fc3517cfdb35174ea1b7151641263a401d2fef845a72626ca2d0075bb2a20701"
+  },
+  {
+    "path": "vendor/wsa884x_dlkm.ko",
+    "size": 149936,
+    "sha256": "035c2b86ddba127d32f3799e0f308a868207f1e76fb51b85ac20116f76ef0ebd"
+  },
+  {
+    "path": "vendor/xhci-sideband.ko",
+    "size": 21784,
+    "sha256": "130af284634825c9ef7a6e91002bc6b695e8c42cdb752094f5d5be90c446277b"
+  }
+]

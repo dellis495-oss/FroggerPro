@@ -1,0 +1,11 @@
+{
+  "ramdisk": {
+    "6.6.139-4k-g6242c82bd7d5 SMP preempt mod_unload modversions aarch64": 309
+  },
+  "vendor": {
+    "6.6.139-4k-g6242c82bd7d5 SMP preempt mod_unload modversions aarch64": 426
+  },
+  "system": {
+    "6.6.139-4k-g6242c82bd7d5 SMP preempt mod_unload modversions aarch64": 77
+  }
+}

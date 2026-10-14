@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "FroggerSystemUIOverlay",
+    product_specific: true,
+    certificate: "platform",
+    sdk_version: "current",
+}

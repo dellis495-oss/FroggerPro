@@ -1,0 +1,6 @@
+// Qualcomm userspace ION ABI headers, shared by source and prebuilt kernel profiles.
+cc_library_headers {
+    name: "frogger_ion_uapi_headers",
+    vendor: true,
+    export_include_dirs: ["."],
+}

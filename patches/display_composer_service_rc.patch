@@ -1,0 +1,12 @@
+diff --git a/composer/vendor.qti.hardware.display.composer-service.rc b/composer/vendor.qti.hardware.display.composer-service.rc
+index 55b011265c..d110559508 100644
+--- a/composer/vendor.qti.hardware.display.composer-service.rc
++++ b/composer/vendor.qti.hardware.display.composer-service.rc
+@@ -3,6 +3,6 @@ service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.
+     user system
+     group graphics drmrpc
+     capabilities SYS_NICE
+-    onrestart restart surfaceflinger
++    # onrestart restart surfaceflinger
+     socket pps stream 0660 system system
+     task_profiles ServiceCapacityLow

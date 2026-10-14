@@ -1,0 +1,1 @@
+adsp_sleepmon.h copied unchanged from FroggerPro downstream kernel include/uapi/misc. Narrow export preserves Bionic Linux headers. Used by PAL ADSP sleep-monitor ioctl calls. SPDX/license retained. Runtime ABI testing remains required.

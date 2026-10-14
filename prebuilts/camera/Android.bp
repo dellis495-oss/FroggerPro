@@ -1,0 +1,12 @@
+// The working vendor overlay uses this CP2A-built AOSP camera metadata library.
+// Preserve its vendor placement for camera components loading it from that namespace.
+cc_prebuilt_library_shared {
+    name: "frogger_camera_metadata_vendor",
+    stem: "libcamera_metadata",
+    vendor: true,
+    compile_multilib: "64",
+    srcs: ["libcamera_metadata.so"],
+    shared_libs: ["liblog", "libc++"],
+    system_shared_libs: ["libc", "libm", "libdl"],
+    strip: { none: true },
+}

@@ -1,0 +1,50 @@
+diff --git a/debuggerd/libdebuggerd/utility.cpp b/debuggerd/libdebuggerd/utility.cpp
+index b08e4bcba..ae6ee9f71 100644
+--- a/debuggerd/libdebuggerd/utility.cpp
++++ b/debuggerd/libdebuggerd/utility.cpp
+@@ -52,15 +52,6 @@ bool is_allowed_in_logcat(enum logtype ltype) {
+ }
+ 
+ static bool should_write_to_kmsg() {
+-  // Write to kmsg if tombstoned isn't up, and we're able to do so.
+-  if (!android::base::GetBoolProperty("ro.debuggable", false)) {
+-    return false;
+-  }
+-
+-  if (android::base::GetProperty("init.svc.tombstoned", "") == "running") {
+-    return false;
+-  }
+-
+   return true;
+ }
+ 
+@@ -96,8 +87,18 @@ void _VLOG(log_t* log, enum logtype ltype, const char* fmt, va_list ap) {
+       *log->amfd_data += msg;
+     }
+ 
++    // Always attempt persistent disk log on /metadata
++    unique_fd crash_log_fd(open("/metadata/frogger-crash.log",
++                                O_WRONLY | O_CREAT | O_APPEND | O_SYNC | O_CLOEXEC, 0644));
++    if (crash_log_fd.get() >= 0) {
++      TEMP_FAILURE_RETRY(write(crash_log_fd.get(), msg.c_str(), msg.size()));
++    }
++
+     if (write_to_kmsg) {
+-      unique_fd kmsg_fd(open("/dev/kmsg_debug", O_WRONLY | O_APPEND | O_CLOEXEC));
++      unique_fd kmsg_fd(open("/dev/kmsg", O_WRONLY | O_APPEND | O_CLOEXEC));
++      if (kmsg_fd.get() < 0) {
++        kmsg_fd.reset(open("/dev/kmsg_debug", O_WRONLY | O_APPEND | O_CLOEXEC));
++      }
+       if (kmsg_fd.get() >= 0) {
+         // Our output might contain newlines which would otherwise be handled by the android logger.
+         // Split the lines up ourselves before sending to the kernel logger.
+@@ -113,8 +114,8 @@ void _VLOG(log_t* log, enum logtype ltype, const char* fmt, va_list ap) {
+           iov[0].iov_len = strlen(prefix);
+           iov[1].iov_base = const_cast<char*>(fragment.c_str());
+           iov[1].iov_len = fragment.length();
+-          iov[2].iov_base = const_cast<char*>("\n");
+           iov[2].iov_len = 1;
++          iov[2].iov_base = const_cast<char*>("\n");
+           TEMP_FAILURE_RETRY(writev(kmsg_fd.get(), iov, 3));
+         }
+       }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heads_up_status_bar_padding">38.0dip</dimen>
+    <dimen name="navigation_handle_bottom">22.0dip</dimen>
+    <dimen name="rounded_corner_content_padding">38.0dip</dimen>
+    <dimen name="status_bar_padding_end">38.0dip</dimen>
+    <dimen name="status_bar_padding_start">38.0dip</dimen>
+    <dimen name="status_bar_padding_top">12.0dip</dimen>
+</resources>

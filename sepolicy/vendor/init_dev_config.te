@@ -1,0 +1,8 @@
+# The stock QCV script publishes SoC properties before vendor HAL startup.
+allow init_dev_config vendor_shell_exec:file rx_file_perms;
+allow init_dev_config vendor_toolbox_exec:file rx_file_perms;
+r_dir_file(init_dev_config, vendor_sysfs_soc)
+set_prop(init_dev_config, vendor_soc_id_prop)
+set_prop(init_dev_config, vendor_soc_name_prop)
+set_prop(init_dev_config, vendor_soc_model_prop)
+set_prop(init_dev_config, vendor_media_performance_class)

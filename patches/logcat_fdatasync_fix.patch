@@ -1,0 +1,17 @@
+diff --git a/logcat/logcat.cpp b/logcat/logcat.cpp
+index 2dfd3150..2a77f095 100644
+--- a/logcat/logcat.cpp
++++ b/logcat/logcat.cpp
+@@ -1222,7 +1222,11 @@ If you have enabled significant logging, look into using the -G option to increa
+                 ProcessBuffer(&log_msg);
+                 break;
+         }
+-        if (blocking && output_file_ == stdout) fflush(stdout);
++        if (blocking && output_file_) {
++            fflush(output_file_);
++            int fd = fileno(output_file_);
++            if (fd >= 0) fdatasync(fd);
++        }
+     }
+     return EXIT_SUCCESS;
+ }

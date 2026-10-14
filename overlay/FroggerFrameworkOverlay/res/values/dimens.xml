@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_bar_height">54dp</dimen>
+    <dimen name="status_bar_height_portrait">54dp</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="navigation_bar_height">64dp</dimen>
+    <dimen name="navigation_bar_height_landscape">48dp</dimen>
+    <dimen name="navigation_bar_frame_height">64dp</dimen>
+    <dimen name="rounded_corner_content_padding">38dp</dimen>
+    <dimen name="rounded_corner_radius">38dp</dimen>
+    <dimen name="rounded_corner_radius_top">38dp</dimen>
+    <dimen name="rounded_corner_radius_bottom">38dp</dimen>
+</resources>
