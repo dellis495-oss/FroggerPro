@@ -19,6 +19,22 @@ from extract_utils.main import (
 
 # Preserve the implicit stock root identity explicitly for init verification.
 blob_fixups: blob_fixups_user_type = {
+    # poweropt modules embed XMLDocument with the stock layout, incompatible with v11.
+    (
+        'vendor/bin/poweropt-service',
+        'vendor/lib64/libpowercore.so',
+        'vendor/lib64/libcamerapoweroptfeature.so',
+        'vendor/lib64/libgamepoweroptfeature.so',
+        'vendor/lib64/liboffscreenpoweroptfeature.so',
+        'vendor/lib64/libaodoptfeature.so',
+        'vendor/lib64/libpsmoptfeature.so',
+        'vendor/lib64/libvideooptfeature.so',
+        'vendor/lib64/libstandbyfeature.so',
+        'vendor/lib64/liblearningmodule.so',
+        'vendor/lib64/libpowercallback.so',
+    ): blob_fixup().replace_needed(
+        'libtinyxml2.so', 'libtinyxml2_nothing.so',
+    ),
     # Keep Thales on its stock KeyMint V3 utility without replacing source V4.
     ('vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales',
      'vendor/lib64/libjc_keymint-thales.so'): blob_fixup().replace_needed(
@@ -72,7 +88,39 @@ module = ExtractUtilsModule(
     ],
 )
 
+# Keep the entire imported runtime set in extraction, not only in hand-edited
+# generated vendor makefiles. Source-built PAL/AGM plugins stay in device.mk.
+required_runtime_blobs = (
+    'vendor/bin/pd-mapper',
+    'vendor/bin/pm-service',
+    'vendor/bin/pm-proxy',
+    'vendor/bin/audioadsprpcd',
+    'vendor/bin/hw/android.hardware.sensors-service.nothing-multihal',
+    'vendor/etc/init/vendor.qti.audio_adsprpc-service.rc',
+    'vendor/etc/init/android.hardware.sensors-service.nothing-multihal.rc',
+    'vendor/etc/vintf/manifest/android.hardware.sensors.nothing-multihal.xml',
+    'vendor/lib64/soundfx/libquasar.so',
+    'vendor/lib64/soundfx/libAACeffect_NTaidl.so',
+    'vendor/lib64/libtinyxml2_nothing.so',
+)
+
+
+def validate_runtime_blob_list():
+    file_list = Path(__file__).with_name('proprietary-files.txt')
+    destinations = set()
+    for line in file_list.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith('#'):
+            continue
+        path = line.lstrip('-').split(';', 1)[0].split('|', 1)[0]
+        destinations.add(path.split(':', 1)[-1])
+    missing = sorted(set(required_runtime_blobs) - destinations)
+    if missing:
+        raise RuntimeError('Runtime blobs missing from extraction list: ' + ', '.join(missing))
+
+
 if __name__ == '__main__':
+    validate_runtime_blob_list()
     utils = ExtractUtils.device(module)
     utils.run()
 

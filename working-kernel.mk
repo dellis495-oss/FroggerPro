@@ -1,6 +1,6 @@
 # Unofficial bring-up profile from the recovery-tested Evolution X 2026-09-30 kernel/module set.
 # Source-kernel debugging remains available under FROGGER_KERNEL_PROFILE=source.
-FROGGER_WORKING_KERNEL := $(DEVICE_PATH)/prebuilts/working-evolutionx-20260930
+FROGGER_WORKING_KERNEL := $(DEVICE_PATH)/prebuilts/working-6.6.139
 TARGET_PREBUILT_KERNEL := $(FROGGER_WORKING_KERNEL)/Image
 BOARD_PREBUILT_DTBIMAGE_DIR := $(FROGGER_WORKING_KERNEL)/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(FROGGER_WORKING_KERNEL)/dtbo.img

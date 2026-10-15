@@ -2049,7 +2049,6 @@ vendor/bin/aecxsimulator
 #vendor/bin/agmvoiceui
 vendor/bin/ar_util_in_test_example
 vendor/bin/athdiag
-#vendor/bin/audioadsprpcd
 vendor/bin/aw882xx_cali
 #vendor/bin/boringssl_self_test64
 vendor/bin/btconfig
@@ -3411,3 +3410,17 @@ vendor/lib64/hw/android.hardware.bluetooth@aidl-impl-qti.so
 
 # Stock SPU KeyMint requires V2, which is not frozen in this source branch.
 vendor/lib64/android.hardware.security.sharedsecret-V2-ndk.so;MODULE_SUFFIX=_nothing
+
+# Stock Android 17 device effects required by audio_effects_config.xml
+vendor/lib64/soundfx/libquasar.so
+vendor/lib64/soundfx/libAACeffect_NTaidl.so
+
+vendor/lib64/libtinyxml2.so:vendor/lib64/libtinyxml2_nothing.so;FIX_SONAME
+
+vendor/bin/audioadsprpcd
+vendor/bin/hw/android.hardware.sensors-service.nothing-multihal
+vendor/etc/init/vendor.qti.audio_adsprpc-service.rc
+vendor/etc/init/android.hardware.sensors-service.nothing-multihal.rc
+vendor/etc/vintf/manifest/android.hardware.sensors.nothing-multihal.xml
+
+# Optional Bluetooth audio software module and full QTI plugin dependency set.

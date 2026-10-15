@@ -1,5 +1,5 @@
 # Temporary early-boot capture, enabled only by the diagnostic build profile.
-service frogger_logcat /system/bin/logcat -b all -v threadtime -f /metadata/frogger-logcat-v2.log -r 512 -n 1
+service frogger_logcat /system/bin/logcat -b all -v threadtime -f /metadata/frogger-logcat-v3.log -r 512 -n 1 sscrpcd:S *:V
     disabled
     user root
     group root log readproc
@@ -23,3 +23,25 @@ service frogger_log_sync /system/bin/sh -c "while true; do /system/bin/sync; /sy
 
 on post-fs && property:ro.boot.frogger.init_log=1
     start frogger_log_sync
+
+# Keep native/Java crash reports separate from high-volume DSP startup messages.
+service frogger_crash_logcat /system/bin/logcat -b crash -v threadtime -f /metadata/frogger-crash-v3.log -r 512 -n 1
+    disabled
+    user root
+    group root log readproc
+    seclabel u:r:su:s0
+    restart_period 1
+
+on post-fs && property:ro.boot.frogger.init_log=1
+    start frogger_crash_logcat
+
+# Capture the normal boot's actual kernel/module state, with a unique boot ID.
+service frogger_boot_state /system/bin/sh /vendor/bin/frogger-boot-state.sh
+    disabled
+    oneshot
+    user root
+    group root log readproc
+    seclabel u:r:su:s0
+
+on post-fs-data && property:ro.boot.frogger.init_log=1
+    start frogger_boot_state

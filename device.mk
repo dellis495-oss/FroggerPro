@@ -66,7 +66,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/nothing/FroggerPro/configs/audio,$(TARGET_COPY_OUT_VENDOR)/etc/audio)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/nothing/FroggerPro/configs/audio-root,$(TARGET_COPY_OUT_VENDOR)/etc)
 # The physical KERA SKU must find the device's preserved audio effects config.
-PRODUCT_COPY_FILES +=     $(LOCAL_PATH)/configs/audio/sku_sun/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kera/audio_effects_config.xml
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/nothing/FroggerPro/configs/audio/sku_sun,$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kera)
 
 # Recovery imports this script through androidboot.hardware=qcom.
 PRODUCT_COPY_FILES += \
@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery \
-    android.hardware.sensors-service.multihal \
+    android.hardware.sensors-service.nothing-multihal \
     android.hardware.usb-service.qti \
     android.hardware.usb.gadget-service.qti \
     android.hardware.wifi-service \
@@ -136,6 +136,18 @@ PRODUCT_PACKAGES += \
     libagmipcservice \
     libpalipcservice \
     libsoundtriggerhal.qti \
+    libbundleaidl \
+    libreverbaidl \
+    libdownmixaidl \
+    libloudnessenhanceraidl \
+    libdynamicsprocessingaidl \
+    libvisualizeraidl \
+    libqcomvisualizer \
+    libqcompostprocbundle \
+    libqcomvoiceprocessing \
+    libvolumelistener \
+    libquasar \
+    libAACeffect_NTaidl \
     hostapd \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
@@ -178,3 +190,29 @@ PRODUCT_PACKAGES += libaudiocorehal.default
 PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti-telephony-utils-prd
+
+# Private stock XMLDocument ABI for the proprietary power parser.
+PRODUCT_PACKAGES += libtinyxml2_nothing
+
+ifeq ($(FROGGER_INIT_DIAGNOSTICS),true)
+PRODUCT_COPY_FILES += device/nothing/FroggerPro/init/frogger-boot-state.sh:$(TARGET_COPY_OUT_VENDOR)/bin/frogger-boot-state.sh
+endif
+
+# PAL virtual card 100 uses the AGM tinyalsa plugins and sound-card parser.
+PRODUCT_PACKAGES += \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagm_compress_plugin \
+    libsndcardparser
+
+# Complete PAL runtime plugin set referenced by the device resource-manager XML.
+PRODUCT_PACKAGES += \
+    libpaleventnotifier \
+    lib_bt_bundle \
+    lib_bt_aptx \
+    lib_bt_ble \
+    libhotword_intf \
+    libcustomva_intf
+
+# Optional Bluetooth SW registration uses this branch's current AIDL implementation.
+PRODUCT_PACKAGES += android.hardware.bluetooth.audio_sw

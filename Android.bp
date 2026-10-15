@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: Apache-2.0
+cc_library_shared {
+    name: "android.hardware.bluetooth.audio_sw",
+    vendor: true,
+    relative_install_path: "hw",
+    defaults: [
+        "aidlaudioservice_defaults",
+        "latest_android_media_audio_common_types_ndk_shared",
+        "latest_android_hardware_audio_core_ndk_shared",
+        "latest_android_hardware_audio_core_sounddose_ndk_shared",
+        "latest_android_hardware_bluetooth_audio_ndk_shared",
+    ],
+    srcs: ["bluetooth/BluetoothSwRegistration.cpp"],
+    shared_libs: ["libaudioserviceexampleimpl"],
+    cflags: ["-Wall", "-Werror"],
+}

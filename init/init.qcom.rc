@@ -11,7 +11,8 @@ on early-init
     symlink /vendor/dsp /dsp
 
 on init
-    mkdir /metadata 0700 root system
+    # Allow traversal to readable aconfig maps; key subdirectory permissions stay private.
+    mkdir /metadata 0711 root system
     mkdir /mnt/vendor/persist 0771 system system
     mkdir /vendor/firmware_mnt 0771 root system
     mkdir /vendor/bt_firmware 0771 bluetooth bluetooth
@@ -39,10 +40,36 @@ on early-boot
     write /sys/kernel/icnss/wlan_en_delay 1000
     write /sys/kernel/icnss/wpss_boot 1
 
-service vendor.froggerpro-modprobe /vendor/bin/modprobe --all=/vendor/lib/modules/modules.load -d /vendor/lib/modules
+service vendor.froggerpro-modprobe /vendor/bin/sh -c "if [ -f /vendor_dlkm/lib/modules/modules.load ]; then /vendor/bin/modprobe --all=/vendor_dlkm/lib/modules/modules.load -d /vendor_dlkm/lib/modules; fi; if [ -f /vendor/lib/modules/modules.load ]; then /vendor/bin/modprobe --all=/vendor/lib/modules/modules.load -d /vendor/lib/modules; fi"
     class core
     user root
     group root
     seclabel u:r:vendor_modprobe:s0
     disabled
     oneshot
+
+# Publish DSP process-domain service locations for FastRPC/audio/sensors.
+# Match the device reference's core-service identity and startup class.
+service vendor.pd_mapper /vendor/bin/pd-mapper
+    class core
+    user system
+    group system
+
+# Peripheral manager/proxy must be started, not just packaged as executables.
+service vendor.per_mgr /vendor/bin/pm-service
+    class core
+    user system
+    group system
+    ioprio rt 4
+
+service vendor.per_proxy /vendor/bin/pm-proxy
+    class core
+    user system
+    group system
+    disabled
+
+on property:init.svc.vendor.per_mgr=running
+    start vendor.per_proxy
+
+on property:sys.shutdown.requested=*
+    stop vendor.per_proxy
