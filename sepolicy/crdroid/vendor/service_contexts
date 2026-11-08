@@ -1,0 +1,2 @@
+vendor.nukisystems.nanoglyph.IMatrixLeds/default u:object_r:hal_matrix_leds_service:s0
+vendor.nukisystems.nanoglyph.IRedLed/default u:object_r:hal_matrix_leds_service:s0

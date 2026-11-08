@@ -1,0 +1,119 @@
+{
+  "properties": {
+    "vendor.qti.diaghal-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.data.connectionaidl-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.fm-V1-ndk": {
+      "vendor_available": true
+    },
+    "android.hardware.audio.common-V3-ndk_nothing": {
+      "installable": false
+    },
+    "android.hardware.audio.core-V2-ndk_nothing": {
+      "installable": false
+    },
+    "android.hardware.audio.core.sounddose-V2-ndk_nothing": {
+      "installable": false
+    },
+    "android.hardware.audio.effect-V2-ndk_nothing": {
+      "installable": false
+    },
+    "android.hardware.graphics.allocator-V1-ndk_nothing": {
+      "installable": false
+    },
+    "android.hardware.graphics.common-V5-ndk_nothing": {
+      "installable": false
+    },
+    "android.hardware.security.sharedsecret-V2-ndk_nothing": {
+      "installable": false
+    },
+    "android.media.audio.common.types-V3-ndk_nothing": {
+      "installable": false
+    },
+    "libmorpho_RapidEffect": {
+      "allow_undefined_symbols": true
+    },
+    "vendor.qti.hardware.display.config-V5-ndk_nothing": {
+      "installable": false
+    },
+    "com.qualcomm.qti.dpm.api@1.0": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.data.connectionfactory-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.data.dataactivity-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.data.ka-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.dpmaidlservice-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.embmsslaidl-V2-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.fm@1.0": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.qseecom-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.vpp-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.hardware.vpp@1.1": {
+      "vendor_available": true
+    },
+    "vendor.qti.qccvndhal_aidl-V1-ndk": {
+      "vendor_available": true
+    },
+    "vendor.qti.qesdhal@1.0": {
+      "vendor_available": true
+    },
+    "vendor.qti.qesdhal@1.1": {
+      "vendor_available": true
+    },
+    "vendor.qti.qesdhal@1.2": {
+      "vendor_available": true
+    },
+    "vendor.qti.qspmhal-V1-ndk": {
+      "vendor_available": true
+    }
+  },
+  "shared_libs_add": {
+    "vendor.qti.diaghal-V1-ndk": [
+      "libwifi-hal-qcom"
+    ],
+    "libntcamskia": [
+      "libnativewindow"
+    ]
+  },
+  "shared_libs_replace": {
+    "libquasar": {
+      "android.hardware.audio.effect-V2-ndk_nothing": "android.hardware.audio.effect-V2-ndk",
+      "android.media.audio.common.types-V3-ndk_nothing": "android.media.audio.common.types-V3-ndk"
+    },
+    "libAACeffect_NTaidl": {
+      "android.hardware.audio.effect-V2-ndk_nothing": "android.hardware.audio.effect-V2-ndk",
+      "android.media.audio.common.types-V3-ndk_nothing": "android.media.audio.common.types-V3-ndk"
+    }
+  },
+  "package_excludes": [
+    "android.hardware.audio.common-V3-ndk_nothing",
+    "android.hardware.audio.core-V2-ndk_nothing",
+    "android.hardware.audio.core.sounddose-V2-ndk_nothing",
+    "android.hardware.audio.effect-V2-ndk_nothing",
+    "android.hardware.graphics.allocator-V1-ndk_nothing",
+    "android.hardware.graphics.common-V5-ndk_nothing",
+    "android.hardware.security.sharedsecret-V2-ndk_nothing",
+    "android.media.audio.common.types-V3-ndk_nothing",
+    "vendor.qti.hardware.display.config-V5-ndk_nothing",
+    "android.hardware.security.keymint-service.strongbox-thales.xml",
+    "android.hardware.security.sharedsecret-service.strongbox-thales.xml"
+  ]
+}

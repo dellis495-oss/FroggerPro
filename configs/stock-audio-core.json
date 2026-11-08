@@ -1,0 +1,142 @@
+{
+  "source": "FroggerPro verified C5.0-260902-1559 vendor audio core; exact matched set validated with stereo amplifier route on device",
+  "libraries": {
+    "libar-pal": {
+      "file": "vendor/lib64/libar-pal.so",
+      "sha256": "1d7b5e1a6b3e5cd18e644f4ade40889b127885e565762ca3fb1a84bcc61b3fd9",
+      "shared_libs": [
+        "libar-gsl",
+        "liblog",
+        "libexpat",
+        "liblx-osal",
+        "libaudioroute",
+        "libcutils",
+        "libutilscallstack",
+        "libagmclient",
+        "libvui_intf",
+        "libarmemlog",
+        "libhidlbase",
+        "libPeripheralStateUtils",
+        "libtinyalsa",
+        "libtinycompress",
+        "libc++"
+      ],
+      "header_libs": [
+        "frogger_stock_libar_pal_headers"
+      ]
+    },
+    "libagm": {
+      "file": "vendor/lib64/libagm.so",
+      "sha256": "db71fb8af90d37c7726882a102f82613d1fa62d123bffa6ecdf1a20a4890e0da",
+      "shared_libs": [
+        "libar-gsl",
+        "liblog",
+        "liblx-osal",
+        "libaudioroute",
+        "libats",
+        "libarmemlog",
+        "libcutils",
+        "libtinyalsa",
+        "libaudio_log_utils",
+        "libexpat",
+        "libc++"
+      ],
+      "header_libs": [
+        "frogger_stock_libagm_headers"
+      ]
+    },
+    "libar-acdb": {
+      "file": "vendor/lib64/libar-acdb.so",
+      "sha256": "c4a9e7e644ac2f947addfdd3e5cc1f6341837f1bb3f44c04708c11eb9359f3ab",
+      "shared_libs": [
+        "liblx-osal",
+        "libc++"
+      ],
+      "header_libs": [
+        "frogger_stock_libar_acdb_headers"
+      ]
+    },
+    "libar-gsl": {
+      "file": "vendor/lib64/libar-gsl.so",
+      "sha256": "ad3d1ba1f91f09d398dbfeb7a760a1908cd316c0f9ff7244d1d94318982b0e7f",
+      "shared_libs": [
+        "liblx-osal",
+        "libar-acdb",
+        "liblx-ar_util",
+        "libar-gpr",
+        "libc++"
+      ],
+      "header_libs": [
+        "frogger_stock_libar_gsl_headers"
+      ]
+    },
+    "libar-gpr": {
+      "file": "vendor/lib64/libar-gpr.so",
+      "sha256": "350854fb4cc002ab4c7865ed732eb95e8689b0d65bd5274f037521a367446de3",
+      "shared_libs": [
+        "liblx-osal",
+        "libcutils",
+        "liblog",
+        "libc++"
+      ],
+      "header_libs": [
+        "frogger_stock_libar_gpr_headers"
+      ]
+    },
+    "libaudio_log_utils": {
+      "file": "vendor/lib64/libaudio_log_utils.so",
+      "sha256": "4b9cede778d133e5f09cab515074cd37fb88a1860aff8ac57ebb3a5395c11eda",
+      "shared_libs": [
+        "libutils",
+        "libcutils",
+        "libexpat",
+        "liblog",
+        "libc++"
+      ]
+    },
+    "libats": {
+      "file": "vendor/lib64/libats.so",
+      "sha256": "adfc8654a84a1bc938f5060ba9967ae3ac53fe246707343c960abae8866ddb6c",
+      "shared_libs": [
+        "liblx-osal",
+        "libutils",
+        "libcutils",
+        "libdiag",
+        "libar-gsl",
+        "libar-acdb",
+        "libc++"
+      ],
+      "header_libs": [
+        "frogger_stock_libats_headers"
+      ]
+    },
+    "liblx-osal": {
+      "file": "vendor/lib64/liblx-osal.so",
+      "sha256": "27c4d8c65de8cc571ad89fe05a3cba7dc9f520ecb8040557bff7524eedc5256c",
+      "shared_libs": [
+        "liblog",
+        "libdiag",
+        "libion",
+        "libpdmapper",
+        "libpdnotifier",
+        "libcutils",
+        "libc++"
+      ],
+      "header_libs": [
+        "libarosal_headers"
+      ]
+    },
+    "liblx-ar_util": {
+      "file": "vendor/lib64/liblx-ar_util.so",
+      "sha256": "b35978c9d8199227442ae44a9fa87fa268baccc8d95097587be86743853df8f7",
+      "shared_libs": [
+        "liblog",
+        "liblx-osal",
+        "libc++"
+      ],
+      "header_libs": [
+        "frogger_stock_liblx_ar_util_headers"
+      ]
+    }
+  }
+}

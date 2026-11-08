@@ -1,3 +1,13 @@
 /froggerpro/
+/17-1559/
+/proprietary/
 /proprietary_vendor_nothing_froggerpro-*.tar.gz
 /proprietary_vendor_nothing_froggerpro-*.zip
+/certs/
+**/__pycache__/
+*.pk8
+*.pem
+*.lineage
+*:Zone.Identifier
+*_Zone.Identifier
+*.bak

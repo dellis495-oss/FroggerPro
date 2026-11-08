@@ -1,0 +1,33 @@
+# Stock FroggerPro matrix permissions for the system lights HAL.
+# Applied before class hal; unrelated stock calibration/debug setup is excluded.
+on early-boot
+    chown system system /sys/class/leds/matrix-leds/hwid
+    chmod 664 /sys/class/leds/matrix-leds/hwid
+    chown system system /sys/class/leds/matrix-leds/effect
+    chmod 664 /sys/class/leds/matrix-leds/effect
+    chown system system /sys/class/leds/matrix-leds/imax
+    chmod 664 /sys/class/leds/matrix-leds/imax
+    chown system system /sys/class/leds/matrix-leds/frame_brightness
+    chmod 220 /sys/class/leds/matrix-leds/frame_brightness
+    chown system system /sys/class/leds/matrix-leds/operating_mode
+    chmod 664 /sys/class/leds/matrix-leds/operating_mode
+    chown system system /sys/class/leds/matrix-leds/always_on
+    chmod 644 /sys/class/leds/matrix-leds/always_on
+    chown system system /sys/class/leds/matrix-leds/all_white_brightness
+    chmod 220 /sys/class/leds/matrix-leds/all_white_brightness
+    chown system system /sys/class/leds/matrix-leds/factory_test
+    chmod 664 /sys/class/leds/matrix-leds/factory_test
+    chown system system /sys/class/leds/matrix-leds/single_brightness
+    chmod 664 /sys/class/leds/matrix-leds/single_brightness
+    chown system system /sys/class/leds/matrix-leds/light_id_info
+    chmod 0664 /sys/class/leds/matrix-leds/hwen
+    chown system system /sys/class/leds/matrix-leds/hwen
+    chmod 220 /sys/class/leds/matrix-leds/light_id_info
+    chown system system /sys/class/leds/matrix-leds/dev_color
+    chown system system /sys/class/leds/matrix-leds/vendor
+    chmod 444 /sys/class/leds/matrix-leds/vendor
+    chown system system /sys/class/leds/matrix-leds/torch
+    chmod 664 /sys/class/leds/matrix-leds/torch
+    chown system system /dev/led_strips
+    chmod 660 /dev/led_strips
+    chmod 0660 /sys/class/leds/matrix-leds/dev_color

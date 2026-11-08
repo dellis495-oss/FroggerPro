@@ -1,0 +1,2 @@
+persist.vendor.face. u:object_r:vendor_frogger_face_config_prop:s0 prefix
+vendor.face.challenge u:object_r:vendor_frogger_face_config_prop:s0 exact string

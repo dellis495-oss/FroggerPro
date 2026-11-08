@@ -397,3 +397,23 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     nvmem_qfprom.ko \
     qfprom-sys.ko \
     nothing_restart_handler.ko
+
+# Source-built peripheral modules used by the working hardware inventory.
+BOARD_VENDOR_KERNEL_MODULES_LOAD += msm-mmrm.ko msm_hw_fence.ko msm_ext_display.ko sync_fence.ko hdcp_qseecom_dlkm.ko qseecom_dlkm.ko smcinvoke_dlkm.ko smmu_proxy_dlkm.ko
+include $(DEVICE_PATH)/configs/kernel/source-audio-modules.mk
+
+# Source-built display, camera, DSP, touch and synchronization drivers.
+BOARD_VENDOR_KERNEL_MODULES_LOAD += focaltech_fts.ko msm_drm.ko frpc-adsprpc.ko msm_kgsl.ko synx-driver.ko ipclite.ko ipclite_test.ko msm_video.ko camera.ko
+
+# Source-built wireless platform, mailbox and Bluetooth dependencies.
+BOARD_VENDOR_KERNEL_MODULES_LOAD += smem-mailbox.ko cnss_nl.ko cnss_prealloc.ko cnss_utils.ko icnss2.ko wlan_firmware_service.ko btfm_slim_codec.ko btfmcodec.ko btpower.ko radio-i2c-rtc6226-qca.ko
+
+# Source-built IPA and RMNET, ordered after the memory provider.
+BOARD_VENDOR_KERNEL_MODULES_LOAD += rmnet_mem.ko gsim.ko ipam.ko ipanetm.ko rmnet_core.ko rmnet_ctl.ko rmnet_sch.ko rmnet_aps.ko rmnet_offload.ko rmnet_perf_tether.ko rmnet_shs.ko rmnet_perf.ko rmnet_wlan.ko
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD += qca_cld3_qca6750.ko
+
+include $(DEVICE_PATH)/configs/kernel/source-early-modules.mk
+
+# Load the source-built Glyph Matrix controller for the vendor lights service.
+BOARD_VENDOR_KERNEL_MODULES_LOAD += leds-aw20144.ko

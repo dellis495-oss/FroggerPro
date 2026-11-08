@@ -1,0 +1,8 @@
+<manifest version="1.0" type="device">
+    <!-- The branch-native software module implements audio core V4. -->
+    <hal format="aidl">
+        <name>android.hardware.audio.core</name>
+        <version>4</version>
+        <fqname>IModule/bluetooth</fqname>
+    </hal>
+</manifest>

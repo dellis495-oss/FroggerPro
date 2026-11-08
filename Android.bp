@@ -1,4 +1,38 @@
 // SPDX-License-Identifier: Apache-2.0
+// Recovery must update Qualcomm GPT slot attributes, like the normal vendor
+// boot HAL. The generic misc-only HAL reports success without selecting the
+// bootloader's actual target slot on this phone.
+cc_binary {
+    name: "frogger.boot-control.recovery",
+    stem: "android.hardware.boot-service.qti.recovery",
+    recovery: true,
+    relative_install_path: "hw",
+    srcs: [
+        "//hardware/qcom-caf/bootctrl:android.hardware.boot-service.qti.common_src",
+        "//hardware/qcom-caf/bootctrl:libboot_control_qti_src",
+    ],
+    header_libs: ["libhardware_headers"],
+    include_dirs: ["hardware/qcom-caf/bootctrl/1.1/libboot_control_qti"],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "libcutils",
+        "liblog",
+        "libz",
+        "android.hardware.boot-V1-ndk",
+        "android.hardware.boot@1.1",
+    ],
+    static_libs: [
+        "libboot_control",
+        "libbootloader_message_vendor",
+        "libfstab",
+        "//hardware/qcom-caf/bootctrl:libgptutils.qti",
+    ],
+    init_rc: ["recovery/boot-control.qti.rc"],
+    vintf_fragments: ["recovery/boot-control.qti.xml"],
+    cflags: ["-Wall", "-Werror"],
+}
+
 cc_library_shared {
     name: "android.hardware.bluetooth.audio_sw",
     vendor: true,
@@ -11,6 +45,59 @@ cc_library_shared {
         "latest_android_hardware_bluetooth_audio_ndk_shared",
     ],
     srcs: ["bluetooth/BluetoothSwRegistration.cpp"],
+    vintf_fragments: ["bluetooth/audio-core-bluetooth.xml"],
     shared_libs: ["libaudioserviceexampleimpl"],
     cflags: ["-Wall", "-Werror"],
+}
+
+install_symlink {
+    name: "frogger_qca6750_config_link",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini",
+}
+install_symlink {
+    name: "frogger_qca6750_mac_link",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/qca6750/wlan_mac.bin",
+    symlink_target: "/mnt/vendor/persist/qca6750/wlan_mac.bin",
+}
+
+android_app_import {
+    name: "FroggerEuiccGoogle",
+    apk: "prebuilts/EuiccGoogle.apk",
+    filename: "EuiccGoogle.apk",
+    product_specific: true,
+    privileged: true,
+    presigned: true,
+    preprocessed: true,
+    optional_uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
+}
+
+install_symlink {
+    name: "frogger_symlink_firmware_wlanmdsp_otaupdate",
+    vendor: true,
+    installed_location: "firmware/wlanmdsp.otaupdate",
+    symlink_target: "/data/vendor/firmware/wlanmdsp.mbn",
+}
+
+install_symlink {
+    name: "frogger_symlink_lib64_libEGL_adreno_so",
+    vendor: true,
+    installed_location: "lib64/libEGL_adreno.so",
+    symlink_target: "egl/libEGL_adreno.so",
+}
+
+install_symlink {
+    name: "frogger_symlink_lib64_libGLESv2_adreno_so",
+    vendor: true,
+    installed_location: "lib64/libGLESv2_adreno.so",
+    symlink_target: "egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+    name: "frogger_symlink_lib64_libq3dtools_adreno_so",
+    vendor: true,
+    installed_location: "lib64/libq3dtools_adreno.so",
+    symlink_target: "egl/libq3dtools_adreno.so",
 }

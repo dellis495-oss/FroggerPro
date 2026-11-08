@@ -1,0 +1,27 @@
+# Goodix owns this exact character device; never grant the HAL generic device
+# access merely because the stock node initially lacks a device-specific label.
+type vendor_frogger_fingerprint_device, dev_type;
+allow hal_fingerprint_default vendor_frogger_fingerprint_device:chr_file rw_file_perms;
+
+# The Goodix vendor daemon's observed trusted-application transport.
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default vendor_dmabuf_qseecom_ta_heap_device:chr_file r_file_perms;
+allow hal_fingerprint_default vendor_dmabuf_qseecom_heap_device:chr_file r_file_perms;
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
+# Label only the two observed FOD control files, not all proc/sysfs nodes.
+type vendor_frogger_fod_proc, fs_type, proc_type;
+type vendor_frogger_fod_sysfs, fs_type, sysfs_type;
+allow hal_fingerprint_default vendor_frogger_fod_proc:file rw_file_perms;
+allow hal_fingerprint_default vendor_frogger_fod_sysfs:file rw_file_perms;
+
+vendor_internal_prop(vendor_frogger_fingerprint_prop)
+set_prop(hal_fingerprint_default, vendor_frogger_fingerprint_prop)
+
+type vendor_frogger_goodix_service, service_manager_type, hal_service_type, protected_service;
+add_service(hal_fingerprint_default, vendor_frogger_goodix_service)
+
+# The observed Goodix dump directory is private to the fingerprint daemon.
+type vendor_frogger_fingerprint_data, file_type, data_file_type;
+allow hal_fingerprint_default vendor_frogger_fingerprint_data:dir create_dir_perms;
+allow hal_fingerprint_default vendor_frogger_fingerprint_data:file create_file_perms;

@@ -1,4 +1,7 @@
 import android.os.IBinder;
+import android.os.Binder;
+import android.hardware.lights.ILightsManager;
+import android.hardware.lights.LightState;
 import android.os.Parcel;
 import android.os.ServiceManager;
 public class FroggerGlyphVisibleTest {
@@ -12,6 +15,18 @@ public class FroggerGlyphVisibleTest {
   } finally {in.recycle();out.recycle();}
  }
  public static void main(String[] args) throws Exception {
+  if(args.length == 1 && "--framework".equals(args[0])) {
+   ILightsManager manager=ILightsManager.Stub.asInterface(ServiceManager.getServiceOrThrow("lights"));
+   IBinder token=new Binder();
+   int[] square=new int[169];
+   for(int row=0;row<13;row++) for(int col=0;col<13;col++) square[row*13+col]=(row==6||col==6)?4080:0;
+   manager.openSession(token,0);
+   try {
+    manager.setLightStates(token,new int[]{118},new LightState[]{new LightState.Builder().setFrameColors(square).build()});
+    System.out.println("Framework cross enabled: 10 seconds");Thread.sleep(10000);
+   } finally {manager.closeSession(token);System.out.println("Framework session closed; matrix off");}
+   return;
+  }
   IBinder extension=ServiceManager.getService("android.hardware.light.ILights/default").getExtension();
   if(!"vendor.hardware.light.ILightsExtension".equals(extension.getInterfaceDescriptor())) throw new IllegalStateException("Wrong extension");
   int[] trims={4,2,1,1,0,0,0,0,0,1,1,2,4};

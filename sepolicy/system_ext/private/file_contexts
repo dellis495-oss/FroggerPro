@@ -1,0 +1,2 @@
+# The system-built recovery HAL is a platform executable, not vendor content.
+/system/bin/hw/android\.hardware\.boot-service\.qti\.recovery u:object_r:frogger_recovery_bootctl_exec:s0

@@ -1,0 +1,15 @@
+diff --git a/packages/SystemUI/src/com/android/keyguard/CarrierTextManager.java b/packages/SystemUI/src/com/android/keyguard/CarrierTextManager.java
+index b0c0f19714d1..f2d3b8d2e51a 100644
+--- a/packages/SystemUI/src/com/android/keyguard/CarrierTextManager.java
++++ b/packages/SystemUI/src/com/android/keyguard/CarrierTextManager.java
+@@ -371,7 +371,9 @@ public class CarrierTextManager {
+             int slotId = subs.get(i).getSimSlotIndex();
+             carrierNames[i] = "";
+             subsIds[i] = subId;
+-            subOrderBySlot[slotId] = i;
++            if (slotId >= 0 && slotId < subOrderBySlot.length) {
++                subOrderBySlot[slotId] = i;
++            }
+             int simState = mKeyguardUpdateMonitor.getSimStateForSlotId(slotId);
+             CharSequence carrierName = subs.get(i).getCarrierName();
+             CharSequence carrierTextForSimState = getCarrierTextForSimState(simState, carrierName);

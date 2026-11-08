@@ -146,17 +146,11 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/libMobileAPI_SHARED.so
 #vendor/lib64/libPeripheralStateUtils.so
 #vendor/lib64/libagmclient.so
-#vendor/lib64/libar-acdb.so
-#vendor/lib64/libar-gpr.so
-#vendor/lib64/libar-gsl.so
-#vendor/lib64/libar-pal.so
 vendor/lib64/libarmemlog.so
 #vendor/lib64/libaudio_aidl_conversion_common_ndk.so
 #vendor/lib64/libaudioaidlcommon.so
 vendor/lib64/libdiag.so
 #vendor/lib64/libjson.so
-#vendor/lib64/liblx-ar_util.so
-#vendor/lib64/liblx-osal.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libpdmapper.so
@@ -1122,7 +1116,7 @@ vendor/lib64/vendor.qti.hardware.dsp-V1-ndk.so
 #vendor/lib64/libstfaceunlockppl.so
 # Fingerprint
 system_ext/lib64/vendor.qti.hardware.fingerprint@1.0.so
-#vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint.so
 # FM
@@ -1859,9 +1853,9 @@ vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so
 # Source service provides this VINTF manifest: vendor/etc/vintf/manifest/android.hardware.usb-service.qti.xml
 # Source service provides this VINTF manifest: vendor/etc/vintf/manifest/android.hardware.usb.gadget-service.qti.xml
 # Vibrator
-#vendor/bin/hw/vendor.qti.hardware.vibrator.service
-# Supplied by source build: vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
-# Source service provides this VINTF manifest: vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
+vendor/bin/hw/vendor.qti.hardware.vibrator.service;MODULE=vendor.qti.hardware.vibrator.service.nothing
+vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
 #vendor/lib64/hw/vibrator.default.so
 vendor/lib64/libaacvibrator.so
 vendor/lib64/libawlccvibrator.so
@@ -1999,9 +1993,10 @@ odm/etc/build_TUR.prop
 odm/overlayfs_origin/vendor/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc:vendor/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc
 odm/overlayfs_origin/vendor/etc/init/android.hardware.thales.ST54L.rc:vendor/etc/init/android.hardware.thales.ST54L.rc
 odm/overlayfs_origin/vendor/etc/init/android.hardware.weaver-service.thales.rc:vendor/etc/init/android.hardware.weaver-service.thales.rc
-odm/overlayfs_origin/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.strongbox-thales.xml:vendor/etc/vintf/manifest/android.hardware.security.keymint-service.strongbox-thales.xml
-odm/overlayfs_origin/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.strongbox-thales.xml:vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.strongbox-thales.xml
-odm/overlayfs_origin/vendor/etc/vintf/manifest/android.hardware.weaver-service.thales.xml:vendor/etc/vintf/manifest/android.hardware.weaver-service.thales.xml
+odm/overlayfs_origin/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.strongbox-thales.xml:vendor/etc/vintf/manifest/android.hardware.security.keymint-service.strongbox-thales.xml;EXTRACT_ONLY
+odm/overlayfs_origin/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.strongbox-thales.xml:vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.strongbox-thales.xml;EXTRACT_ONLY
+# Preserve the optional OEM origin, but do not advertise an unavailable ROW OMAPI backend.
+odm/overlayfs_origin/vendor/etc/vintf/manifest/android.hardware.weaver-service.thales.xml:vendor/etc/vintf/manifest/android.hardware.weaver-service.thales.xml;EXTRACT_ONLY
 vendor/apex/com.android.hardware.cas.apex
 vendor/apex/com.google.android.widevine-12498615.apex
 vendor/app/CACertService/CACertService.apk
@@ -2877,7 +2872,7 @@ vendor/lib64/bm5a79v08s13n75.bin
 vendor/lib64/bm5a79v08s13n76.bin
 #vendor/lib64/btaudio_offload_if.so
 vendor/lib64/com.qti.chiusecaseselector.so
-#vendor/lib64/com.qti.settings.sm7750.so
+vendor/lib64/com.qti.settings.sm7750.so
 vendor/lib64/com.qti.settings.sm8750.so
 vendor/lib64/com.qti.stats.awbsimulationwrapper.so
 vendor/lib64/com.qualcomm.mcx.distortionmapper.so
@@ -2921,7 +2916,6 @@ vendor/lib64/lib_lvacfs.so
 vendor/lib64/libadm.so
 vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libadreno_compiler_cl.so
-#vendor/lib64/libagm.so
 #vendor/lib64/libagm_compress_plugin.so
 #vendor/lib64/libagm_mixer_plugin.so
 #vendor/lib64/libagm_pcm_plugin.so
@@ -2936,8 +2930,6 @@ vendor/lib64/libaiphotoeraser.arcsoft.so
 vendor/lib64/libaodoptfeature.so
 vendor/lib64/libapengine.so
 vendor/lib64/libappclassifier.so
-#vendor/lib64/libats.so
-#vendor/lib64/libaudio_log_utils.so
 #vendor/lib64/libaudiochargerlistener.so
 #vendor/lib64/libaudioplatformconverter.qti.so;MODULE_SUFFIX=_nothing
 #vendor/lib64/libaudioserviceexampleimpl.so
@@ -3240,7 +3232,8 @@ vendor/lib64/libsxrservice_client.qti.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/libtaautoload.so
-# Source module owns this install destination: vendor/lib64/libtensorflowlite_c.so;MODULE_SUFFIX=_nothing
+# Stock voice SDK requires private XNNPACK exports absent from the platform ABI.
+vendor/lib64/libtensorflowlite_c.so:vendor/lib64/libtensorflowlite_c_nothing.so;FIX_SONAME
 vendor/lib64/libtfestriping.so
 #vendor/lib64/libtinyalsav2.so
 vendor/lib64/libtlpd.so
@@ -3418,9 +3411,21 @@ vendor/lib64/soundfx/libAACeffect_NTaidl.so
 vendor/lib64/libtinyxml2.so:vendor/lib64/libtinyxml2_nothing.so;FIX_SONAME
 
 vendor/bin/audioadsprpcd
-vendor/bin/hw/android.hardware.sensors-service.nothing-multihal
-vendor/etc/init/vendor.qti.audio_adsprpc-service.rc
-vendor/etc/init/android.hardware.sensors-service.nothing-multihal.rc
-vendor/etc/vintf/manifest/android.hardware.sensors.nothing-multihal.xml
+vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:vendor/etc/init/vendor.qti.audio_adsprpc-service.rc
 
 # Optional Bluetooth audio software module and full QTI plugin dependency set.
+
+# Qualcomm OEM hook shared Java library and its transitive utility bindings
+system_ext/framework/qcrilhook.jar
+system_ext/etc/permissions/qcrilhook.xml
+
+# Matched OEM audio core, consumed by source-namespace preferred prebuilts.
+vendor/lib64/libagm.so;EXTRACT_ONLY
+vendor/lib64/libar-acdb.so;EXTRACT_ONLY
+vendor/lib64/libar-gpr.so;EXTRACT_ONLY
+vendor/lib64/libar-gsl.so;EXTRACT_ONLY
+vendor/lib64/libar-pal.so;EXTRACT_ONLY
+vendor/lib64/libats.so;EXTRACT_ONLY
+vendor/lib64/libaudio_log_utils.so;EXTRACT_ONLY
+vendor/lib64/liblx-ar_util.so;EXTRACT_ONLY
+vendor/lib64/liblx-osal.so;EXTRACT_ONLY

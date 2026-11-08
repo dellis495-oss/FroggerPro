@@ -1,0 +1,4 @@
+;; The FroggerPro Glyph HAL has no counterpart in this policy version.
+(type new_objects)
+(typeattribute new_objects)
+(typeattributeset new_objects (new_objects hal_matrix_leds_service))

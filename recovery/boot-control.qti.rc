@@ -1,0 +1,7 @@
+# Match the Qualcomm source recovery service and its boot-control domain.
+service vendor.boot-qti /system/bin/hw/android.hardware.boot-service.qti.recovery
+    class early_hal
+    user root
+    group root
+    seclabel u:r:frogger_recovery_bootctl:s0
+    interface aidl android.hardware.boot.IBootControl/default

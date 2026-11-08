@@ -1,0 +1,7 @@
+hal_attribute(matrix_leds)
+type hal_matrix_leds_service, hal_service_type, protected_service, service_manager_type;
+
+binder_call(hal_matrix_leds_client, hal_matrix_leds_server)
+binder_call(hal_matrix_leds_server, hal_matrix_leds_client)
+hal_attribute_service(hal_matrix_leds, hal_matrix_leds_service)
+binder_use(hal_matrix_leds_server)

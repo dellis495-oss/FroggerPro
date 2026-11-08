@@ -1,0 +1,6 @@
+type hieroglyph_app, domain, coredomain;
+app_domain(hieroglyph_app)
+hal_client_domain(hieroglyph_app, hal_matrix_leds)
+
+# ActivityThread and the app use ordinary Android framework services.
+allow hieroglyph_app app_api_service:service_manager find;

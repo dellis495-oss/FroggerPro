@@ -1,0 +1,14 @@
+binder_call(hal_face_default, cameraserver)
+allow hal_face_default fwk_camera_service:service_manager find;
+allow hal_face_default fwk_camera_hwservice:hwservice_manager find;
+allow hal_face_default hidl_token_hwservice:hwservice_manager find;
+get_prop(hal_face_default, camera_config_prop)
+
+# The Nothing face HAL initializes its SDK configuration through these properties.
+set_prop(hal_face_default, vendor_frogger_face_config_prop)
+
+# The Nothing face HAL creates its SDK directory under Android’s face data path.
+allow hal_face_default face_vendor_data_file:dir create;
+
+# Face enrollment allocates and maps camera preview buffers.
+hal_client_domain(hal_face_default, hal_graphics_allocator)

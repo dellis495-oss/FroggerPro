@@ -1,0 +1,20 @@
+diff --git a/src/java/com/android/internal/telephony/Phone.java b/src/java/com/android/internal/telephony/Phone.java
+index 9c2112dccc..996debe4dd 100644
+--- a/src/java/com/android/internal/telephony/Phone.java
++++ b/src/java/com/android/internal/telephony/Phone.java
+@@ -2351,8 +2351,13 @@ public abstract class Phone extends Handler implements PhoneInternalInterface {
+     private @TelephonyManager.NetworkTypeBitMask long getEffectiveAllowedNetworkTypes() {
+         long allowedNetworkTypes = TelephonyManager.getAllNetworkTypesBitmask();
+         synchronized (mAllowedNetworkTypesForReasons) {
+-            for (long networkTypes : mAllowedNetworkTypesForReasons.values()) {
+-                allowedNetworkTypes = allowedNetworkTypes & networkTypes;
++            for (Map.Entry<Integer, Long> entry : mAllowedNetworkTypesForReasons.entrySet()) {
++                long networkTypes = entry.getValue();
++                if (entry.getKey() == TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G) {
++                    // A saved 2G mask may have been created with an older preferred network mode.
++                    networkTypes |= ~TelephonyManager.NETWORK_CLASS_BITMASK_2G;
++                }
++                allowedNetworkTypes &= networkTypes;
+             }
+         }
+         if (!mIsCarrierNrSupported) {

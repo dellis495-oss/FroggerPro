@@ -1,0 +1,63 @@
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_config",
+    src: "android.hardware.radio.config.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_data",
+    src: "android.hardware.radio.data.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_messaging",
+    src: "android.hardware.radio.messaging.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_modem",
+    src: "android.hardware.radio.modem.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_network",
+    src: "android.hardware.radio.network.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_sap",
+    src: "android.hardware.radio.sap.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_sim",
+    src: "android.hardware.radio.sim.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "frogger_radio_vintf_voice",
+    src: "android.hardware.radio.voice.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}

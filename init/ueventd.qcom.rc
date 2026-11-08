@@ -123,6 +123,8 @@ subsystem mem_buf_vm
 /dev/smd11                0660   radio      radio
 
 #permsissions for BT/FM
+# Bluetooth HCI UART: match stock ownership when the node is created.
+/dev/ttyHS0               0660   bluetooth  net_bt
 /dev/smd2                 0660   bluetooth  bluetooth
 /dev/smd3                 0660   bluetooth  bluetooth
 /dev/btpower              0660   bluetooth  system
@@ -553,6 +555,7 @@ subsystem mem_buf_vm
 */
 
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight brightness 0664 system graphics
 
 #asm330 sensor
 #common sensors files

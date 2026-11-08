@@ -1,1 +1,19 @@
-/vendor/bin/init\.qti\.qcv\.sh u:object_r:init_dev_config_exec:s0
+# The QCV script uses the Qualcomm vendor_qti_init_shell domain and its
+# inherited executable label. Do not override it with init_dev_config_exec.
+/vendor/bin/hw/vendor\.nothing\.hardware\.biometrics\.fingerprint-service u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power\.stats-service u:object_r:hal_power_stats_default_exec:s0
+/vendor/bin/hw/vendor\.noth\.hardware\.thermal-service u:object_r:hal_thermal_default_exec:s0
+/dev/goodix_fp u:object_r:vendor_frogger_fingerprint_device:s0
+/vendor/bin/hw/vendor\.noth\.hardware\.camera-service u:object_r:vendor_hal_camera_default_exec:s0
+/vendor/bin/hw/vendor\.noth\.hardware\.charge-service u:object_r:vendor_hal_charge_default_exec:s0
+/vendor/bin/hw/vendor\.noth\.hardware\.sensor\.sensor_extension-service u:object_r:vendor_sensor_extension_default_exec:s0
+/vendor/bin/hw/vendor\.noth\.hardware\.stability-service u:object_r:vendor_stability_default_exec:s0
+/vendor/bin/hw/vendor\.cnce\.hardware\.facsvc@2\.0-service u:object_r:facsvc_exec:s0
+/vendor/bin/ntf-service u:object_r:ntf_exec:s0
+/dev/ntfeature u:object_r:vendor_frogger_ntfeature:s0
+
+/data/vendor/fpdump(/.*)? u:object_r:vendor_frogger_fingerprint_data:s0
+# These are immutable root routing symlinks, not the mounted firmware contents.
+/bt_firmware u:object_r:rootfs:s0
+/firmware u:object_r:rootfs:s0
+/dsp u:object_r:rootfs:s0

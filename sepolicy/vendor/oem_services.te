@@ -1,0 +1,84 @@
+# Stock executable ownership, expressed as isolated domains rather than letting
+# unlabeled OEM executables inherit init. Access is limited to named interfaces
+# and observed resources; generic device/proc/sysfs grants are not imported.
+type vendor_hal_camera_default, domain;
+type vendor_hal_camera_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_camera_default)
+binder_use(vendor_hal_camera_default)
+hal_client_domain(vendor_hal_camera_default, hal_camera)
+hal_client_domain(vendor_hal_camera_default, hal_graphics_allocator)
+allow vendor_hal_camera_default fwk_camera_service:service_manager find;
+binder_call(vendor_hal_camera_default, cameraserver)
+binder_call(cameraserver, vendor_hal_camera_default)
+
+type vendor_hal_charge_default, domain;
+type vendor_hal_charge_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_charge_default)
+binder_use(vendor_hal_charge_default)
+r_dir_file(vendor_hal_charge_default, vendor_sysfs_usb_supply)
+r_dir_file(vendor_hal_charge_default, vendor_sysfs_battery_supply)
+binder_call(system_server, vendor_hal_charge_default)
+
+type vendor_sensor_extension_default, domain;
+type vendor_sensor_extension_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_sensor_extension_default)
+binder_use(vendor_sensor_extension_default)
+allow vendor_sensor_extension_default self:qipcrtr_socket { create read write getattr setopt };
+
+type vendor_stability_default, domain;
+type vendor_stability_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_stability_default)
+binder_use(vendor_stability_default)
+
+type facsvc, domain;
+type facsvc_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(facsvc)
+binder_use(facsvc)
+hwbinder_use(facsvc)
+
+type ntf, domain;
+type ntf_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(ntf)
+type vendor_frogger_ntfeature, dev_type;
+allow ntf vendor_frogger_ntfeature:file rw_file_perms;
+type_transition ntf device:file vendor_frogger_ntfeature "ntfeature";
+allow ntf device:dir { search write add_name };
+allow ntf vendor_frogger_ntfeature:file create_file_perms;
+allow { hal_camera_default surfaceflinger zygote rild } vendor_frogger_ntfeature:file r_file_perms;
+
+type vendor_frogger_camera_service, service_manager_type, hal_service_type, protected_service;
+type vendor_frogger_charge_service, service_manager_type, hal_service_type, protected_service;
+type vendor_frogger_sensor_extension_service, service_manager_type, hal_service_type, protected_service;
+type vendor_frogger_stability_service, service_manager_type, hal_service_type, protected_service;
+add_service(vendor_hal_camera_default, vendor_frogger_camera_service)
+add_service(vendor_hal_charge_default, vendor_frogger_charge_service)
+add_service(vendor_sensor_extension_default, vendor_frogger_sensor_extension_service)
+add_service(vendor_stability_default, vendor_frogger_stability_service)
+allow cameraserver vendor_frogger_camera_service:service_manager find;
+allow system_server vendor_frogger_charge_service:service_manager find;
+
+# This vendor image uses the legacy loc_launcher/network/XTRA stack. Qualcomm's
+# identical compatibility access is otherwise selected only for taro, not sun.
+hwbinder_use(vendor_location)
+binder_use(vendor_location)
+get_prop(vendor_location, hwservicemanager_prop)
+net_domain(vendor_location)
+allow vendor_location self:qipcrtr_socket create_socket_perms_no_ioctl;
+
+# Observed key-ring/scheduling checks during this matched kernel's module probes.
+allow vendor_modprobe self:key write;
+allow vendor_modprobe self:capability sys_nice;
+allow vendor_modprobe kernel:process setsched;
+# The installed Gatekeeper queries only the existing vendor retry-timer property.
+get_prop(vendor_hal_gatekeeper_qti, vendor_keymint_retry_timer_prop)
+
+# Exact OEM interfaces from the shipped VINTF manifest, not default services.
+type vendor_frogger_thermal_control_service, service_manager_type, hal_service_type, protected_service;
+type vendor_frogger_factory_service, service_manager_type, hal_service_type, protected_service;
+add_service(hal_thermal_default, vendor_frogger_thermal_control_service)
+add_service(facsvc, vendor_frogger_factory_service)
+
+# The Qualcomm provider publishes the Nothing offline post-processing service.
+type vendor_frogger_camera_postproc_service, service_manager_type, hal_service_type, protected_service;
+add_service(hal_camera_default, vendor_frogger_camera_postproc_service)
+allow vendor_hal_camera_default vendor_frogger_camera_postproc_service:service_manager find;

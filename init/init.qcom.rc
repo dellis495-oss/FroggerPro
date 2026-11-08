@@ -1,6 +1,8 @@
 import /vendor/etc/init/hw/init.froggerpro.usb.rc
 
 on early-init
+    write /proc/sys/kernel/printk "4 6 1 7"
+    write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
     setprop ro.hardware.egl adreno
     setprop ro.hardware.vulkan adreno
     setprop sys.usb.configfs 1
@@ -11,12 +13,17 @@ on early-init
     symlink /vendor/dsp /dsp
 
 on init
+    # QCRIL needs this directory before radio property triggers can start it.
+    mkdir /dev/socket/qmux_radio 0770 radio radio
+    chmod 2770 /dev/socket/qmux_radio
     # Allow traversal to readable aconfig maps; key subdirectory permissions stay private.
     mkdir /metadata 0711 root system
     mkdir /mnt/vendor/persist 0771 system system
     mkdir /vendor/firmware_mnt 0771 root system
     mkdir /vendor/bt_firmware 0771 bluetooth bluetooth
     mkdir /vendor/dsp 0771 root system
+    setprop ro.boot.product.hardware.sku ${ro.boot.hardware.sku}
+    start memory-init-boot
 
 on property:ro.boot.usbcontroller=*
     wait /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode
@@ -26,8 +33,17 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom --early
+    chown root system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist
+    mkdir /mnt/vendor/persist/data 0700 system system
+    mkdir /mnt/vendor/persist/rfs 0770 root system
+    mkdir /mnt/vendor/persist/hlos_rfs 0770 root system
+    mkdir /mnt/vendor/persist/audio 0775 audio audio
+    mkdir /mnt/vendor/persist/secnvm 0770 system system
 
 on post-fs
+    # Use the device module list in its declared boot order.
     exec_start vendor.froggerpro-modprobe
     # Keep the secure services alive across module loading. Restarting here
     # leaves KeyMint without QSEE during late-fs wrapped-key generation.
@@ -36,17 +52,196 @@ on post-fs
 on late-fs
     mount_all /vendor/etc/fstab.qcom --late
 
+# Restore the stock QCRIL state lifecycle after userdata is formatted.
+on post-fs-data
+    mkdir /vendor/data/tombstones 0771 system system
+    mkdir /data/vendor/tombstones 0771 system system
+    mkdir /data/vendor/tombstones/rfs 0771 system system
+    mkdir /data/vendor/tombstones/rfs/modem 0771 system system
+    mkdir /data/vendor/tombstones/rfs/lpass 0771 system system
+    mkdir /data/vendor/tombstones/rfs/cdsp 0771 system system
+    mkdir /data/vendor/tombstones/rfs/slpi 0771 system system
+    mkdir /data/vendor/tombstones/rfs/ois 0771 system system
+    mkdir /data/vendor/tombstones/rfs/tn 0771 system system
+    mkdir /data/vendor/tombstones/rfs/wpss 0771 system system
+    mkdir /data/vendor/ssrdump 0770 root system
+    mkdir /data/vendor/connectivity 0771 radio radio
+    mkdir /data/vendor/perfd 0770 root system
+    chmod 2770 /data/vendor/perfd
+    rm /data/vendor/perfd/default_values
+    mkdir /data/vendor/location 0770 gps gps
+    mkdir /data/vendor/location/mq 0770 gps gps
+    mkdir /data/vendor/location/xtwifi 0770 gps gps
+    mkdir /data/vendor/camera 0775 camera camera
+    copy /mnt/vendor/persist/camera/bokeh_caldata_uw_persist.bin /data/vendor/camera/bokeh_caldata_uw_persist.bin
+    chmod 0444 /data/vendor/camera/bokeh_caldata_uw_persist.bin
+    chown cameraserver audio /data/vendor/camera/bokeh_caldata_uw_persist.bin
+    copy /mnt/vendor/persist/camera/bokeh_caldata_tele_persist.bin /data/vendor/camera/bokeh_caldata_tele_persist.bin
+    chmod 0444 /data/vendor/camera/bokeh_caldata_tele_persist.bin
+    chown cameraserver audio /data/vendor/camera/bokeh_caldata_tele_persist.bin
+    copy /vendor/etc/camera/bokeh_caldata_uw_golden.bin /data/vendor/camera/bokeh_caldata_uw_golden.bin
+    chmod 0444 /data/vendor/camera/bokeh_caldata_uw_golden.bin
+    chown cameraserver audio /data/vendor/camera/bokeh_caldata_uw_golden.bin
+    copy /vendor/etc/camera/bokeh_caldata_tele_golden.bin /data/vendor/camera/bokeh_caldata_tele_golden.bin
+    chmod 0444 /data/vendor/camera/bokeh_caldata_tele_golden.bin
+    chown cameraserver audio /data/vendor/camera/bokeh_caldata_tele_golden.bin
+    chown system camera /dev/nt_cam_dev
+    chmod 0660 /dev/nt_cam_dev
+    mkdir /data/vendor/radio 0770 system radio
+    rm /data/vendor/radio/shmbus
+    mkdir /data/vendor/modem_config 0570 radio root
+    copy /vendor/radio/qcril_database/qcril.db /data/vendor/radio/qcril_prebuilt.db
+    chown radio radio /data/vendor/radio/qcril_prebuilt.db
+    chmod 0660 /data/vendor/radio/qcril_prebuilt.db
+    copy /vendor/etc/qcril_database/qcrilNr.db /data/vendor/radio/qcrilNr_prebuilt.db
+    chown radio radio /data/vendor/radio/qcrilNr_prebuilt.db
+    chmod 0660 /data/vendor/radio/qcrilNr_prebuilt.db
+    # QCRIL manages the writable database using the prebuilt seed.
+    write /data/vendor/radio/prebuilt_db_support 1
+    chown radio radio /data/vendor/radio/prebuilt_db_support
+    chmod 0400 /data/vendor/radio/prebuilt_db_support
+    write /data/vendor/radio/db_check_done 0
+    chown radio radio /data/vendor/radio/db_check_done
+    chmod 0660 /data/vendor/radio/db_check_done
+    write /data/vendor/radio/copy_complete 0
+    chown radio radio /data/vendor/radio/copy_complete
+    chmod 0660 /data/vendor/radio/copy_complete
+    write /sys/kernel/cnss/fs_ready 1
+    setprop vold.post_fs_data_done 1
+
 on early-boot
+    start vendor.qcom-sh
     write /sys/kernel/icnss/wlan_en_delay 1000
     write /sys/kernel/icnss/wpss_boot 1
 
-service vendor.froggerpro-modprobe /vendor/bin/sh -c "if [ -f /vendor_dlkm/lib/modules/modules.load ]; then /vendor/bin/modprobe --all=/vendor_dlkm/lib/modules/modules.load -d /vendor_dlkm/lib/modules; fi; if [ -f /vendor/lib/modules/modules.load ]; then /vendor/bin/modprobe --all=/vendor/lib/modules/modules.load -d /vendor/lib/modules; fi"
+on boot
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
+    chmod 0660 /dev/cpuset/camera-daemon/tasks
+
+on property:ro.vendor.ril.mbn_copy_completed=1
+    write /data/vendor/radio/copy_complete 1
+
+on property:vold.decrypt=trigger_restart_framework
+    start qcom-c_main-sh
+
+on property:vendor.memory.min_free_kbytes=*
+    write /proc/sys/vm/min_free_kbytes ${vendor.memory.min_free_kbytes}
+
+on property:sys.boot_completed=1
+    write /dev/kmsg "Boot completed "
+    write /sys/block/dm-0/queue/read_ahead_kb 512
+    write /sys/block/dm-1/queue/read_ahead_kb 512
+    write /sys/block/dm-2/queue/read_ahead_kb 512
+    write /proc/sys/vm/page-cluster 0
+    start kernel-boot
+    start kernel-post-boot
+    start memory-post-boot
+    start vendor.qcom-post-boot
+
+service gki.modprobe /vendor/bin/system_dlkm_modprobe.sh
+    class main
+    user root
+    group root system
+    disabled
+    stdio_to_kmsg
+    seclabel u:r:vendor_modprobe:s0
+    oneshot
+
+service vendor.froggerpro-modprobe /vendor/bin/modprobe --all=/vendor_dlkm/lib/modules/modules.load -d /vendor_dlkm/lib/modules
     class core
     user root
     group root
     seclabel u:r:vendor_modprobe:s0
     disabled
     oneshot
+
+service vendor.modprobe /vendor/bin/vendor_modprobe.sh
+    class main
+    user root
+    group root system
+    disabled
+    stdio_to_kmsg
+    seclabel u:r:vendor_modprobe:s0
+    oneshot
+
+service memory-init-boot /vendor/bin/sh /vendor/bin/init.kernel.init_boot-memory.sh
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+service memory-post-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot-memory.sh
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+service kernel-boot /vendor/bin/sh /vendor/bin/init.qti.kernel.sh
+    class core
+    user root
+    group root
+    disabled
+    oneshot
+
+service kernel-post-boot /vendor/bin/sh /vendor/bin/init.kernel.post_boot.sh
+    class core
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
+service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
+    class core
+    user root
+    oneshot
+
+service qcom-c_main-sh /vendor/bin/init.class_main.sh
+    class main
+    user root
+    group root system
+    oneshot
+
+service vendor.qcom-sh /vendor/bin/init.qcom.early_boot.sh
+    class core
+    user root
+    oneshot
+
+service qcom-sh /vendor/bin/init.qcom.sh
+    class late_start
+    user root
+    group root system radio
+    oneshot
+
+service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
+service ssgqmigd /vendor/bin/ssgqmigd
+    class late_start
+    user radio
+    group radio gps system
+    socket ssgqmig seqpacket 0660 radio inet
+
+service mlid /vendor/bin/mlid
+    class late_start
+    user gps
+    group gps
+    socket mlid stream 0666 gps gps
+
+service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
+    class late_start
+    user system
+    group system inet net_admin wifi
+    capabilities NET_ADMIN
 
 # Publish DSP process-domain service locations for FastRPC/audio/sensors.
 # Match the device reference's core-service identity and startup class.

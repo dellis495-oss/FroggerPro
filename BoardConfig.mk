@@ -37,8 +37,8 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilts/dtb
 
 # Kernel built from source
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.selinux=permissive androidboot.load_modules_parallel=true androidboot.usbcontroller=a600000.dwc3 androidboot.serialconsole=0 firmware_class.path=/vendor/firmware,/vendor/firmware_mnt/image,/firmware/image log_buf_len=1M nosoftlockup sysctl.kernel.firmware_config.force_sysfs_fallback=1
-FROGGER_INIT_DIAGNOSTICS ?= true
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.load_modules_parallel=true androidboot.usbcontroller=a600000.dwc3 androidboot.serialconsole=0 firmware_class.path=/vendor/firmware,/vendor/firmware_mnt/image,/firmware/image log_buf_len=1M nosoftlockup sysctl.kernel.firmware_config.force_sysfs_fallback=1
+FROGGER_INIT_DIAGNOSTICS ?= false
 ifeq ($(FROGGER_INIT_DIAGNOSTICS),true)
 BOARD_KERNEL_CMDLINE += androidboot.frogger.init_log=1
 endif
@@ -47,7 +47,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_KERNEL_VERSION := 6.6
 TARGET_KERNEL_CLANG_VERSION := r563880c
-# Select an explicit profile; default to working kernel for bootability.
+# Default to the boot-verified kernel and its matching modules.
 FROGGER_KERNEL_PROFILE ?= working
 ifeq ($(FROGGER_KERNEL_PROFILE),working)
 include $(DEVICE_PATH)/working-kernel.mk
@@ -55,7 +55,12 @@ else ifeq ($(FROGGER_KERNEL_PROFILE),source)
 TARGET_KERNEL_SOURCE := device/nothing/FroggerPro-kernel/android_kernel_msm-6.6_nothing_sm7750
 TARGET_KERNEL_CONFIG := gki_defconfig vendor/sun_perf.config vendor/FroggerPro.config
 TARGET_KERNEL_EXT_MODULE_ROOT := device/nothing/FroggerPro-kernel/android_kernel_msm-6.6_nothing_sm7750/vendor
-TARGET_KERNEL_EXT_MODULES := qcom/opensource/mmrm-driver qcom/opensource/mm-drivers/hw_fence qcom/opensource/mm-drivers/msm_ext_display qcom/opensource/mm-drivers/sync_fence qcom/opensource/audio-kernel qcom/opensource/securemsm-kernel
+TARGET_KERNEL_EXT_MODULES := qcom/opensource/mmrm-driver qcom/opensource/mm-drivers/hw_fence qcom/opensource/mm-drivers/msm_ext_display qcom/opensource/mm-drivers/sync_fence qcom/opensource/securemsm-kernel qcom/opensource/audio-kernel qcom/opensource/synx-kernel qcom/opensource/display-drivers qcom/opensource/graphics-kernel qcom/opensource/touch-drivers qcom/opensource/dsp-kernel qcom/opensource/video-driver qcom/opensource/camera-kernel qcom/opensource/data-kernel/drivers/smem-mailbox qcom/opensource/wlan/platform qcom/opensource/bt-kernel qcom/opensource/datarmnet-ext/mem qcom/opensource/dataipa/drivers/platform/msm qcom/opensource/datarmnet/core qcom/opensource/datarmnet-ext/sch qcom/opensource/datarmnet-ext/aps qcom/opensource/datarmnet-ext/offload qcom/opensource/datarmnet-ext/perf_tether qcom/opensource/datarmnet-ext/shs qcom/opensource/datarmnet-ext/perf qcom/opensource/datarmnet-ext/wlan qcom/opensource/wlan/qcacld-3.0
+
+# Match the OEM project define used by build.config.nothing.FroggerPro.
+TARGET_KERNEL_ADDITIONAL_FLAGS += NT_PROJECT=FroggerPro
+BOARD_USES_VENDOR_DLKMIMAGE := true
+BOARD_USES_SYSTEM_DLKMIMAGE := true
 
 include $(DEVICE_PATH)/kernel-modules.mk
 
@@ -153,8 +158,16 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # SELinux
 # include vendor/nothing/NanoGlyph/sepolicy/config.mk
 # include hardware/nothing/config.mk
+# Qualcomm system_ext and product SELinux policies
+include device/qcom/sepolicy/SEPolicy.mk
+
+# Qualcomm vendor SELinux policies
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/system_ext/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/crdroid/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/crdroid/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/crdroid/public
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 
 # Wi-Fi
@@ -308,7 +321,7 @@ SOONG_CONFIG_froggerpro_stock_copy_destinations = $(sort $(foreach stock_copy,\
 # AVB partition split/rollback locations verified from the matched stock dump.
 # Development signing for the generated images.
 BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 0
 BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_BOOT_KEY_PATH := $(BOARD_AVB_KEY_PATH)
@@ -345,6 +358,7 @@ $(call soong_config_set,qtidisplay,gralloc_handle_has_ubwcp_format,true)
 $(call soong_config_set,qtidisplay,mapper_ext,true)
 $(call soong_config_set,qtidisplay,composer_version,v3_3)
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/nothing/FroggerPro/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/vintf/nanoglyph-framework-matrix.xml
 
 # Match the existing metadata filesystem and stock vendor identity.
 BOARD_BOOTCONFIG += \
@@ -353,3 +367,12 @@ BOARD_BOOTCONFIG += \
     androidboot.usbcontroller=a600000.dwc3 \
     androidboot.product.vendor.sku=kera
 VENDOR_SECURITY_PATCH := 2026-04-05
+
+# Select the complete OEM audio core for this device while retaining source modules elsewhere.
+FROGGER_USE_STOCK_AUDIO_CORE ?= true
+SOONG_CONFIG_NAMESPACES += froggerpro
+SOONG_CONFIG_froggerpro += stock_audio_core
+SOONG_CONFIG_froggerpro_stock_audio_core := $(FROGGER_USE_STOCK_AUDIO_CORE)
+
+# Keep display userspace ABI paired with the preserved proprietary extension.
+$(call soong_config_set_bool,froggerpro,preserved_display,true)

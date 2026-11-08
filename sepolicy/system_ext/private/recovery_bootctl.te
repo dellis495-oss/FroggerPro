@@ -1,0 +1,23 @@
+# The source-built recovery boot HAL lives under the recovery /system tree.
+# Declare its file type for platform file_contexts, but instantiate the service
+# domain and its boot-control permissions only in recovery policy.
+type frogger_recovery_bootctl_exec, exec_type, system_file_type, file_type;
+
+recovery_only(`
+  type frogger_recovery_bootctl, domain, coredomain;
+  init_daemon_domain(frogger_recovery_bootctl)
+  hal_server_domain(frogger_recovery_bootctl, hal_bootctl)
+
+  # Match platform boot HAL fstab/proc and diagnostic logging access.
+  read_fstab(frogger_recovery_bootctl)
+  allow frogger_recovery_bootctl proc_cmdline:file r_file_perms;
+  allow frogger_recovery_bootctl sysfs_dt_firmware_android:dir search;
+  allow frogger_recovery_bootctl sysfs_dt_firmware_android:file r_file_perms;
+  allow frogger_recovery_bootctl block_device:dir search;
+  allow frogger_recovery_bootctl misc_block_device:blk_file rw_file_perms;
+  allow frogger_recovery_bootctl kmsg_device:chr_file { open write };
+
+  # Qualcomm shared hal_bootctl attribute rules supply GPT, UFS/BSG and
+  # slot-selection access. This single default-domain rule is also needed.
+  allow frogger_recovery_bootctl vendor_uefi_block_device:blk_file getattr;
+')
